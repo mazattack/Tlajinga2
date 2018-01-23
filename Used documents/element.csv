@@ -1,0 +1,1733 @@
+R_ID,Name,Elinfo
+1,White-tailed deer,Tibia
+2,White-tailed deer,Femur
+3,Dog,Cervical
+4,Dog,Talus
+5,Dog,RibR12
+6,Dog,Craniumbasiopheniod
+7,medium-large mammal,Craniumfrag
+8,Eastern cottontail,Mand/Tth
+9,bird,radiusradius
+10,bird,shaftlong bone
+11,Human,
+12,large mammal,Shaft fragsworked
+13,mammal,ND frags
+14,mammal,ND frags
+15,Human,
+16,Turtle,carapace/plastronplastron scute
+17,medium-large mammal,Tth NDroot
+18,mammal,ND frags
+19,White-tailed deer,Cervical
+20,White-tailed deer,Lumbar
+21,Dog,Talus
+22,Dog,MetatarsalMt V
+23,Dog,Phalanx 1Ph V
+24,Dog,RibR1?
+25,Slider turtle,carapace/plastroncarapace- costal scute
+26,Eastern cottontail,Mand/Tth
+27,Cottontail,Mandible
+28,Cottontail,Tth ND
+29,Cottontail,Phalanx 1posterior
+30,Rabbit/hare,Pelvis Acetabulumillium
+31,Hare,Atlas
+32,small mammal,Thoracic
+33,Smokey pocket gopher,Tibia
+34,small mammal,Vert ND
+35,bird,unknownfragment
+36,bird,sternumsternum
+37,Artiodactyl,Tibia
+38,mammal,unknownfragment
+39,Human,
+40,medium-large mammal,Radius
+41,mammal,shaftworked bone
+42,mammal,unknownfragment
+43,fish,vertebraC5Cervical
+44,Smokey pocket gopher,mandiblemandible + dentition
+45,Human,
+46,Cottontail,mandiblemandible + dentition
+47,Eastern cottontail,ulnaulna
+48,Cottontail,Pelvis AcetabulumPelvis Acetabulum
+49,Dog,metacarpalMetacarpal (4)
+50,bird,unknownfragment
+51,Dog,toothpm2 (inferior)
+52,Dog,toothpm4 (inferior)
+53,Canid,toothM3? (inferior)
+54,Dog,phalanxdistal phalanx
+55,mammal,othersesamoid
+56,small mammal,patellapatella
+57,White-tailed deer,toothM1 (inferior)
+58,Artiodactyl,toothincisor (inf)
+59,Artiodactyl,toothtooth
+60,Eastern cottontail,scapulascapula
+61,Smokey pocket gopher,scapulascapula
+62,Hare,ulnaulna
+63,bird,cranialcranium
+64,mammal,Vert ND
+65,Cottontail,mandiblemandible + dentition
+66,Cottontail,toothtooth
+67,Hare,ribrib (9)
+68,medium mammal,ribrib
+69,medium mammal,ribrib
+70,mammal,shaftneedle 
+71,fish,Vert NDvertebra
+72,bird,ribrib
+73,large mammal,shaftworked bone
+74,large mammal,shaftworked bone
+75,large bird,shaftlong bone
+76,mammal,unknownfragment
+77,medium mammal,Vert ND
+78,Dog,Cervical
+79,Human,
+80,Hare,
+81,mammal,unknownfragment
+82,Human,
+83,Cottontail,phalanxproximal phalanx (inferior)
+84,Snapper,spinedorsal spine
+85,mammal,unknownfragment
+86,unknown,unknownfragment
+87,large mammal,unknownfragment
+88,Waterfowl,femurfemur
+89,Dog,Atlas
+90,Dog,Atlas
+91,Dog,cranialinternal auditory meatus
+92,Dog,cranialoccipitcondyle
+93,Dog,cranialoccipitcondyle
+94,Dog,cranialoccipital
+95,Dog,cranialparietal
+96,Dog,cranialmaxilla +dentition
+97,Dog,mandiblemandible + dentition
+98,Dog,metacarpalMetacarpal
+99,Dog,cranialmaxilla
+100,Dog,cranialpremaxilla
+101,medium mammal,cranialcranium
+102,White-tailed deer,Lumbar
+103,White-tailed deer,Vert NDepiphysis
+104,Dog,toothmolar
+105,Dog,Caudal
+106,White-tailed deer,cranialexternal audoritory meatus
+107,large mammal,cranialcranium
+108,White-tailed deer,toothincisor (inf) 1
+109,Artiodactyl,toothtooth
+110,Hare,cranialtemporal
+111,small mammal,Lumbar
+112,Guajolote,Vert NDvertebra
+113,Hawk,radiusradius
+114,large bird,pelvispelvis
+115,bird,unknownfragment
+116,Shell,unknownfragment
+117,Human,
+118,mammal,unknownfragment
+119,Hare,metatarsalmetatarsal (5)
+120,Human,
+121,small mammal,ribrib
+122,mammal,unknownfragment
+123,Waterfowl,humerushumerus
+124,Waterfowl,coracoidcoracoid
+125,Puma,phalanxproximal phalanx (inferior) 4
+126,Human,
+127,mammal,unknownfragment
+128,White-sided Jackrabbit,mandiblemandible + dentition
+129,Hare,mandiblemandible
+130,Hare,cranialmaxilla
+131,Smokey pocket gopher,mandiblemandible
+132,small mammal,Axis
+133,Dog,phalanx*medial tarsal phalanx 5
+134,Dog,phalanx*proximal tarsal phalanx 3 or 4
+135,White-tailed deer,Carpalscaphoid
+136,Artiodactyl,ribrib
+137,Smokey pocket gopher,
+138,mammal,shaftShort or long bone
+139,large mammal,Vert ND
+140,Human,
+141,mammal,unknownfragment
+142,medium bird,Tibiatibiotarsus
+143,Pigeon,"phalanxPhalanx 1, digit 2 (carpal)"
+144,Guajolote,radiusradius
+145,bird,metatarsaltarsometatarsus
+146,Galliformes,sternumsternum
+147,Galliformes,sternumsternum
+148,bird,unknownfragment
+149,large mammal,shaftShort or long bone
+150,White-tailed deer,phalanxproximal phalanx (Right of the two)
+151,mammal,unknownfragment
+152,Human,
+153,large mammal,shaftpossible awl
+154,White-tailed deer,Antler
+155,Desert cottontail,Lumbar
+156,Desert cottontail,cranialPremaxilla
+157,Desert cottontail,sacrumsacrum
+158,Desert cottontail,
+159,Desert cottontail,Humerus
+160,Eastern cottontail,mandiblemandible
+161,Smokey pocket gopher,cranialcranium
+162,Opossum (Tlacuache),cranialMaxilla
+163,White-tailed deer,CervicalC5
+164,White-tailed deer,toothtooth
+165,White-tailed deer,Lumbar
+166,Artiodactyl,ribrib
+167,large mammal,shaftlong bone
+168,Human,
+169,mammal,unknownfragment
+170,bird,unknownfragment
+171,Domestic pig,cranialjugal
+172,large mammal,unknownfragment
+173,White-tailed deer,toothtooth
+174,mammal,unknownfragment
+175,mammal,unknownfragment
+176,bird,unknownfragment
+177,Dog,cranialparietal
+178,Smokey pocket gopher,Pelvis AcetabulumPelvis Acetabulumpelvis
+179,Artiodactyl,ribrib
+180,Eastern cottontail,
+181,Cottontail,Lumbar
+182,Rat/Mouse,Atlas
+183,Mud turtle,carapace/plastroncarapace- costal scute
+184,Slider turtle,carapace/plastroncarapace- costal scute
+185,Guajolote,Vert NDvertebra
+186,Human,
+187,mammal,toothtooth
+188,mammal,unknownfragment
+189,White-tailed deer,ulnaulna
+190,mammal,unknownfragment
+191,Artiodactyl,Lumbar
+192,mammal,unknownfragment
+193,Artiodactyl,ribrib
+194,Opossum (Tlacuache),mandiblemandible
+195,small mammal,ribrib
+196,Dog,ribrib
+197,Dog,phalanx*medial tarsal phalanx 3 or 4
+198,mammal,unknownfragment
+199,Guajolote,"phalanxphalanx 1, digit 2, carpal"
+200,Human,
+201,Rabbit/hare,ribrib
+202,small mammal,shaftshort bone
+203,small mammal,cranialcranium
+204,small mammal,Thoracic
+205,White-sided Jackrabbit,toothpremolar 3 of mandible 
+206,Hare,
+207,Smokey pocket gopher,toothincisor (sup) 
+208,Dog,toothpremolar 4 of mandible 
+209,Artiodactyl,ribrib
+210,large mammal,Cervical
+211,bird,unknownfragment
+212,Human,
+213,mammal,unknownfragment
+214,Human,
+215,mammal,unknownfragment
+216,Artiodactyl,ribrib
+217,Artiodactyl,ribrib
+218,Dog,cranialnasal
+219,Dog,phalanx*proximal carpal phalanx 2
+220,mammal,unknownfragment
+221,White-tailed deer,Antler
+222,Northern bobwhite,metatarsaltarsometatarsus
+223,Guajolote,humerushumerus
+224,bird,unknownfragment
+225,Jack fish,Vert NDvertebra
+226,unknown,unknownfragment
+227,Turtle,carapace/plastronplastron?
+228,cf. Tlachichi,metatarsalMetatarsal (3)
+229,medium mammal,Vert NDepiphysis
+230,mammal,unknownfragment
+231,Smokey pocket gopher,cranialjugal
+232,Slider turtle,carapace/plastroncarapace- costal scute
+233,Waterfowl,ulnaulna
+234,Waterfowl,radiusradius
+235,Fossil shark from cretaceous,toothtooth
+236,mammal,shaftlong bone
+237,mammal,shaftlong bone
+238,mammal,unknownfragment
+239,medium-large bird,furculafurcula
+240,Dog,ribrib
+241,Artiodactyl,ribrib
+242,mammal,unknownfragment
+243,unidentifiable,unknownfragment
+244,mammal,unknownfragment
+245,Artiodactyl,scapulascapula
+246,mammal,unknownfragment
+247,Human,
+248,mammal,unknownfragment
+249,unknown,unknownfragment
+250,Human,
+251,White-tailed deer,mandiblemandible
+252,Human,
+253,mammal,unknownfragment
+254,White-tailed deer,patellapatella
+255,mammal,unknownfragment
+256,Human,
+257,Jack fish,Caudalvertebra
+258,Human,
+259,mammal,unknownfragment
+260,mammal,unknownfragment
+261,White-tailed deer,Antler
+262,mammal,unknownfragment
+263,Pigeon,ulnaulna
+264,Human,
+265,Pigeon,humerushumerus
+266,marine fish,Otherurostyle
+267,mammal,unknownfragment
+268,White-tailed deer,Pelvis AcetabulumPelvis Acetabulumpelvis
+269,White-tailed deer,Pelvis NDpelvis
+270,Rat/Mouse,Humerus
+271,mammal,unknownfragment
+272,Snapper,cranialopercular
+273,Dog,metacarpalMetacarpal (2)
+274,Dog,ribrib
+275,White-tailed deer,Antler
+276,mammal,unknownfragment
+277,White-tailed deer,
+278,Hare,Humerus
+279,Eastern cottontail,metatarsalmetatarsal (2)
+280,medium mammal,ribrib
+281,mammal,unknownfragment
+282,Human,
+283,medium-large mammal,ribrib
+284,medium-large mammal,ribrib
+285,mammal,unknownfragment
+286,mammal,unknownfragment
+287,mammal,unknownfragment
+288,Guajolote,femurfemur
+289,Guajolote,femurfemur
+290,Guajolote,metatarsaltarsometatarsus
+291,Guajolote,ribrib
+292,Guajolote,fibulafibula
+293,Guajolote,radiusradius
+294,White-tailed deer,
+295,Mexican cottontail,ulnaulna
+296,Desert cottontail,
+297,Dog,mandiblemandible
+298,Dog,cranialpremaxilla
+299,Turtle,carapace/plastronplastron
+300,mammal,unknownfragment
+301,Human,
+302,Human,
+303,Dog,toothM1 (superior)
+304,cf. Long tailed wood patridge,scapulascapula
+305,Guajolote,phalanxproximal tarsal phalanx (1)
+306,mammal,unknownfragment
+307,White-tailed deer,Lumbar
+308,Smokey pocket gopher,
+309,small mammal,Thoracic
+310,Human,
+311,mammal,unknownfragment
+312,Northern bobwhite,coracoidcoracoid
+313,mammal,unknownfragment
+314,Guajolote,radiusradius
+315,large bird,Tibiatibiotarsus
+316,bird,otherossified tendon
+317,bird,unknownfragment
+318,mammal,unknownfragment
+319,mammal,unknownfragment
+320,medium mammal,ribrib
+321,Dog,phalanx*proximal tarsal phalanx 3 or 4
+322,medium-large mammal,unknownunidentifiable flat bone
+323,mammal,shaftneedle
+324,mammal,unknownfragment
+325,large bird,humerushumerus
+326,Human,
+327,Northern bobwhite,metatarsaltarsometatarsus
+328,Hare,Iliumpelvis
+329,mammal,unknownfragment
+330,Hare,scapulascapula
+331,Rabbit/hare,ribrib
+332,Smokey pocket gopher,Humerus
+333,large mammal,otherossified costal cartilage
+334,White-tailed deer,Lumbar
+335,White-tailed deer,Ischiumpelvis
+336,Black-necked grebe,metatarsaltarsometatarsus
+337,Black-necked grebe,Tibiatibiotarsus
+338,medium-large bird,humerushumerus
+339,Waterfowl,Tibiatibiotarsus
+340,Quail,femurfemur
+341,cf. Fulica americana,metatarsaltarsometatarsus
+342,Guajolote,humerushumerus
+343,large bird,otherossified tendon
+344,large bird,phalanxproximal tarsal phalanx
+345,bird,phalanxmedial or distal tarsal phalanx
+346,bird,ribrib
+347,bird,unknownfragment
+348,cf. guajolote,Unknown?humerus
+349,White-tailed deer,ribrib
+350,Dog,ThoracicT8
+351,Human,
+352,mammal,unknownfragment
+353,bird,sternumsternum
+354,Mud turtle,carapace/plastronplastron scute
+355,Brocket deer,
+356,Brocket deer,toothM2 (sup) 
+357,Brocket deer,Humerus
+358,cf. Brocket Deer,scapulascapula
+359,Dog,Humerus
+360,Dog,toothcanine (sup)
+361,White-tailed deer,cranialsquamosal
+362,White-tailed deer,ribrib
+363,Hare,cranialmaxilla
+364,medium mammal,Vert NDepiphysis
+365,medium mammal,ribrib
+366,mammal,shaftworked bone
+367,Pigeon,metatarsaltarsometatarsus
+368,extra-large bird,Vert NDvertebra
+369,bird,unknownfragment
+370,Snapper,spineUpper dorsal spine
+371,Snapper,spineLowerdorsal spine
+372,Human,
+373,mammal,unknownfragment
+374,mammal,shaftworked bone
+375,Cottontail,cranialoccipital
+376,Red-bellied squirrel,Humerus
+377,Dog,metacarpalMetacarpal (4)
+378,Dog,metatarsalMetatarsal (5)
+379,Dog,metatarsalMetatarsal (4)
+380,White-tailed deer,
+381,Waterfowl,coracoidcoracoid
+382,small bird,metatarsaltarsometatarsus
+383,bird,unknownfragment
+384,Snapper,cranialPremaxilla
+385,fish,cranialcranium
+386,mammal,unknownfragment
+387,Human,
+388,White-tailed deer,cranialbasiopheniod
+389,Artiodactyl,Thoracic
+390,Artiodactyl,shaftlong bone
+391,mammal,shaftneedle
+392,Human,
+393,mammal,unknownfragment
+394,Rabbit/hare,ThoracicT12
+395,Human,
+396,Rabbit/hare,
+397,White-tailed deer,scapulascapula
+398,medium mammal,ribrib
+399,White-tailed deer,Antler
+400,Waterfowl,humerushumerus
+401,White-tailed deer,Pelvis AcetabulumPelvis Acetabulumpelvis
+402,mammal,unknownfragment
+403,Artiodactyl,ribrib
+404,mammal,shaftneedle
+405,small mammal,Clavical
+406,mammal,unknownfragment
+407,Artiodactyl,shaftlong bone
+408,mammal,shaftneedle
+409,mammal,shaftneedle
+410,Artiodactyl,ribrib
+411,Artiodactyl,sacrumsacral epiphysis
+412,mammal,shaftflake
+413,mammal,unknownfragment
+414,bird,unknownfragment
+415,White-tailed deer,Lumbar
+416,mammal,unknownfragment
+417,White-tailed deer,toothtooth
+418,Artiodactyl,ribrib
+419,Artiodactyl,ribrib
+420,Artiodactyl,Lumbar
+421,cf. Mexican cottontail,
+422,cf. Mexican cottontail,
+423,Cottontail,cranialPremaxilla+dentition
+424,Guajolote,mandiblemandible
+425,mammal,unknownfragment
+426,Human,
+427,Smokey pocket gopher,ulnaulna
+428,Dog,toothM2 (inferior)
+429,mammal,shaftspatula
+430,Charadriidae,humerushumerus
+431,Charadriidae,metatarsaltarsometatarsus
+432,Waterfowl,scapulascapula
+433,Rallidae,Tibiatibiotarsus
+434,small bird,phalanxtarsal phalanx
+435,bird,fibulafibula
+436,bird,unknownfragment
+437,Guajolote,phalanxproximal tarsal phalanx
+438,mammal,unknownfragment
+439,Human,
+440,Smokey pocket gopher,ulnaulna
+441,Cottontail,mandiblemandible
+442,mammal,unknownfragment
+443,unknown,shaftshaft
+444,Artiodactyl,ribRib
+445,mammal,cranialcranium
+446,large mammal,ribrib
+447,mammal,unknownfragment
+448,Smokey pocket gopher,mandiblemandible + dentition
+449,Artiodactyl,toothcanine?
+450,mammal,unknownfragment
+451,Human,
+452,Human,femurfemur
+453,Dog,metatarsalMetatarsal (4)
+454,Human,
+455,Human,
+456,cf. raptor,metacarpalcarpometacarpus
+457,mammal,unknownepiphysis
+458,mammal,shaftneedle
+459,mammal,shaftneedle
+460,cf. Waterfowl,Tibiatibiotarsus
+461,Shell,otherdebitage
+462,American Coot,cranialPremaxilla
+463,American Coot,ulnaUlna
+464,American Coot,radiusradius
+465,American Coot,metacarpalcarpometacarpus
+466,American Coot,metatarsaltarsometatarsus
+467,American Coot, tibiotarsus
+468,American Coot,phalanxtarsal digit II phalanx 1
+469,American Coot,phalanxtarsal digit II phalanx 2
+470,American Coot,phalanxtarsal digit III phalanx 1
+471,American Coot,phalanxtarsal digit I phalanx 1
+472,American Coot,phalanxtarsal digit III phalanx 3
+473,American Coot,phalanxtarsal digit III phalanx 2
+474,American Coot,phalanxtarsal digit IV phalanx 1
+475,American Coot,phalanxtarsal digit IV phalanx 2
+476,Waterfowl,coracoidcoracoid
+477,Waterfowl,coracoidcoracoid
+478,Waterfowl,coracoidcoracoid
+479,Waterfowl,metacarpalcarpometacarpus
+480,Waterfowl,humerushumerus
+481,Waterfowl,humerushumerus
+482,Waterfowl,ulnaulna
+483,Waterfowl,radiusradius
+484,Waterfowl,radiusradius
+485,Waterfowl,scapulascapula
+486,cf. Waterfowl,Tibiatibiotarsus
+487,Gallinule,pelvispelvis
+488,bird,Vert NDvertebra
+489,bird,unknownfragment
+490,cf. Mexican cottontail,
+491,cf. Mexican cottontail,Pelvis AcetabulumPelvis AcetabulumPelvis
+492,Mexican cottontail,scapulascapula
+493,Red-bellied squirrel,
+494,Red-bellied squirrel,
+495,Red-bellied squirrel,
+496,small mammal,CervicalC7
+497,Smokey pocket gopher,
+498,Smokey pocket gopher,toothincisor (inf)
+499,Artiodactyl,Thoracic
+500,Artiodactyl,ribRib
+501,Coati,mandiblemandible + dentition
+502,medium-large mammal,otherossified costal cartilage
+503,Human,
+504,mammal,shaftneedle
+505,mammal,unknownfragment
+506,Raven,Tibiatibiotarsus
+507,Raven,metatarsaltarsometatarsus
+508,Guajolote,coracoidcoracoid
+509,medium-large bird,coracoidcoracoid
+510,Brocket deer,phalanxproximal phalanx
+511,Artiodactyl,ribrib
+512,Cervid,Thoracic
+513,Cervid,Thoracic
+514,Human,
+515,human?,shaftrasp
+516,mammal,unknownfragment
+517,Slider turtle,Carapace/plastronSuprapygal
+518,Slider turtle,Carapace/plastronmarginal scute
+519,Dog,Humerus
+520,Dog,CervicalC3
+521,Human,
+522,Artiodactyl,ribrib
+523,White-tailed deer,
+524,cf. Odocoileus virginianus,Thoracic
+525,Dog,ribrib
+526,mammal,shaftneedle
+527,Human,
+528,mammal,unknownfragment
+529,Guajolote,pelvispelvis
+530,Guajolote,pelvispelvis
+531,Guajolote,sacrumsynsacrum
+532,Guajolote,Vert NDvertebra
+533,Guajolote,femurfemur
+534,Human,
+535,bird,unknownfragment
+536,fish,cranialcranium
+537,cf. Needle fish,cranialcranium
+538,White-tailed deer,
+539,mammal,unknownfragment
+540,Human,
+541,bird,unknownfragment
+542,Guajolote,coracoidcoracoid
+543,bird,unknownfragment
+544,Peccari,
+545,Peccari,sacrumSacrum
+546,mammal,unknownfragment
+547,Artiodactyl,ribrib
+548,large mammal,shaftlong bone
+549,mammal,unknownfragment
+550,Human,
+551,medium mammal,ribrib
+552,mammal,unknownfragment
+553,Human,
+554,Guajolote,Tibiatibiotarsus
+555,bird,unknownfragment
+556,White-tailed deer,Humerus
+557,mammal,unknownfragment
+558,Human,
+559,Smokey pocket gopher,mandiblemandible
+560,Smokey pocket gopher,
+561,Dog,Pelvis AcetabulumPelvis Acetabulumpelvis 
+562,Artiodactyl,ribrib
+563,medium mammal,ribrib
+564,White-tailed deer,mandiblemandible
+565,Smokey pocket gopher,mandiblemandible
+566,Smokey pocket gopher,toothmolar
+567,Rabbit/hare,Thoracic
+568,mammal,unknownfragment
+569,Dog,toothM1 (superior)
+570,Dog,toothincisor (inf) 2
+571,Desert cottontail,scapulascapula
+572,mammal,unknown
+573,Cervid,
+574,large mammal,cranialcranium
+575,Cervid,Carpalcuneiform
+576,Human,
+577,mammal,unknownfragment
+578,large mammal,shaftlong bone
+579,mammal,shaftneedle
+580,White-tailed deer,scapulascapula
+581,human?,shaftlong bone
+582,mammal,shaftneedle
+583,mammal,shaftneedle
+584,mammal,shaftneedle
+585,marine fish,spinedorsal spine
+586,mammal,shaftneedle
+587,bird,unknownfragment
+588,mammal,unknownfragment
+589,mammal,unknownfragment
+590,Cottontail,metatarsalmetatarsal
+591,Smokey pocket gopher,
+592,Smokey pocket gopher,mandiblemandible
+593,mammal,ribrib
+594,medium-large bird,metatarsaltarsometatarsus
+595,mammal,unknownfragment
+596,White-tailed deer,ulnaUlna
+597,mammal,shaftneedle
+598,mammal,shaftneedle
+599,mammal,shaftneedle
+600,Human,
+601,mammal,unknownfragment
+602,mammal,shaftworked bone
+603,Smokey pocket gopher,
+604,Smokey pocket gopher,mandiblemandible + dentition
+605,Dog,phalanx*proximal tarsal phalanx 2
+606,Human,
+607,large mammal,cranialcranium
+608,mammal,shaftneedle
+609,Cottontail,
+610,Waterfowl,scapulascapula
+611,Waterfowl,metatarsalTarsometatarsus
+612,Waterfowl,Tibiatibiotarsus
+613,bird,phalanxproximal phalanx
+614,Northern bobwhite,Tibiatibiotarsus
+615,American coot,cranialpremaxilla
+616,bird,Vert NDvertebra
+617,Smokey pocket gopher,cranialJugal
+618,Smokey pocket gopher,toothincisor (sup) 
+619,Smokey pocket gopher,
+620,Smokey pocket gopher,mandiblemandible
+621,Smokey pocket gopher,
+622,cf. Mexican cottontail,
+623,Hare,Iliumpelvis
+624,Dog,Axis
+625,Dog,toothcanine (inf)
+626,Human,
+627,small mammal,Axis
+628,cf. Cervid,phalanxmedial phalanx
+629,Dog,ribrib
+630,bird,unknownfragment
+631,Rabbit/hare,mandiblemandible
+632,Artiodactyl,ribRib
+633,small mammal,cranialcranium
+634,Artiodactyl,toothtooth
+635,Cervid,Antler
+636,Unknown,shaftbone
+637,Slider turtle,carapace/plastroncarapace- costal scute
+638,mammal,shaftneedle
+639,mammal,unknownfragment
+640,medium-large mammal,cranialcranium
+641,White-tailed deer,
+642,mammal,shaftneedle
+643,Hare,
+644,Waterfowl,humerushumerus
+645,Waterfowl,Tibiatibiotarsus
+646,Waterfowl,radiusradius
+647,cf. Waterfowl,coracoidcoracoid
+648,Charadriiformes,humerushumerus
+649,large bird,ulnaulna
+650,bird,radiusradius
+651,bird,unknownfragment
+652,Dog,toothcanine (sup)
+653,Desert cottontail,scapulascapula
+654,Hare,mandiblemandible
+655,Volcano rabbit (Teporingo),
+656,Smokey pocket gopher,scapulascapula
+657,Smokey pocket gopher,scapulascapula
+658,small mammal,cranialcranium
+659,small mammal,shaftlong bone
+660,small mammal,ribrib
+661,mammal,shaftworked bone
+662,Dog,ribrib
+663,Dog,metacarpalMetacarpal (3)
+664,White-tailed deer,mandiblemandible + dentition
+665,mammal,unknownfragment
+666,Human,
+667,fish,spinedorsal spine
+668,Dog,cranialoccipital
+669,Dog,cranialparietal
+670,Mexican cottontail,metatarsalmetatarsal (3)
+671,Eastern cottontail,metatarsalmetatarsal (5)
+672,Volcano rabbit (Teporingo),Humerus
+673,small mammal,cranialbulla
+674,Human,
+675,small mammal,unknownfragment
+676,Passerine,metacarpalcarpometacarpus
+677,Passerine,sacrumsynsacrum
+678,bird,shaftshaft
+679,Anseriformes,furculafurcula
+680,medium-large bird,coracoidcoracoid
+681,White-tailed deer,CervicalC3
+682,White-tailed deer,Lumbar
+683,White-tailed deer,Carpallunate
+684,cf. Brocket deer,LumbarL1
+685,medium-large mammal,Thoracic
+686,Artiodactyl,iliumPelvis
+687,mammal,unknownfragment
+688,Cottontail,mandiblemandible
+689,small mammal,cranialcranium
+690,Rabbit/hare,Thoracic
+691,mammal,shaftworked bone
+692,mammal,shaftneedle
+693,Dog,toothCanine (sup)
+694,Dog,toothincisor (sup) 2
+695,Dog,toothM1 (inferior)
+696,Waterfowl,metacarpalcarpometacarpus
+697,bird,ulnaulna
+698,bird,unknownfragment
+699,bird,shaftworked bone
+700,fish,Vert NDvertebra
+701,mammal,unknownfragment
+702,Dog,toothcanine (sup)
+703,Dog,toothmolar (inf) 1
+704,White-tailed deer,metatarsal or metacarpametatarsal or metacarpal
+705,Brocket deer,Humerus
+706,Eastern cottontail,
+707,Rabbit/hare,cranialsquamosal
+708,Rabbit/hare,cranialfrontal
+709,Smokey pocket gopher,cranialpremaxilla
+710,Rabbit/hare,Thoracic
+711,small mammal,Axis
+712,Dog,
+713,Dog,toothcanine (inf)
+714,White-tailed deer,
+715,9 banded armadillo,otherscute
+716,9 banded armadillo,otherscute
+717,Artiodactyl,ribRib
+718,Artiodactyl,Thoracic
+719,Artiodactyl,cranialcranium
+720,cf. Fulica americana,humerushumerus
+721,bird,unknownfragment
+722,Jack fish,PrecaudalVertebra
+723,marine fish,Vert NDvertebra
+724,fish,cranialcranium
+725,mammal,shaftworked fragment
+726,mammal,unknownfragment
+727,Human,
+728,Hare,
+729,Dog,metatarsalMetatarsal (2)
+730,Artiodactyl,phalanxproximal phalanx
+731,small mammal,cranialcranium
+732,mammal,unknownfragment
+733,Pigeon,metacarpalcarpometacarpus
+734,bird,shaftshaft 
+735,Passerine,ulnaulna
+736,Slider turtle,carapace/plastroncarapace- neural scute
+737,Hare,
+738,mammal,cranialcranium
+739,Human,ribRib
+740,mammal,unknownfragment
+741,Artiodactyl,ribrib
+742,bird,shaftlong bone
+743,Dog,scapulascapula
+744,Dog,metacarpalMetacarpal (4)
+745,Dog,metatarsal or metacarpaMetacarpal or tarsal
+746,Artiodactyl,ribrib
+747,Dog,
+748,mammal,shaftneedle
+749,mammal,ribrib
+750,Human,
+751,mammal,unknownfragment
+752,Quail,femurfemur
+753,bird,unknownfragment
+754,marine fish,spinedorsal spine
+755,Brocket deer,
+756,Mexican cottontail,Pelvis AcetabulumPelvis AcetabulumPelvis
+757,mammal,shaftchisel?
+758,mammal,unknownfragment
+759,large bird,shaftlong bone
+760,chicken?,scapulascapula
+761,Slider turtle,carapace/plastroncarapace
+762,Slider turtle,carapace/plastronPlastron
+763,Tlachichi,
+764,Artiodactyl,sacrumSacrum
+765,Eastern cottontail,metatarsalmetatarsal (4)
+766,Artiodactyl,Thoracic
+767,small mammal,scapulascapula
+768,Marine fish,ribrib
+769,fish,cranialcranium
+770,Cottontail,CervicalC3
+771,small mammal,Thoracic
+772,small mammal,ribrib
+773,small mammal,shaftshort bone
+774,mammal,unknownfragment
+775,quail,Tibiatibiotarsus
+776,quail,sternumsternum
+777,quail,sternumsternum
+778,Mud turtle,carapace/plastroncarapace- costal scute
+779,White-tailed deer,
+780,Artiodactyl,ribrib
+781,Artiodactyl,ribrib 13
+782,Artiodactyl,shaftlong bone
+783,large mammal,shaftlong bone
+784,mammal,unknownfragment
+785,White-tailed deer,
+786,White-tailed deer,phalanxmedial phalanx
+787,White-tailed deer,phalanxdistal phalanx
+788,Dog,
+789,Hare,scapulascapula
+790,Red-bellied squirrel,Humerus
+791,Red-bellied squirrel,ulnaulna
+792,Red-bellied squirrel,
+793,small mammal,ribrib
+794,mammal,unknownfragment
+795,bird,coracoidcoracoid
+796,Gallinule,metatarsaltarsometatarsus
+797,Gallinule,coracoidcoracoid
+798,Waterfowl,scapulascapula
+799,Waterfowl,ulnaulna
+800,Cooper’s Hawk,humerushumerus
+801,Cooper’s Hawk,ulnaulna
+802,Cooper’s Hawk,radiusradius
+803,Cooper’s Hawk,metacarpalcarpometacarpus
+804,Cooper’s Hawk,"phalanxDigit II, phalax 1"
+805,White-tailed deer,
+806,Artiodactyl,ribrib
+807,Desert cottontail,
+808,large mammal,otherossified costal cartilage
+809,medium-large mammal,Vert NDepiphysis
+810,Deer mouse,cranialcranium
+811,mammal,unknownfragment
+812,small-med bird,pelvispelvis
+813,bird,unknownfragment
+814,Dog,cranialmaxilla and palatine and dentition
+815,Dog,metatarsalMetatarsal (3)
+816,Dog,metatarsalMetatarsal (4)
+817,Dog,LumbarL1
+818,Dog,LumbarL2
+819,Dog,cranialjugal
+820,Dog,ribrib
+821,Dog,ribrib
+822,White-tailed deer,Humerus
+823,White-tailed deer,
+824,Artiodactyl,Thoracic
+825,mammal,unknownfragment
+826,cf turtle,carapace/plastroncf. Plastron
+827,Waterfowl,metatarsaltarsometatarsus
+828,bird,unknownfragment
+829,Loberro,mandiblemandible + dentition
+830,Mexican cottontail,Humerus
+831,White-tailed deer,phalanxproximal phalanx
+832,White-tailed deer,Humerus
+833,small mammal,ribrib
+834,medium-large mammal,Vert ND
+835,mammal,unknownfragment
+836,Human,
+837,Slider turtle,carapace/plastroncarapace- marginal scute
+838,Slider turtle,carapace/plastronplastron
+839,Guajolote,humerushumerus
+840,small mammal,ribRib
+841,small mammal,ribrib
+842,Rabbit/hare,ribRib
+843,Desert cottontail,Humerus
+844,Southern pocket gopher,toothincisor (inf)
+845,mammal,unknownfragment
+846,Human,cranium
+847,Northern bobwhite,metatarsaltarsometatarsus
+848,Northern bobwhite,metatarsaltarsometatarsus
+849,large bird,shaftlong bone
+850,unknown bone,shaftshaft 
+851,marine fish,ribrib
+852,Hare,Humerus
+853,large mammal,shaftworked shaft fragment
+854,Northern bobwhite,metatarsaltarsometatarsus
+855,Eastern cottontail,
+856,mammal,unknownfragment
+857,bird,shaftlong bone
+858,Artiodactyl,mandible
+859,Artiodactyl,scapula
+860,Artiodactyl,patella
+861,Dog,McIII
+862,large mammal,shaft
+863,Hare,mandible
+864,Teporingo,
+865,Teporingo,
+866,Rabbit/hare,Lumbarlumbar
+867,Cervid,Radiusmedial condyle and shaft
+868,medium-large mammal,shaftneedle
+869,Human,"shaftfragment ground to rounded ""spatula"""
+870,Hare,MtII
+871,Hare,MtIII
+872,Hare,MtIV
+873,Hare,MtV
+874,Dog,Tth upI3
+875,large mammal,Ribfrag
+876,large mammal,shaftfrag
+877,medium-large mammal,shaftneedle
+878,medium-large mammal,shaftfrag
+879,medium-large mammal,shaftfrag
+880,medium mammal,craniumfrag
+881,small mammal,shaftfrag
+882,mammal,unknownfrag
+883,Human,
+884,Shell,fragment
+885,White-tailed deer,Femurshaft frag and lesser trochanter 
+886,White-tailed deer,Tth upp2 o dp2
+887,Eastern cottontail,"Pelvis AcetabulumPelvis AcetabulumIl, ish"
+888,Northern bobwhite,Femur
+889,large mammal,Craniumfrag
+890,medium-large mammal,shaftfrag
+891,medium-large mammal,shaftfrag
+892,medium mammal,ribhead
+893,medium mammal,shaftfrag
+894,bird,unknownfrag
+895,White-tailed deer,Humerusshaft frag and nutrient foramina
+896,Mexican ground squirrel,Mand/Tth
+897,cf. mexican ground squirrel,Pelvis AcetabulumPelvis AcetabulumIl and rectus grube tubercle
+898,large mammal,ribfrag
+899,large mammal,shaftfrag
+900,medium-large mammal,unknownfrag
+901,medium-large mammal,unknownfrag
+902,medium-large bird,shaftfrag
+903,Human,
+904,large mammal,shaftfrag
+905,medium-large bird,shaftfrag
+906,medium mammal,ribfrag
+907,Human,chisel
+908,large mammal,needle
+909,White-tailed deer,Mtfrag of medial condyle and shaft
+910,cf. Hawk,Craniumnasal
+911,medium-large mammal,unknownfrag
+912,small-med bird,shaftfrag
+913,Smokey pocket gopher,Skeletonnear complete
+914,Dog,Craniumparietal
+915,medium-large mammal,unknownfrag
+916,medium mammal,Vert NDepiphysis
+917,Brocket deer,Humerus
+918,Dog,Calcaneus
+919,Dog,Talus
+920,Dog,Tarsal
+921,Dog,Tarsal
+922,Dog,Tarsal
+923,Dog,MtII
+924,Dog,MtIII
+925,Dog,MtIV
+926,large mammal,rib
+927,medium mammal,unknownfrag
+928,medium-large mammal,shaftfrag
+929,small mammal,ThoracicThoracic
+930,Brocket deer,Ph3
+931,White-tailed deer,Mt
+932,Artiodactyl,Humerusgreater tubercle fragment
+933,Artiodactyl,Craniumfrag
+934,Large Dog,Humerusdistal
+935,Dog,Cervical3
+936,Dog,McII
+937,large mammal,Needle
+938,medium mammal,Ribhead
+939,medium mammal,Ribsternal
+940,medium-large mammal,Vert NDfrag
+941,medium-large mammal,Vert NDepiphysis
+942,medium-large mammal,Chisel/spatulafrag
+943,medium-large mammal,shaftfrag
+944,medium-large mammal,NDfrag
+945,Northern bobwhite,Sternum
+946,Northern bobwhite,Pelvis AcetabulumAcetabulum
+947,Northern bobwhite,Pelvis AcetabulumAcetabulum
+948,Guajolote,Vert NDVert ND
+949,cf. Swallow,Coracoid
+950,Bird,Ph ND
+951,Waterfowl,Humerus
+952,Dog,McV
+953,Dog,Tth upP4
+954,White-tailed deer,SacrumS1
+955,Artiodactyl,CraniumZygomatic
+956,large mammal,ribfrag
+957,medium mammal,ribfrag
+958,medium mammal,shaftfrag
+959,mammal,frag
+960,mammal,frag
+961,Human,
+962,Slider turtle,scutecostal
+963,White-tailed deer,"Mand/TthM2, M3. body frag"
+964,Artiodactyl,PhLikely 2
+965,large mammal,shaftfrag
+966,Human,
+967,Smokey pocket gopher,Tth upI1
+968,Mexican cottontail,MtII
+969,Rabbit/hare,TthND
+970,Dog,McIII
+971,Dog,Tth lwM1
+972,Artiodactyl,"Craniumlacrimal, frag"
+973,medium mammal,ThoracicThoracicspineous process
+974,medium-large mammal,shaftfrag
+975,medium-large mammal,shaftfrag
+976,mammal,shaftfrag
+977,mammal,frag
+978,American coot,ulna
+979,Waterfowl,Dentary
+980,Waterfowl,Radius
+981,Bird,Tibiotarsus
+982,Bird,shaftfrag
+983,Bird,frag
+984,Shell,shell
+985,Red-bellied squirrel,"Premax/Tthlateral, I1"
+986,Red-bellied squirrel,Tth upI1
+987,medium mammal,ThoracicThoracic13
+988,large mammal,Vert NDprocess
+989,large mammal,Rib
+990,small mammal,Rib
+991,mammal,unknown
+992,Northern bobwhite,Tibiotarsus
+993,Waterfowl,Tibiotarsus
+994,large mammal,Tth NDincisor or canine
+995,Human,
+996,White-tailed deer,McAwl
+997,large mammal,Awldistal
+998,medium-large mammal,Needledistal
+999,Human,
+1000,Human,Shaftfrag
+1001,medium-large mammal,Needledistal
+1002,White-tailed deer,Radiusdistal
+1003,Artiodactyl,Metapodialshaft
+1004,Artiodactyl,Scapulacaudal border
+1005,Dog,"Craniumparietal L+R, Frontal R, Nasal R"
+1006,Artiodactyl,Radiusposterior shaft
+1007,Dog (lg),Ph2
+1008,Dog (sm),Ph1
+1009,Squirrel,CraniumFrontalfrontal
+1010,large mammal,shaftfrag
+1011,large mammal,ribshaft
+1012,large mammal,shaftfrag
+1013,medium-large mammal,Needleproximal
+1014,medium-large mammal,frag
+1015,medium mammal,ribshaft
+1016,medium mammal,Vert NDepiphysis
+1017,American coot,Coracoidposterior
+1018,Large Bird,pygostyle
+1019,Waterfowl,Humerusdistal
+1020,Bird,frag
+1021,Perciformes,hyomandibular
+1022,Perciformes,caudalCaudal
+1023,Human,
+1024,Artiodactyl,Pelvis AcetabulumPelvis AcetabulumPubis
+1025,Artiodactyl,Rib
+1026,Artiodactyl,Rib
+1027,medium-large mammal,Rib
+1028,medium-large mammal,Cranium
+1029,medium-large mammal,Shaftfrag
+1030,Guajolote,Fibula
+1031,Guajolote,Innominateillium frag
+1032,Bird,tendonossified
+1033,Bird,tarsometatarsusmedial and central condyle and shaft
+1034,Bird,Shaftfrag
+1035,Human,Calcaneus
+1036,White-tailed deer,Ph3
+1037,large mammal,Shaftfrag
+1038,medium-large mammal,Shaftfrag
+1039,mammal,Craniumauditory meatus frag
+1040,Human,
+1041,Artiodactyl,Mcshaft
+1042,large mammal,Awldistal
+1043,medium-large mammal,Shaftfrag
+1044,Human,
+1045,sp.,Humerusdistal
+1046,medium-large mammal,Ribshaft
+1047,Northern bobwhite,Tibiotarsus
+1048,Bird,Shaftfrag
+1049,Human,
+1050,Dog,"Mand/Tthposterior, M2, M3"
+1051,Dog,Craniumzygomatric
+1052,Guajolote,ScapulaHead
+1053,Human,
+1054,Slider turtle,Carapacecostal and 2 peripheral
+1055,large mammal,Frag
+1056,medium-large mammal,Ribshaft
+1057,Buteo,Craniumpremaxillary
+1058,small mammal,ThoracicThoracic
+1059,Galliformes,Tarsometatarsusproximal
+1060,medium-large mammal,Vert NDbody
+1061,medium-large mammal,Spatula/Chisel
+1062,mammal,frag
+1063,Mexican cottontail,Pelvis AcetabulumPelvis Acetabulum
+1064,dog,"Mand thanterior fragment, alveolus of canine, roots of P2, P1 root resorbed"
+1065,medium-large mammal,Craniumfrag
+1066,small-med mammal,Frag
+1067,Artiodactyl,Cervical
+1068,Artiodactyl,Scapulacaudal border
+1069,medium-large mammal,Craniumfrag
+1070,medium-large mammal,Frag
+1071,Lagomorph or Rodent,Tth NDp2?
+1072,Smokey pocket gopher,Femur
+1073,Quail,Coracoid
+1074,medium-large mammal,Frag
+1075,Human,
+1076,medium-large mammal,Ribfrag
+1077,medium-large mammal,Shaftfrag
+1078,medium-large mammal,Frag
+1079,small-med mammal,Ribfrag
+1080,Artiodactyl,Rib
+1081,medium-large mammal,Shaftfrag
+1082,medium-large mammal,Craniumfrag
+1083,mammal,Shaft
+1084,large bird,Ph1III and partial carpometacarpus
+1085,bird,Cranium
+1086,mammal,Frag
+1087,bird,Tarsometatarsus
+1088,bird,Shaftfrag
+1089,Human,
+1090,medium-large mammal,Shaftfrag
+1091,medium-large mammal,Shaftfrag
+1092,dog,Tth upM1
+1093,dog,Tth updp2
+1094,medium-large mammal,Shaftfrag
+1095,small-med mammal,Pelvis AcetabulumPelvis Acetabulumish
+1096,Artiodactyl,Ribhead
+1097,small-med mammal,Ph1
+1098,mammal,frag
+1099,large bird,tibiotarsus
+1100,bird,Shaft
+1101,White-tailed deer,Ph2
+1102,White-tailed deer,Antlershaft
+1103,White-tailed deer,"Humerusshaft, deltoid tuberority"
+1104,Hare,Rib
+1105,medium-large mammal,Shaftfrag
+1106,medium-large mammal,Needlefrag
+1107,bird,Shaftfrag
+1108,Waterfowl,tibiotarsusdistal
+1109,Human,
+1110,Waterfowl,tarsometatarsus
+1111,Grebe,tarsometatarsus
+1112,bird,tarsometatarsus
+1113,bird,humerus
+1114,bird,femur
+1115,bird,rib
+1116,Unknown,frag
+1117,medium-large mammal,shaft
+1118,medium mammal,ribshaft
+1119,Human,
+1120,Smokey pocket gopher,Mand/TthM1 or 2
+1121,cf. Mazama,Ph2
+1122,large mammal,shaft
+1123,Human,
+1124,Bird,Humerus
+1125,Frog,Urostyle
+1126,medium-large mammal,frag
+1127,medium-large mammal,needle
+1128,bird,InnominateIlium
+1129,Unknown,frag
+1130,dog,Tth up C1
+1131,medium-large mammal,needleshaft
+1132,medium-large mammal,shaftfrag
+1133,small-med mammal,Ph1
+1134,bird,Rib
+1135,Unknown,frag
+1136,dog,MtV
+1137,medium-large mammal,frag
+1138,medium-large mammal,Vert NDepiphysis
+1139,bird,shaft
+1140,medium-large mammal,Needle
+1141,Kinosternon,Scutecostal
+1142,Cf. Marine Fish,Spine
+1143,large bird,shaftfrag
+1144,Artiodactyl,ThoracicThoracicbody
+1145,dog,Mandfragment of body incl half P3 and 75% P4 alveoli
+1146,Frog,Ilium
+1147,Human, 
+1148,Human, 
+1149,medium-large mammal,shaft
+1150,Mammal,frag
+1151,dog,Mand/Tth
+1152,medium-large mammal,Needle
+1153,small mammal,Cervical
+1154,Human,
+1155,Artiodactyl,Craniumfrag
+1156,Lagomorph (L),IliumIliumfrag
+1157,large mammal,shaftfrag
+1158,bird,shaft
+1159,Human,
+1160,Artiodactyl,Ribshaft
+1161,Tuza,ScapulaHead +Neck
+1162,medium-large mammal,?Scapulaborder
+1163,medium-large mammal,ribshaft
+1164,medium-large mammal,Ribshaft
+1165,medium-large mammal,shaftfrag
+1166,medium mammal,ribshaft
+1167,Guajolote,pygostyle
+1168,Bird,shaftfrag
+1169,Bird,shaftfrag
+1170,Unknown,shaftfrag
+1171,Human,
+1172,Quail,Sternumanterior and keel
+1173,Guajolote,tibiotarsusshaft
+1174,Bird,Vert NDVert NDfrag
+1175,cf. Guajolote,Ph1III
+1176,bird,shaftpos. tibiotarsus
+1177,fish,spinedorsal
+1178,White-tailed deer,Femurshaft
+1179,Artiodactyl,ribhalf head and shaft
+1180,medium-large mammal,needledistal point
+1181,medium-large mammal,frag
+1182,medium-large mammal,shaftfrag
+1183,Quail,tibiotarsus
+1184,,
+1185,BUNNY,Pelvis AcetabulumPelvis Acetabulum
+1186,Bird,shaftfrag
+1187,Bird,Vert NDVert NDspinous process
+1188,mammal,frag
+1189,Guajolote,tarsometatarsusdistal and shaft
+1190,medium-large mammal,shaftfrag
+1191,medium mammal,ribshaft
+1192,Artiodactlya,long boneshaft
+1193,large mammal,?frags
+1194,medium-large mammal,ribshaft
+1195,bird,shaftfrag
+1196,unknown,unknown
+1197,bird,ulna
+1198,cunicularius,HumerusProx
+1199,cunicularius,ScapulaHead/neck
+1200,small mammal,rib
+1201,mammal,frag
+1202,Slider turtle,Carapacemarginal scute
+1203,,"Pelvis Acetabulumfrag of ilium, mostly just the acetabulum"
+1204,cf. White-tail,Femurshaft and part of lesser trohanter
+1205,cf. White-tail,mandiblecoronoid process
+1206,bird,shaft
+1207,Artiodactyla,ThoracicThoracicspine
+1208,Pig,Ulnaradial articuar facet and shaft
+1209,Cattle,Ph 2
+1210,Sheep/goat,Tarsalcentral
+1211,Sheep/goat,Femurgreater trochanter
+1212,Artiodactyla,Ribshaft and some head
+1213,medium mammal,ribshaft
+1214,medium-large mammal,shaftfrag
+1215,medium-large mammal,Pelvis NDPelvis NDfrag of ilium or ischium
+1216,medium-large mammal,shaftfrag
+1217,medium-large mammal,frag
+1218,mammal,frag
+1219,large mammal,needle
+1220,mammal,frag
+1221,large mammal,Ph ND1 or 2
+1222,large mammal,shaftshaft with portion of epiphysis
+1223,medium-large mammal,shaftfrag
+1224,medium-large mammal,shaftfrag
+1225,small mammal,craniumnasal
+1226,medium-large mammal,shaftfrag
+1227,medium-large mammal,Vert NDepiphysis
+1228,Artiodactlya,LumbarLumbar
+1229,White-tailed deer,Antlertine
+1230,Eastern cottontail,"Mand/Tthanterior including partial I1 and most of P3, whole P4, M1"
+1231,small mammal,Cervical
+1232,small mammal,ThoracicThoracic
+1233,medium-large mammal,Needle
+1234,medium-large mammal,frag
+1235,human,
+1236,bird,frag
+1237,Waterfowl,Sternumcoracoid facets
+1238,Waterfowl,Radius
+1239,Bird,Cranium
+1240,Galliformes,Sternumkeel
+1241,Human,shaft
+1242,White-tailed deer,Ph 2
+1243,medium mammal,Cervical
+1244,medium-large mammal,shaftfrag
+1245,human,
+1246,cf guajolote,tibiotarsusshaft
+1247,medium-large mammal,shaftfrag
+1248,White-tailed deer,Radiusproximal
+1249,medium mammal,Cervical
+1250,Artiodactlya,Ribshaft
+1251,medium-large mammal,frag
+1252,Human,
+1253,medium-large mammal,frag
+1254,Human,
+1255,Bird,Radiusshaft
+1256,Unknown,
+1257,Testudines,carapace or plastron
+1258,Testudines,carapacecostal scute
+1259,Bird,humerus
+1260,Mammal or Bird,Frag
+1261,White-tailed deer,Radiusdistal
+1262,Waterfowl,Tarsometatarsus
+1263,medium-large mammal,frag
+1264,Human,
+1265,White-tailed deer,Femurshaft and lesser trochanter
+1266,Guajolote,Tibiotarsusshaft
+1267,medium-large mammal,Craniumfrag
+1268,medium-large mammal,Shaftfrag
+1269,mammal,frag
+1270,Human,
+1271,medium-large mammal,frag
+1272,unknown,
+1273,medium-large mammal,shaftfrag
+1274,Phasinidae,Tarsometatarsus
+1275,White-tailed deer,Tth NDND
+1276,human,
+1277,Tlacuache,Femurdistal medial condyle
+1278,Tuza,Tibia
+1279,medium-large mammal,frag
+1280,medium-large mammal,fragpelvis frag?
+1281,medium mammal,Vert NDepiphysis
+1282,bird,shaftfrag
+1283,Human,
+1284,Tuza,Tibia
+1285,medium-large mammal,cranial frag
+1286,Human,
+1287,large mammal,shaft frag
+1288,large mammal,shaft frag
+1289,medium-large mammal,cranial frag
+1290,pig,Iliumiliumfrag of greater sciatic notch with some body and part of the auricular surface
+1291,Cottontail,MtV
+1292,Waterfowl,Tarsometatarsus
+1293,Waterfowl,Ulna
+1294,medium mammal,Caudal
+1295,medium mammal,Femur
+1296,Bird,tibiotarsusshaft
+1297,large mammal,shaft frag
+1298,medium-large mammal,shaft frag
+1299,medium-large mammal,frag
+1300,medium-large mammal,frag
+1301,Human,
+1302,dog,Ph 1
+1303,fish,frag
+1304,medium-large mammal,frag
+1305,human,
+1306,Bird,ulnashaft
+1307,Bird,vert NDVert ND
+1308,shell,shell
+1309,medium-large mammal,needle
+1310,medium mammal,thoracicThoracicbody
+1311,medium-large mammal,shaftfrag
+1312,medium-large mammal,shaftfrag
+1313,Human,
+1314,Waterfowl,Mandibleposterior
+1315,Quail,Sternumanterior and posterior
+1316,dog,Mandibleposterior
+1317,medium mammal,Ribhead and shaft
+1318,medium-large mammal,Ribshaft frag
+1319,medium-large mammal,frag
+1320,Human,
+1321,medium mammal,Ribhead and shaft
+1322,medium-large mammal,frag
+1323,human,
+1324,White-tailed deer,Antlertine and base
+1325,large mammal,frag
+1326,human,
+1327,small mammal,lumbarLumbar
+1328,medium-large mammal,shaftfrag
+1329,unknown,frag
+1330,Human,
+1331,Hooded skunk,ulnashaft and distal portion of trochlea notch
+1332,Hooded skunk,Radiusdistal
+1333,Hare,Radiusproximal
+1334,Waterfowl,Mandiblecentral portion
+1335,Waterfowl,Humerusdistal shaft
+1336,Human,
+1337,White-tailed deer,Antlertip of tine
+1338,Hare,scapulacaudal border
+1339,Bird,frag
+1340,medium-large mammal,shaftfrag
+1341,medium-large mammal,shaftfrag
+1342,medium-large mammal,shaftfrag
+1343,mammal,frag
+1344,Human,
+1345,Mammal,unknownfrag
+1346,Human,
+1347,Human,
+1348,medium mammal,rib
+1349,Brocket deer,Mcdistal
+1350,name,Pelvis Acetabulumpelvis acetabulum
+1351,large mammal,needle
+1352,mammal,frag
+1353,White-tailed deer,Ph 2
+1354,dog,Tth lwI2I2
+1355,medium-large mammal,shaftfrag
+1356,Human,
+1357,Lagomorph,Femurshaft frag
+1358,small mammal,Femurhead
+1359,medium-large mammal,shaftfrag
+1360,mammal,frag
+1361,Human,
+1362,Mud turtle,plastronhypo/hyoplastron/abdonimal
+1363,Human,shaftfrag
+1364,small rodent,Femur
+1365,bird,shaftfrag
+1366,mammal,frag
+1367,Rail,Tibiotarsusdistal
+1368,Northern bobwhite,Tarsometatarsus
+1369,Bird,Tibiotarsusshaft
+1370,Waterfowl,Pelvissynsacrum and acetabulum of R pelvis
+1371,Waterfowl,Unlashaft
+1372,dog,"Craniumtemporal and occipital fragment, including zygomatic process of temporal"
+1373,Artiodactyl,Scapulacranial angle
+1374,Artiodactyl,Ribone of the first ribs
+1375,Artiodactyl,Ribone of the first ribs
+1376,bunny,Humerusdistal
+1377,Leporidae,Premaxilla
+1378,Artiodactyl,LumbarLumbar
+1379,small mammal,Cervical
+1380,Artiodactyl,Tibialateral shaft frag
+1381,Artiodactyl,Metacarpalshaft
+1382,medium mammal,rib
+1383,medium-large mammal,shaftfrag
+1384,medium-large mammal,frag
+1385,Eastern cottontail,"Craniumfrontal, L temporal, L nasal"
+1386,Eastern cottontail,Scapulamissing caudal angle
+1387,Northern bobwhite,sternumanterior keel
+1388,Waterfowl,Scapuladistal
+1389,passerine,Tibiotarsusshaft with portion of fib crest
+1390,dog,Craniumnasal
+1391,medium-large mammal,shaftfrag
+1392,mammal,frag
+1393,Artiodactyl,Rib
+1394,hare,HumerusHead
+1395,bird,frag
+1396,Human?,Tibiashaft frag
+1397,bird,Frag
+1398,Waterfowl,Mandiblefrag
+1399,mammal,frag
+1400,mammal,shaftfrag
+1401,Artiodactyl,Ribhead
+1402,Artiodactyl,Craniumorbit/frontal frag
+1403,bunny,Humerushead frag and greater tubercle
+1404,Leporidae,Atlas
+1405,Dog,Tth upP4
+1406,Artiodactyl,IliumPelvisilium - tuber sacrale
+1407,American coot,Tarsometatarsus
+1408,Northern bobwhite,Tarsometatarsusdistal
+1409,Waterfowl,Humerusshaft
+1410,Bird,Pelvis acetabulumishium and small frag of acetabulum
+1411,Bird,shaftfrag
+1412,medium-large mammal,Ribfrag
+1413,medium-large mammal,shaftfrag
+1414,medium-large mammal,frag
+1415,Smokey pocket gopher,Femurdistal
+1416,medium-large mammal,frag
+1417,Waterfowl,Tarsometatarsus
+1418,bird,shaft
+1419,Human,shaftprobably femur
+1420,Mud turtle,Carapacecostal scute
+1421,medium-large mammal,Needle
+1422,large mammal,Needle
+1423,large mammal,Awl
+1424,Smokey pocket gopher,Mandiblebody
+1425,turtle,carapace or plastron
+1426,Mammal,frag
+1427,Human,
+1428,White-tailed deer,IschiumPelvisIschium
+1429,Artiodactyl,Ribshaft
+1430,dog,tth upM1
+1431,Hare,"LumbarL1, L2, L3Lumbar1, 2, 3"
+1432,Hare,Sacrums3
+1433,medium-large mammal,shaftfrag
+1434,large mammal,shaftfrag
+1435,large mammal,craniumfrag with brain case
+1436,mammal,shaft
+1437,Human,
+1438,Waterfowl,Femurshaft
+1439,Marine fish,Precaudal vert
+1440,Bird or Mammal,Rib?frag
+1441,Bird,Tibiotarsusdistal
+1442,medium mammal,Cervicalfrag
+1443,Human,
+1444,Artiodactyl,"Craniumfragment of petrous temporal, bone that makes us the external auditory meatus"
+1445,medium mammal,Ribshaft frag
+1446,Human,
+1447,medium-large mammal,shaftfrag
+1448,Artiodactyl,Pubis/ischiumPelvisPubis body/ishium
+1449,Human,
+1450,Artiodactyl,Lumbar vertLumbar
+1451,medium mammal,Cervical
+1452,Cottontail,MtIII
+1453,dog,MetacarpalIII
+1454,Human,
+1455,Bird,shaft
+1456,Squirrel,HumerusDistal
+1457,Waterfowl,Humerusproximal
+1458,Waterfowl,Coracoidproximal
+1459,*large bird,Synsacrumlumbar
+1460,bird,frag
+1461,large mammal,ribfrag
+1462,mammal,shaftfrag
+1463,medium-large mammal,Vert NDfrag
+1464,Human,
+1465,Waterfowl,Coracoidanterior (glenoid end)
+1466,Waterfowl,Sternumanterior frag
+1467,dog,Cranialnasal
+1468,dog,Tth upM1
+1469,dog,Tth lowI3
+1470,bunns,CranialFrontal
+1471,Squirrel,Ulna
+1472,Artiodactyl,Cranialpre/maxilla
+1473,small-medium mammal,LumbarLumbar
+1474,medium-large mammal,Cranialsphenoid wing frag
+1475,medium-large mammal,Frag
+1476,medium-large mammal,Shaft
+1477,large mammal,shaftneedle or some other cylindical tool
+1478,large mammal,shaftspatula?
+1479,bird or mammal,shaft
+1480,bird or mammal,frag
+1481,Shell,Shell
+1482,Human,
+1483,dog,Tth NDCanine
+1484,dog,McV
+1485,Waterfowl,Tarsometatarsus
+1486,Waterfowl,MandibleAngular
+1487,Artiodactyl,Tibiashaft
+1488,medium mammal,Rib
+1489,large mammal,Shaftfrag
+1490,mammal,frag
+1491,Human,
+1492,dog,Pelvis Acetabulumpelvis acetabulumischium
+1493,Waterfowl,coraciod
+1494,medium-large mammal,shaftfrag
+1495,medium-large mammal,ribfrag
+1496,large mammal,shaftspatula
+1497,Human,
+1498,Human,
+1499,large mammal,shaftspatula?
+1500,dog,Tth LowCanine
+1501,medium mammal,ribfrag
+1502,bird or mammal,shaft
+1503,Waterfowl,Sternum
+1504,Bird,Ulna
+1505,Human,
+1506,White-tailed deer,MetacarpalDista
+1507,White-tailed deer,Antlerfrag
+1508,buns,Femur
+1509,buns,Tibia
+1510,Hare,MtIV
+1511,Leporidae,IliumPelvisilium articular surface
+1512,small mammal,LumbarLumbar
+1513,small-medium mammal,shaft
+1514,large mammal,Ribshaft
+1515,dog,Tth NDCanine
+1516,Carangidae,Dentaryposterior 
+1517,Marine fish,Dorsal spineprox. 
+1518,fish,frag
+1519,bird or mammal,shaft
+1520,mammal,frag
+1521,Human,
+1522,White-tailed deer,Femurprx
+1523,Artiodactyl,Ribshaft
+1524,buns,Pelvis AcetabulumPelvis acetabulumcentral including part of all three
+1525,tortuga,carapacescute
+1526,medium mammal,ribshaft
+1527,medium-large mammal,frag
+1528,mammal,frag
+1529,human,
+1530,tortuga,"carapacefront right peripheral scute, where plastron and carapace meet"
+1531,mammal,
+1532,dog,Craniumtemporal
+1533,dog,CraniumPremaxilla
+1534,Hare,Radius
+1535,buns,Radiusprox
+1536,Hare,Ribprox
+1537,small-medium mammal,LumbarLumbar
+1538,Artiodactyl,Cervicalpost. Epiphysis
+1539,large mammal,ribfrag
+1540,medium-large mammal,shaftfrag
+1541,large mammal,shaftfrag
+1542,human,
+1543,dog,Humeruscomplete unfused shaft
+1544,dog,McIII
+1545,dog,Mpnot sure which
+1546,dog,Craniumbasioccipital
+1547,dog,"Craniumnasal, anterior portion"
+1548,dog,Craniumpalatine
+1549,dog,Pelvis AcetabulumPelvis acetabulumischium including acetab
+1550,White-tailed deer,Antlertine
+1551,Artiodactyl,ribshaft
+1552,Smokey pocket gopher,IliuminnominateIlium
+1553,Tuza,ulnaproximal
+1554,Cottontail,Femurprox
+1555,medium-large mammal,Vert NDepiphyses
+1556,medium-large mammal,Shaftfrag
+1557,medium-large mammal,frag
+1558,mammal,shaftfrag
+1559,mammal,frag
+1560,Waterfowl,"carpometacarpusmost, missing a bit from each end and McIII"
+1561,Bird,mandible or premaxillafrag
+1562,Bird,shaftfrag
+1563,dog,Tth upM2
+1564,Waterfowl,Coracoidmost of shaft
+1565,Loberro?,Mt III
+1566,Tuza,Humerusdistal
+1567,medium-large mammal,shaftfrag
+1568,mammal,frag
+1569,Human,
+1570,Mammal,frag
+1571,Human,
+1572,dog,Tibiadistal shaft
+1573,rodent,Tth NDincisor
+1574,mammal,shaftfrag
+1575,Human,
+1576,Squirrel,HumerusDistal
+1577,Tuza,ulnaprox shaft
+1578,Tuza,Radiusprox
+1579,dog,Tibia
+1580,Leporidae,Ribprox
+1581,Charadriiformes,Tarsometatarsus
+1582,small mammal,Patella
+1583,small-medium mammal,Rib
+1584,medium-large mammal,Vert NDepiphyses
+1585,medium-large mammal,shaftfrag
+1586,medium-large mammal,ribfrag
+1587,bird,shaftfrag
+1588,,
+1589,Rodentia,Mandible
+1590,medium mammal,Ribfrag
+1591,bird or mammal,shaftfrag
+1592,turtle,Carapaceneural scute
+1593,dog,Tth upP4
+1594,small mammal,Ribshaft
+1595,medium-large mammal,shaftfrag
+1596,mamal,shaftfrag
+1597,medium-large mammal,frag
+1598,bird or mammal,frag
+1599,Human,
+1600,Gastropod,
+1601,Human,
+1602,Hotbuns,MtIV
+1603,cf. loberro,Tth lowM1
+1604,White-tailed deer,Femurprox shaft
+1605,Artiodactyl,thoracicThoracic
+1606,Human,worked bone
+1607,Bird,tarsometatarsusshaft
+1608,mammal,shaft
+1609,Cottontail,Scapulacaudal angle and border
+1610,Tuza,Mandibleant.
+1611,bird or mammal,frag
+1612,small mammal,ribfrag
+1613,medium-large mammal,frag
+1614,large mammal,ribshaft
+1615,medium-large mammal,needleshaft
+1616,Tuza,Radiusno epihyses
+1617,Waterfowl,Humerusprox
+1618,Waterfowl,Humerusdistal
+1619,Waterfowl,Ulnaprox
+1620,medium mammal,Ph 1
+1621,medium mammal,Ph 1prox
+1622,Gastropod,shell
+1623,dog,Tth lowP3
+1624,mammal,frag
+1625,bird or mammal,frag
+1626,Human,
+1627,dog,Ph 2?
+1628,Carnivora,McV
+1629,Waterfowl,TibiotarsusDIST
+1630,Bird,Tarsometatarsusprox
+1631,small mammal,Craniumzygomatic frag
+1632,medium-large mammal,frag
+1633,Human,
+1634,White-tailed deer,Femurdistal shaft frag inclu. Muscular attachment
+1635,dog,Tth upI3
+1636,dog,"Atlasfrag of cranial facet, superior L side"
+1637,medium mammal,Ph1
+1638,Marine fish,Pteryiophoresbasal part of the dorsal spine
+1639,bird or mammal,frag
+1640,Squirrel,Radius
+1641,Mammal,frag
+1642,Human,
+1643,dog,Tth lowC1
+1644,medium-large mammal,frag
+1645,Mammal,shaft
+1646,mammal,Hyoid?
+1647,dog,Tth lowM2
+1648,buns,Humerusdistl
+1649,mammal,shaft
+1650,,
+1651,medium-large mammal,frag
+1652,human,
+1653,dog,Tth lowPm4
+1654,small-medium mammal,"Craniumfrag, likely parietal"
+1655,medium-large mammal,shaftfrag
+1656,Mammal,frag
+1657,Human,
+1658,Hare,MtIV
+1659,small-medium mammal,shaft
+1660,medium-large mammal,shaft
+1661,medium-large mammal,frag
+1662,Human,
+1663,White-tailed deer,Humerusdistal
+1664,White-tailed deer,Tibiaprox epiphysis
+1665,White-tailed deer,Tth upDp3
+1666,White-tailed deer,Tth lowIncisor
+1667,Hare,Tibiadistal
+1668,dog,Radiusshaft
+1669,tuza,Tth upIncisor
+1670,Cottontail,"Pelvis AcetabulumInnominate acetabulumIschium, acetab (whole) and part of pubis"
+1671,bird,frag
+1672,small-medium mammal,ribhead
+1673,medium-large mammal,frag
+1674,medium-large mammal,shaftflake
+1675,Artiodactyl,Ribshaft
+1676,small mammal,ribhead
+1677,medium-large mammal,fragwork frag
+1678,Mammal,frag
+1679,Human,
+1680,Northern bobwhite,Tibiotarsusdistal shaft
+1681,bird,shaft
+1682,bird,frag
+1683,mammal,frag
+1684,Human,
+1685,small mammal,shaft
+1686,medium-large mammal,shaft
+1687,Leporidae,Premaxillaant. 
+1688,Artiodactyl,Mandiblefrag of acending ramus
+1689,medium-large mammal,frag
+1690,Waterfowl,Radiusdistal
+1691,Birf,shaftfrag
+1692,Waterfowl,Coracoid
+1693,bunz,"Pelvis AcetabulumInnominate acetabulumAcetabulum, most of ischium, half of illium"
+1694,medium-large mammal,ribfrag
+1695,medium-large mammal,shaftfrag
+1696,medium-large mammal,fragtool frag
+1697,Human,
+1698,Mammal,worked boneshaft?
+1699,Mammal,shaftworked bone
+1700,Mammal,frag
+1701,human,
+1702,Mammal,frag
+1703,human,
+1704,Waterfowl,Ulna
+1705,Bird,Vert NDVert ND
+1706,Dog,MtIV
+1707,mammal,shaftfrag
+1708,human,
+1709,Mammal,frag
+1710,White-tailed deer,Humerusshaft
+1711,human,
+1712,White-tailed deer,Radiusprox
+1713,White-tailed deer,Scapuladistal (i.e. cranial) blade and neck
+1714,Loberro,Tth lowC
+1715,Mammal,Cranialfrag
+1716,Mammal,frag
+1717,medium-large mammal,shaft
+1718,medium-large mammal,frag
+1719,Shell,shell
+1720,mammal,shaft
+1721,human,
+1722,large mammal,shaftworked
+1723,Artiodactyl,Radiusshaft
+1724,medium-large mammal,needleproximal
+1725,mammal,shaftfrag worked
+1726,Human,
+1727,medium-large mammal,shaft
+1728,small mammal,ribhead
+1729,Waterfowl,sternumside fragment
+1730,Mammal,frag
+1731,Mammal,rib
+,,

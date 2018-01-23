@@ -1,0 +1,70 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+d1<-read.csv("2017_data_cleaning.csv")
+el_list<-read.csv("El_list.csv")
+d2<-read.csv("2016_data_clean.csv")
+```
+```{r}
+library(dplyr)
+```
+
+```{r}
+#This code creates a list of the unique elements in the R_El column. 
+uni_el<-unique(d1$R_El)
+#I used this list to code each to a particular standardised element
+```
+
+```{r}
+#This code creates a list of the unique elements in the R_El column in the second dataset and adds them to the prior dataset
+uni_el2<-unique(d2$R_El)
+uni_merg<-c(as.character(uni_el), as.character(uni_el2))
+uni_all<-unique(uni_merg)
+```
+
+```{r}
+#This code creates a new column for standardized elements and uses the look up list to provide the standardised element for that specimen. 
+d1$New_El<-el_list$Standard[match(d1$R_El, el_list$Orig)]
+d2$New_El<-el_list$Standard[match(d2$R_El, el_list$Orig)]
+```
+
+```{r}
+write.csv(d1, file= "2017_new_element.csv", append=FALSE)
+write.csv(d2, file= "2016_new_element.csv")
+```
+
+
+CLEANING PORTION DATA
+```{r}
+uni_por2<-unique(d2$R_portion)
+View(uni_por2)
+```
+I ended up cleaning those up in the original spreadsheet.
+
+Now I will put the datasets back together and clean the species names and set the groupings by type. 
+```{r}
+temp1<-select(d1, -Portion, -Element.info, -Comments)
+temp2<-select(d2, -Portion, -Comments)
+names(temp1)[45]<-"Details"
+names(temp2)[45]<-"Details"
+names(temp2)[20]<-"R_Portion"
+names(temp1)
+names(temp2)
+```
+```{r}
+Tla_1<-rbind(temp1, temp2)
+trimws(Tla_1)
+```
+HEre I will look for unique names in the Name coloumn
+```{r}
+unique(Tla_1$Name)
+```
+```{r}
+sp.<-select(Tla_1, Class, Category, Genus, Species, Name)
+uni_sp<-(unique(sp.))
+```
+
+
