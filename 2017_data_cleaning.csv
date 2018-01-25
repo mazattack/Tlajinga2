@@ -162,8 +162,8 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1018,2017,,534,18,I21,,DHS,18_VI_14,Bird,General,large,,large bird,#N/A,pygostyle,,,1,,,1,,,,,,,,Phone 28_VIII_17,Y,,,0,,,,,,,,,"8.4, 26.9, 29.8","Body length, tail length perpendicular to body, max length",,,"large pygostyle, not golden eagle or turkey, check Buteo Swansoni for ID","pygostyle///large pygostyle, not golden eagle or turkey, check Buteo Swansoni for ID"
 1019,2017,,534,18,I21,,DHS,18_VI_14,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,Humerus,-,L,0.3,4-Distal and shaft,1,1,,,,,,,,,,,4,1,,,,,,,,,8.39,W,4-Distal and shaft,distal,,Humerus/4-Distal and shaft/distal/
 1020,2017,,534,18,I21,,DHS,18_VI_14,Bird,General,,,Bird,#N/A,frag,,,0,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
-1021,2017,,534,18,I21,,DHS,18_VI_14,Fish,,,,Perciformes,#N/A,hyomandibular,,R,0.5,,?,1,,,,,,,,,,,,0,,,,,,,,,,,,,"large, likely marine","hyomandibular///large, likely marine"
-1022,2017,,534,18,I21,,DHS,18_VI_14,Fish,,cf. Cichlidae or Gerreidae,,Perciformes,cf. Cichlidae or Gerreidae,Caudal,,,1,6- whole lenght/size but still broken,,1,,,,,,,,NEED,Y,,,0,,,,,,,,,,,6- whole lenght/size but still broken,,"large, likely marine","Caudal/6- whole lenght/size but still broken//large, likely marine"
+1021,2017,,534,18,I21,,DHS,18_VI_14,Fish,Fish,,,Perciformes,#N/A,hyomandibular,,R,0.5,,?,1,,,,,,,,,,,,0,,,,,,,,,,,,,"large, likely marine","hyomandibular///large, likely marine"
+1022,2017,,534,18,I21,,DHS,18_VI_14,Fish,Fish,cf. Cichlidae or Gerreidae,,Perciformes,cf. Cichlidae or Gerreidae,Caudal,,,1,6- whole lenght/size but still broken,,1,,,,,,,,NEED,Y,,,0,,,,,,,,,,,6- whole lenght/size but still broken,,"large, likely marine","Caudal/6- whole lenght/size but still broken//large, likely marine"
 1023,2017,,534,18,I21,,DHS,18_VI_14,Mammal,Human,,,Human,#N/A,,,,,,,4,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1024,2017,,527,18,L24,,DHS,19_VI_14,Mammal,Artiodactyla,Artiodactyla,,Artiodactyl,#N/A,Pelvis Acetabulum,Pubis,L,0.1,3-Proximal and shaft,1,2,,,,FU,,,,NEED,Y,,7,2,,,,,,,,,7x7.4,body triangular in cross-section HxW,3-Proximal and shaft,Pubis,"very narrow body of pubis, deer seems to be thicker bodied","Pelvis Acetabulum/3-Proximal and shaft/Pubis/very narrow body of pubis, deer seems to be thicker bodied"
 1025,2017,,527,18,L24,,DHS,19_VI_14,Mammal,Artiodactyla,Artiodactyla,,Artiodactyl,#N/A,Rib,,R,0.3,5-Shaft only,1,3,,,,,,,,Phone 28_VIII_17,,,,0,,,,,1,,,,,,5-Shaft only,,"three fragments of rib, two dorsal shaft frags, one ventral shaft frag, clear cuts on two, possible cut on the third. Likely butchery marks, possibly cut into 2.5 inch rib cuts, each measures 65.7 in length and two appear to be cut on both ends","Rib/5-Shaft only//three fragments of rib, two dorsal shaft frags, one ventral shaft frag, clear cuts on two, possible cut on the third. Likely butchery marks, possibly cut into 2.5 inch rib cuts, each measures 65.7 in length and two appear to be cut on both ends"
@@ -252,12 +252,12 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1108,2017,,612,18,J20,,DHS,30_VI_14,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,tibiotarsus,-,,0.3,4-Distal and shaft,?,1,,,,,,,,,,,,0,,,,,,,,,,,4-Distal and shaft,distal,distal mostly complete but not measurable. ,tibiotarsus/4-Distal and shaft/distal/distal mostly complete but not measurable. 
 1109,2017,,612,18,J20,,DHS,30_VI_14,Mammal,Human,,,Human,#N/A,,,,,,,11,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1110,2017,,606,18,I20,,DHS,28_VI_14,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,tarsometatarsus,,R,0.8,4-Distal and shaft,?,1,,9,,FU,PR,,,,,,,0,,,,,,,,,6.4,"distal width, nearly intact",4-Distal and shaft,,"different individual, if not species to the unknown tarsometatarsus L","tarsometatarsus/4-Distal and shaft//different individual, if not species to the unknown tarsometatarsus L"
-1111,2017,,606,18,I20,,DHS,28_VI_14,Bird,,Podicipedidae,,Grebe,#N/A,tarsometatarsus,,R,0.8,4-Distal and shaft,?,1,,9,,FU,PR,,,Phone 28_VIII_17,,,,0,,,,,,,,,5.4,distal width,4-Distal and shaft,,"different individual, if not species to the unknown tarsometatarsus L","tarsometatarsus/4-Distal and shaft//different individual, if not species to the unknown tarsometatarsus L"
+1111,2017,,606,18,I20,,DHS,28_VI_14,Bird,Other bird,Podicipedidae,,Grebe,#N/A,tarsometatarsus,,R,0.8,4-Distal and shaft,?,1,,9,,FU,PR,,,Phone 28_VIII_17,,,,0,,,,,,,,,5.4,distal width,4-Distal and shaft,,"different individual, if not species to the unknown tarsometatarsus L","tarsometatarsus/4-Distal and shaft//different individual, if not species to the unknown tarsometatarsus L"
 1112,2017,,606,18,I20,,DHS,28_VI_14,Bird,General,,,Bird,#N/A,tarsometatarsus,,L,0.9,3-Proximal and shaft,?,1,,prob 9,,,,,,,,,,0,,,,,,,,,,,3-Proximal and shaft,,"possibly anatidae, similar in size to others in this bag","tarsometatarsus/3-Proximal and shaft//possibly anatidae, similar in size to others in this bag"
 1113,2017,,606,18,I20,,DHS,28_VI_14,Bird,General,,,Bird,#N/A,humerus,,L,0.6,5-Shaft only,,1,,,,,PR,,,,,,7,1,,,,,,,,,,,5-Shaft only,,,humerus/5-Shaft only//
 1114,2017,,606,18,I20,,DHS,28_VI_14,Bird,General,,,Bird,#N/A,femur,,L,0.7,5-Shaft only,,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,,missing both ends,femur/5-Shaft only//missing both ends
 1115,2017,,606,18,I20,,DHS,28_VI_14,Bird,General,,,Bird,#N/A,rib,,?,0.4,3-Proximal and shaft,,1,,,,,,,,,,,,0,,,,,,,,,,,3-Proximal and shaft,,,rib/3-Proximal and shaft//
-1116,2017,,606,18,I20,,DHS,28_VI_14,Unknown,,,,NID,#N/A,frag,,,0,,?,1,,,,,,,,,,,,0,,,,,,,,,,,,,mammal or bird,frag///mammal or bird
+1116,2017,,606,18,I20,,DHS,28_VI_14,Unknown,NID,,,NID,#N/A,frag,,,0,,?,1,,,,,,,,,,,,0,,,,,,,,,,,,,mammal or bird,frag///mammal or bird
 1117,2017,,606,18,I20,,DHS,28_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,,,0,sliver,?,3,,,,,,,,,,,6,3,,,,,,,,,,,sliver,,,shaft/sliver//
 1118,2017,,606,18,I20,,DHS,28_VI_14,Mammal,General,medium,,medium mammal,#N/A,rib,,,0,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,shaft,,rib/5-Shaft only/shaft/
 1119,2017,,606,18,I20,,DHS,28_VI_14,Mammal,Human,,,Human,#N/A,,,,,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,"listed as trabajado, I think its just a young vert","///listed as trabajado, I think its just a young vert"
@@ -270,20 +270,20 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1126,2017,,603,18,I23,,DHS,28_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,8- pieces grouped together ,5,3,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1127,2017,,603,18,I23,,DHS,28_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,needle,Needle,,1,,,1,,,,,,,,Phone 28_VIII_17,,,,0,,,,,,,,,66.8x2.68,Lx max W,,Needle,NICE,needle//Needle/NICE
 1128,2017,,603,18,I23,,DHS,28_VI_14,Bird,General,,,Bird,#N/A,Ilium,-,R,0.1,5-Shaft only,?,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,Ilium,,Ilium/5-Shaft only/Ilium/
-1129,2017,,603,18,I23,,DHS,28_VI_14,Unknown,,,,NID,#N/A,frag,,,0,,?,2,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
+1129,2017,,603,18,I23,,DHS,28_VI_14,Unknown,NID,,,NID,#N/A,frag,,,0,,?,2,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1130,2017,,616,18,J20,,DHS,30_VI_14,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth up ,C1,L,0.7,4-Distal and shaft,?,1,,,ND,,,,,,,,,0,,,,,,,,,7.6x4.8,ant-pos x anch,4-Distal and shaft,C1,,Tth up /4-Distal and shaft/C1/
 1131,2017,,616,18,J20,,DHS,30_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,needle,Needle,,0.5,5-Shaft only,1,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,Needle,,needle/5-Shaft only/Needle/
 1132,2017,,616,18,J20,,DHS,30_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,Frags,,0,8- pieces grouped together ,5,4,,,,,,,,,,,8,1,,,,*,,,,,,,8- pieces grouped together ,frag,"one possibly used to be part of a tool, one partly burnt 8","shaft/8- pieces grouped together /frag/one possibly used to be part of a tool, one partly burnt 8"
 1133,2017,,616,18,J20,,DHS,30_VI_14,Mammal,General,small-med,,small-med mammal,#N/A,Ph1,,,1,,,1,,,,FU,PR,FU,,,,,,0,,,,,,,,,22.6x5.4x4.7,LxWxH(Prox),,,likely lepus,Ph1///likely lepus
 1134,2017,,616,18,J20,,DHS,30_VI_14,Bird,General,,,Bird,#N/A,Rib,,,0.6,3-Proximal and shaft,?,1,,,,,,,,,,,,0,,,,,,,,,,,3-Proximal and shaft,,,Rib/3-Proximal and shaft//
-1135,2017,,616,18,J20,,DHS,30_VI_14,Unknown,,,,NID,#N/A,frag,,,0,,,2,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
+1135,2017,,616,18,J20,,DHS,30_VI_14,Unknown,NID,,,NID,#N/A,frag,,,0,,,2,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1136,2017,,604,18,J23,,DHS,28_VI_14,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Mt,V,L,0.9,5-Shaft only,1,1,,,,FU,PR,ND,,,,,,0,,,,,,,,,,,5-Shaft only,V,,Mt/5-Shaft only/V/
 1137,2017,,604,18,J23,,DHS,28_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,2,1,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1138,2017,,604,18,J23,,DHS,28_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,Vert ND,,,0,,1,1,,,,,,,,,,,,0,,,,,,,,,,,,epiphysis,,Vert ND//epiphysis/
 1139,2017,,604,18,J23,,DHS,28_VI_14,Bird,General,,,Bird,#N/A,shaft,,,0,,,1,,,,,,,,,,,,0,?,,,,,,,,,,,,,shaft///
 1140,2017,,620,18,J20,,DMC,1_VII_14,Mammal,General,medium-large,,medium-large mammal,#N/A,Needle,Needle,,1,,,1,,,,,,,,NEED,,,,0,?,,,,,,,,45x2.3,Lx max W,,Needle,,Needle//Needle/
 1141,2017,,620,18,J20,,DMC,1_VII_14,Reptile,Testudine,Kinosternon,cf. hirtipes,Mud turtle,cf. hirtipes,Scute,Costal scute,,0.8,,3,1,,,,,,,,,,,,0,,,,,,,,,14.55,W,,costal,,Scute//costal/
-1142,2017,,512,18,N25,,DHS,16_VI_14,Fish,,,,cf. Marine Fish,cf. Marine Fish,Spine,,,0.6,,3,1,,,,,,,,,,,6,1,,,,,,,,,,,,,,Spine///
+1142,2017,,512,18,N25,,DHS,16_VI_14,Fish,Fish,,,cf. Marine Fish,cf. Marine Fish,Spine,,,0.6,,3,1,,,,,,,,,,,6,1,,,,,,,,,,,,,,Spine///
 1143,2017,,512,18,N25,,DHS,16_VI_14,Bird,General,large,,large bird,#N/A,shaft,Frags,,0,sliver,2,1,,,,,,,,,,,6,1,,,,,,,,,,,sliver,frag,,shaft/sliver/frag/
 1144,2017,,518,18,N24,,DHS,17_VI_14,Mammal,Artiodactyla,Artiodactyla,,Artiodactyl,#N/A,Thoracic,,,0.7,,3,1,,9,,FU,PR,FU,probably small odoco,,,,,0,,,,,,,,,"25.2, 42.5","Est body length, width between transverse processes",Body,body,,Thoracic/Body/body/
 1145,2017,,518,18,N24,,DHS,17_VI_14,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Mand,Multiple,L,0,,1,1,,9,,,,,,Phone 28_VIII_17,,,,0,,,,,,,,,,,,fragment of body incl half P3 and 75% P4 alveoli,"worked piece of mandible, sawn at midpoint of p3 alveolus, sides and inferior border also sawn","Mand//fragment of body incl half P3 and 75% P4 alveoli/worked piece of mandible, sawn at midpoint of p3 alveolus, sides and inferior border also sawn"
@@ -311,14 +311,14 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1167,2017,,501,18,K24,,DHS,14_VI_14,Bird,Galliformes,Meleagris,gallopavo,Guajolote,#N/A,pygostyle,,,1,,,1,,9,,,,,,,,,,0,,,,,,,,,,,,,poss. Fused with next caudal too?,pygostyle///poss. Fused with next caudal too?
 1168,2017,,501,18,K24,,DHS,14_VI_14,Bird,General,,,Bird,#N/A,shaft,Frags,,0,sliver,,1,,,,,,,,,,,7,1,,,,,,,,,,,sliver,frag,,shaft/sliver/frag/
 1169,2017,,501,18,K24,,DHS,14_VI_14,Bird,General,,,Bird,#N/A,shaft,Frags,,0,sliver,3,2,,,,,,,,,,,4,2,,,,,,,,,,,sliver,frag,,shaft/sliver/frag/
-1170,2017,,501,18,K24,,DHS,14_VI_14,Unknown,,,,NID,#N/A,shaft,Frags,,0,5-Shaft only,?,1,,,,,,,,,,,4,1,,,,,,,,,,,5-Shaft only,frag,,shaft/5-Shaft only/frag/
+1170,2017,,501,18,K24,,DHS,14_VI_14,Unknown,NID,,,NID,#N/A,shaft,Frags,,0,5-Shaft only,?,1,,,,,,,,,,,4,1,,,,,,,,,,,5-Shaft only,frag,,shaft/5-Shaft only/frag/
 1171,2017,,501,18,K24,,DHS,14_VI_14,Mammal,Human,,,Human,#N/A,,,,,,,6,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1172,2017,,506,18,L24,,DHS,16_VI_14,Bird,Galliformes,Odontophoridae,,Quail,#N/A,Sternum,-,,0.6,Anterior,?,1,,1,,UN,,,,,,,,0,,,,,,,,,18.8x28.7,"height of keel (to base, not max but intact), keel to unfused anterior",3-Proximal and shaft,anterior and keel,"young, but larger than colinus virginianus","Sternum/3-Proximal and shaft/anterior and keel/young, but larger than colinus virginianus"
 1173,2017,,506,18,L24,,DHS,16_VI_14,Bird,Galliformes,Meleagris,gallopavo,Guajolote,#N/A,tibiotarsus,,L,0.2,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,shaft,includes nutrient foramen,tibiotarsus/5-Shaft only/shaft/includes nutrient foramen
 1174,2017,,506,18,L24,,DHS,16_VI_14,Bird,General,,,Bird,#N/A,Vert ND,Frags,,0.3,,2,2,,,,,,,,,,,,0,,,,,,,,,,,,frag,,Vert ND//frag/
 1175,2017,,506,18,L24,,DHS,16_VI_14,Bird,General,cf. Meleagris gallopavo,,cf. Guajolote,cf. Meleagris gallopavo,Ph1,III,R,1,,,1,,,,FU,PR,FU,,,,,4,1,,,,,,,,,"23.1, 7.37x7.9, 6.4x5.22","L, prox WxH, distal WxH",,III,,Ph1//III/
 1176,2017,,506,18,L24,,DHS,16_VI_14,Bird,General,,,Bird,#N/A,shaft,Tibiotarsus?,,0,sliver,2,1,,,,,,,,,,,3,1,,,,,,,,,,,sliver,pos. tibiotarsus,,shaft/sliver/pos. tibiotarsus/
-1177,2017,,506,18,L24,,DHS,16_VI_14,Fish,,,,ND fish,#N/A,Pteryiophores,,,0.8,,,1,,,,,,,,,,,,0,,,,,,,,,34.7,L (fragmented I think),,,,Pteryiophores///
+1177,2017,,506,18,L24,,DHS,16_VI_14,Fish,Fish,,,ND fish,#N/A,Pteryiophores,,,0.8,,,1,,,,,,,,,,,,0,,,,,,,,,34.7,L (fragmented I think),,,,Pteryiophores///
 1178,2017,,502,18,M25,,DHS,16_VI_14,Mammal,Artiodactyla,Odocoileus,virginianus,White-tailed deer,#N/A,femur,,L,0.2,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,shaft,contains nutrient foramen,femur/5-Shaft only/shaft/contains nutrient foramen
 1179,2017,,502,18,M25,,DHS,16_VI_14,Mammal,Artiodactyla,Artiodactyla,,Artiodactyl,#N/A,rib,,,0.5,3-Proximal and shaft,2,1,,,,,,,,,,,,0,,,,,,,,,,,3-Proximal and shaft,half head and shaft,,rib/3-Proximal and shaft/half head and shaft/
 1180,2017,,502,18,M25,,DHS,16_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,needle,Needle,,0.4,4-Distal and shaft,1,1,,,,,,,,,,,,0,,,,,,,,,,,4-Distal and shaft,Needle,,needle/4-Distal and shaft/Needle/
@@ -337,7 +337,7 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1193,2017,,452,18,L25,,DMC,9_VI_14,Mammal,General,large,,large mammal,#N/A,?,Frags,,0,,3,3,,,,,,,,,,,,0,,,,,,3,,,,,,frags,,?//frags/
 1194,2017,,452,18,L25,,DMC,9_VI_14,Mammal,General,medium-large,,medium-large mammal,#N/A,rib,,,0,5-Shaft only,4,1,,,,,,,,,,,,0,,,,,1,3,,,,,5-Shaft only,shaft,"5 cut marks on shaft, rounded cross-section, maybe dog or human, would be interesting to zooms","rib/5-Shaft only/shaft/5 cut marks on shaft, rounded cross-section, maybe dog or human, would be interesting to zooms"
 1195,2017,,452,18,L25,,DMC,9_VI_14,Bird,General,,,Bird,#N/A,shaft,Frags,,0,sliver,2,1,,,,,,,,,,,,0,,,,,,,,,,,sliver,frag,,shaft/sliver/frag/
-1196,2017,,452,18,L25,,DMC,9_VI_14,Unknown,,,,NID,#N/A,unknown,,,0,,4,1,,,,,,,,,,,"3- partly calcined, partly carbonized",1,,,,,,,,,7.8x4.5,wxd,,,proximal tibiotarsus of bird or distal tibia of lagomorph,unknown///proximal tibiotarsus of bird or distal tibia of lagomorph
+1196,2017,,452,18,L25,,DMC,9_VI_14,Unknown,NID,,,NID,#N/A,unknown,,,0,,4,1,,,,,,,,,,,"3- partly calcined, partly carbonized",1,,,,,,,,,7.8x4.5,wxd,,,proximal tibiotarsus of bird or distal tibia of lagomorph,unknown///proximal tibiotarsus of bird or distal tibia of lagomorph
 1197,2017,,452,18,L25,,DMC,9_VI_14,Bird,General,,,Bird,#N/A,ulna,,L,0,2-Distal epiphysis,4,1,,,,,,,,,,,"3- partly calcined, partly carbonized",1,,,,,,,,,5.34,w of what is complete,2-Distal epiphysis,,,ulna/2-Distal epiphysis//
 1198,2017,,457,18,J23,,DHS,10_VI_14,Mammal,Leporidae,Sylvilagus,cunicularius,Mexican cottontail,#N/A,Humerus,-,L,0.3,3-Proximal and shaft,4,1,,,,FU,PR,ND,,,,,,0,,,,,,,,,12.8x11.6,WxD prox,3-Proximal and shaft,Prox,,Humerus/3-Proximal and shaft/Prox/
 1199,2017,,457,18,J23,,DHS,10_VI_14,Mammal,Leporidae,Sylvilagus,cunicularius,Mexican cottontail,#N/A,Scapula,,R,0.3,3-Proximal and shaft,2,1,,,,,,,,,,,,0,,,,,,1,,,9.33x10.8,"W glendoid, D glenoid-coracoi",3-Proximal and shaft,Head/neck,,Scapula/3-Proximal and shaft/Head/neck/
@@ -397,11 +397,11 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1253,2017,,355,18,K22,,DMC,26_V_14,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,2,1,,,,,,,,,,,,0,,,,,,,,,,,,,possibly part of artiodactly pelvis,frag///possibly part of artiodactly pelvis
 1254,2017,,354,18,K22,,DMC,26_V_14,Mammal,Human,,,Human,#N/A,,,,,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,single root molar,///single root molar
 1255,2017,,504,18,J25,,DHS,16_VI_14,Bird,General,,,Bird,#N/A,Radius,,ND,0.5,5-Shaft only,3,1,,,,,,,,,,,9,1,,,,,,,,,54.5,Frag length,5-Shaft only,shaft,"likely charadriforme or something, appears very narrow and long","Radius/5-Shaft only/shaft/likely charadriforme or something, appears very narrow and long"
-1256,2017,,504,18,J25,,DHS,16_VI_14,Unknown,,,,NID,#N/A,,,,?,,4,1,,,,,,,,Phone photo 2/VIII/2017,,,,0,,,,,,,,,,,,,,///
+1256,2017,,504,18,J25,,DHS,16_VI_14,Unknown,NID,,,NID,#N/A,,,,?,,4,1,,,,,,,,Phone photo 2/VIII/2017,,,,0,,,,,,,,,,,,,,///
 1257,2017,,504,18,J25,,DHS,16_VI_14,Reptile,Testudine,,,Turtle,#N/A,carapace or plastron,-,,?,,3,3,,,,,,,,,,,,0,,,,,,,,,,,,carapace or plastron,"likely young, very thin","carapace or plastron//carapace or plastron/likely young, very thin"
 1258,2017,,504,18,J25,,DHS,16_VI_14,Reptile,Testudine,,,Turtle,#N/A,carapace,Costal scute,,0.8,,3,1,,,,,,,,,,,,0,,,,,,,,,,,,costal scute,,carapace//costal scute/
 1259,2017,,504,18,J25,,DHS,16_VI_14,Bird,General,,,Bird,#N/A,humerus,,L,0.5,5-Shaft only,?,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,,,humerus/5-Shaft only//
-1260,2017,,500,18,M24,,DHS,14_VI_14,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,Frag,,,0,,3,1,,,,,,,,,,,,0,,,,,,,,,,,,,,Frag///
+1260,2017,,500,18,M24,,DHS,14_VI_14,Unknown,NID,,,Bird or Mammal,#N/A,Frag,,,0,,3,1,,,,,,,,,,,,0,,,,,,,,,,,,,,Frag///
 1261,2017,,315,18,L21,,LH,20_V_14,Mammal,Artiodactyla,Odocoileus,virginianus,White-tailed deer,#N/A,Radius,-,L,2,4-Distal and shaft,3,1,,,,ND,ND,FU,,,,,,0,,,,,,,,,"34.36 x 26.1, 18.9","Distal WxH (max), H articular surface",4-Distal and shaft,distal,"highly fragmented, large and robust","Radius/4-Distal and shaft/distal/highly fragmented, large and robust"
 1262,2017,,315,18,L21,,LH,20_V_14,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,Tarsometatarsus,,R,0.8,4-Distal and shaft,1,1,,,,,,,,,,,,0,,,,,,,,,37.44x8.12,"Broken length, complete distal width",4-Distal and shaft,,,Tarsometatarsus/4-Distal and shaft//
 1263,2017,,315,18,L21,,LH,20_V_14,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,3,4,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
@@ -413,12 +413,12 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1269,2017,,316,18,N20,,DHS,20_V_14,Mammal,General,,,mammal,#N/A,frag,,,0,,5,2,,,,,,,1 calcined 1),,,,1,1,,,,,,,,,,,,,,frag///
 1270,2017,,316,18,N20,,DHS,20_V_14,Mammal,Human,,,Human,#N/A,,,,0,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1271,2017,,318,18,N21,,DHS,20_V_14,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,5,4,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
-1272,2017,,318,18,N21,,DHS,20_V_14,Unknown,,,,NID,#N/A,,,,,,4,1,,,,,,,,Phone 3_VIII_17,,,,0,,,,,,,,,,,,,,///
+1272,2017,,318,18,N21,,DHS,20_V_14,Unknown,NID,,,NID,#N/A,,,,,,4,1,,,,,,,,Phone 3_VIII_17,,,,0,,,,,,,,,,,,,,///
 1273,2017,,319,18,N22,,DHS,21_V_14,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,Frags,,0,sliver,2,1,,,,,,,,,,,,0,,,1,,,,,,,,sliver,frag,,shaft/sliver/frag/
 1274,2017,,319,18,N22,,DHS,21_V_14,Bird,Galliformes,Phasinidae,,Phasinidae,#N/A,Tarsometatarsus,,L,0.5,3-Proximal and shaft,1,1,,,,,,,,,,,,0,,,,,,,,,,,3-Proximal and shaft,,"using Mayr 2016, same as the second phasinidae example. ","Tarsometatarsus/3-Proximal and shaft//using Mayr 2016, same as the second phasinidae example. "
 1275,2017,,319,18,N22,,DHS,21_V_14,Mammal,Artiodactyla,Odocoileus,virginianus,White-tailed deer,#N/A,Tth ND,,,0.4,,1,1,,,,,,,,,,,8,1,,,,,,,,,,,,ND,,Tth ND//ND/
 1276,2017,,319,18,N22,,DHS,21_V_14,Mammal,Human,,,Human,#N/A,,,,0,,,2, ,,,,,,,,,,,0,,,,,,,,,,,,,,///
-1277,2017,,314,18,M20,,DHS,20_V_14,Mammal,Other,Didelphis,virginianus,Tlacuache,#N/A,Femur,-,L,0.3,4-Distal and shaft,4,1,,,,,,FU,,,,,,0,,,,,,,,,,,4-Distal and shaft,distal medial condyle,missing lateral condyle,Femur/4-Distal and shaft/distal medial condyle/missing lateral condyle
+1277,2017,,314,18,M20,,DHS,20_V_14,Mammal,Other mammal,Didelphis,virginianus,Tlacuache,#N/A,Femur,-,L,0.3,4-Distal and shaft,4,1,,,,,,FU,,,,,,0,,,,,,,,,,,4-Distal and shaft,distal medial condyle,missing lateral condyle,Femur/4-Distal and shaft/distal medial condyle/missing lateral condyle
 1278,2017,,314,18,M20,,DHS,20_V_14,Mammal,Rodentia,Geomyidae,,Tuza,#N/A,Tibia,,L,0.5,4-Distal and shaft,4,1,,,,,,FU,,,,,,0,,,,,,,,,7.3x4.4,distal WxH,4-Distal and shaft,,"larger than examples of thomomys, smaller than cratogeomys","Tibia/4-Distal and shaft//larger than examples of thomomys, smaller than cratogeomys"
 1279,2017,,314,18,M20,,DHS,20_V_14,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,4,1,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1280,2017,,314,18,M20,,DHS,20_V_14,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,Pelvis?,,0,,3,1,,,,,,,,,,,,0,,,,,,1,,,,,,pelvis frag?,,frag//pelvis frag?/
@@ -444,7 +444,7 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1300,2017,,101,17,J22,,DHS,22_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,5,4,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1301,2017,,101,17,J22,,DHS,22_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,3,,,,,,,,,,,,0,,,,,,,,,,,,,"at least two, likely three events due to differences in surface treatment of bones, like the rest of the bones in this bag. ","///at least two, likely three events due to differences in surface treatment of bones, like the rest of the bones in this bag. "
 1302,2017,,104,17,J21,,KGH,23_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Ph 1,,,1,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,one of the inner two,Ph 1///one of the inner two
-1303,2017,,104,17,J21,,KGH,23_VII_13,Fish,,,,ND fish,#N/A,frag,,,0,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
+1303,2017,,104,17,J21,,KGH,23_VII_13,Fish,Fish,,,ND fish,#N/A,frag,,,0,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1304,2017,,104,17,J21,,KGH,23_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,3,1,,,,,,,,,,,,0,,,,,,,,,,,,,likely rib frag,frag///likely rib frag
 1305,2017,,104,17,J21,,KGH,23_VII_13,Mammal,Human,,,Human,#N/A,,,,0,,,30,,,,,,,,,,,,0,,,,,,,,,,,,,"highly fragmented, incomplete person. ","///highly fragmented, incomplete person. "
 1306,2017,,106,17,K20,,DHS,23_VII_13,Bird,General,,,Bird,#N/A,ulna,,R,0.6,5-Shaft only,,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,shaft,song bird size,ulna/5-Shaft only/shaft/song bird size
@@ -470,10 +470,10 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1326,2017,,116,17,K20,,AGMR,23_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,5,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1327,2017,,113,17,I20,,KGH/AGMR,23_VII_13,Mammal,General,small,,small mammal,#N/A,Thoracic,,,1,,,1,,young,,EL,PR,UN,,,,,,0,,,,,,,,,,,,,,Thoracic///
 1328,2017,,113,17,I20,,KGH/AGMR,23_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,Frags,,0,sliver,5,6,,,,,,,,,,,,0,,,,,,,,,,,sliver,frag,,shaft/sliver/frag/
-1329,2017,,113,17,I20,,KGH/AGMR,23_VII_13,Unknown,,,,NID,#N/A,frag,,,0,,,4,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
+1329,2017,,113,17,I20,,KGH/AGMR,23_VII_13,Unknown,NID,,,NID,#N/A,frag,,,0,,,4,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1330,2017,,113,17,I20,,KGH/AGMR,23_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,20,,,,,,,,,,,,0,,,,,,,,,,,,,,///
-1331,2017,,109,17,J20,,KGH,23_VII_13,Mammal,,Mephitis,macroura,Hooded skunk,#N/A,ulna,,L,0.6,5-Shaft only,3,1,,,,FU,,,,Phone 8_VIII_17,,,,0,,,,,,,,,,,5-Shaft only,shaft and distal portion of trochlea notch,,ulna/5-Shaft only/shaft and distal portion of trochlea notch/
-1332,2017,,109,17,J20,,KGH,23_VII_13,Mammal,,Mephitis,macroura,Hooded skunk,#N/A,radius,-,L,0.6,4-Distal and shaft,1,1,,,,,,FU,,Phone 8_VIII_17,,,,0,,,,,,,,,7.6,distal W,4-Distal and shaft,distal,,radius/4-Distal and shaft/distal/
+1331,2017,,109,17,J20,,KGH,23_VII_13,Mammal,Carnivora,Mephitis,macroura,Hooded skunk,#N/A,ulna,,L,0.6,5-Shaft only,3,1,,,,FU,,,,Phone 8_VIII_17,,,,0,,,,,,,,,,,5-Shaft only,shaft and distal portion of trochlea notch,,ulna/5-Shaft only/shaft and distal portion of trochlea notch/
+1332,2017,,109,17,J20,,KGH,23_VII_13,Mammal,Carnivora,Mephitis,macroura,Hooded skunk,#N/A,radius,-,L,0.6,4-Distal and shaft,1,1,,,,,,FU,,Phone 8_VIII_17,,,,0,,,,,,,,,7.6,distal W,4-Distal and shaft,distal,,radius/4-Distal and shaft/distal/
 1333,2017,,117,17,H20,,KGH,23_VII_13,Mammal,Leporidae,Lepus,sp.,Hare,#N/A,radius,-,L,0.4,3-Proximal and shaft,3,1,,,,FU,,,,,,,,0,,,,,,,,,8.6x6.4,prox. Wxd,3-Proximal and shaft,proximal,,radius/3-Proximal and shaft/proximal/
 1334,2017,,117,17,H20,,KGH,23_VII_13,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,Mandible,,R,0.6,,,1,,,,,,,,,,,,0,,,,,,,,,,,,central portion,missing anterior portion,Mandible//central portion/missing anterior portion
 1335,2017,,117,17,H20,,KGH,23_VII_13,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,Humerus,-,R,0.4,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,distal shaft,distal shaft,Humerus/5-Shaft only/distal shaft/distal shaft
@@ -485,7 +485,7 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1341,2017,,112,17,I21,,KGH,23_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,Frags,,0,sliver,3,2,,,,,,,"some form of erosion on the inside of the bone, not visible on the outside, maybe chemical?",,,,,0,,,,,,*,,,,,sliver,frag,,shaft/sliver/frag/
 1342,2017,,112,17,I21,,KGH,23_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,Frags,,0,sliver,8,3,,,,,,,,,,,,0,,,,,,,,,,,sliver,frag,,shaft/sliver/frag/
 1343,2017,,112,17,I21,,KGH,23_VII_13,Mammal,General,,,mammal,#N/A,frag,,,0,,8,3,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
-1344,2017,,112,17,I21,,KGH,23_VII_13,Mammal,Human,,,Human,#N/A,,,,,,2,,,,,,,,,,,,,0,,,,,,,,,,,,,,///
+1344,2017,,112,17,I21,,KGH,23_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,2,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1345,2017,,104,17,J21,,DHS,24_VII_13,Mammal,General,,,mammal,#N/A,unknown,Frags,,?,,2,2,,,,,,,,,,,,0,,,,,,,,,,,,frag,"highly degraded, very small tight trabeculae so maybe very young, or possibly antler","unknown//frag/highly degraded, very small tight trabeculae so maybe very young, or possibly antler"
 1346,2017,,104,17,J21,,DHS,24_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,15,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1347,2017,,115,17,J20,,AGMR/KGH,23_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,6,,,,,,,,,,,,0,,,,,,,,,,,,,,///
@@ -580,8 +580,8 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1436,2017,,569,18,N26,,AH,24_VI_14,Mammal,General,,,mammal,#N/A,shaft,,,?,,1,1,,,,,,,,,,,,0,,,,,,,,,,,,,maybe baby?,shaft///maybe baby?
 1437,2017,,569,18,N26,,AH,24_VI_14,Mammal,Human,,,Human,#N/A,,,,,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,patella,///patella
 1438,2017,,577,18,N26,,AH,25_VI_14,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,Femur,,L,0.8,5-Shaft only,?,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,shaft,Looks like a smallish duck,Femur/5-Shaft only/shaft/Looks like a smallish duck
-1439,2017,,577,18,N26,,AH,25_VI_14,Fish,,Marine fish,,Marine fish,#N/A,Precaudal vert,,,0.9,,?,1,,,,,,,,Phone 14_VIII_17,,,,0,,,,,,,,,9.8,L,,,Larger than lake fish. ,Precaudal vert///Larger than lake fish. 
-1440,2017,,564,18,I23,,DHS,23_VI_14,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,Rib?,Rib?,,0,,2,1,,,,,,,,,,,,0,,,,,,,,,,,,Rib? frag,,Rib?//Rib? frag/
+1439,2017,,577,18,N26,,AH,25_VI_14,Fish,Marine fish,Marine fish,,Marine fish,#N/A,Precaudal vert,,,0.9,,?,1,,,,,,,,Phone 14_VIII_17,,,,0,,,,,,,,,9.8,L,,,Larger than lake fish. ,Precaudal vert///Larger than lake fish. 
+1440,2017,,564,18,I23,,DHS,23_VI_14,Unknown,NID,,,Bird or Mammal,#N/A,Rib?,Rib?,,0,,2,1,,,,,,,,,,,,0,,,,,,,,,,,,Rib? frag,,Rib?//Rib? frag/
 1441,2017,,564,18,I23,,DHS,23_VI_14,Bird,General,cf. Charadriforme,,Bird,cf. Charadriforme,Tibiotarsus,-,R,0.3,4-Distal and shaft,4,1,,,,,,,,Phone 14_VIII_17,Y,,,0,,,,,,,,,6.8x6.5x5.7,WxD of distalx height of condyles,4-Distal and shaft,distal,"Looks v similar to a small bird Joel identified as scolopacidae (a charidriform), also looking on J rochester flicker, it looked similar also to some of the woodpeckers. Really distinctive, should be able to ID","Tibiotarsus/4-Distal and shaft/distal/Looks v similar to a small bird Joel identified as scolopacidae (a charidriform), also looking on J rochester flicker, it looked similar also to some of the woodpeckers. Really distinctive, should be able to ID"
 1442,2017,,564,18,I23,,DHS,23_VI_14,Mammal,General,medium,,medium mammal,#N/A,Cervical,Frags,,0.1,,2,1,,,,,,,,,,,,0,,,,,,,,,,,transverse proces,frag,,Cervical/transverse proces/frag/
 1443,2017,,564,18,I23,,DHS,23_VI_14,Mammal,Human,,,Human,#N/A,,,,,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,///
@@ -620,8 +620,8 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1476,2017,,167,17,I19,,MRD,30_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,Shaft,,,0,sliver,5,6,,,,,,,One weathered stage 2,,,,,0,,,,,,*,,,,,sliver,,,Shaft/sliver//
 1477,2017,,167,17,I19,,MRD,30_VII_13,Mammal,General,large,,large mammal,#N/A,Tool,Needle,,0,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,4.4,W,5-Shaft only,needle or some other cylindical tool,small worked piece of bone with a light grove down the middle. Could have been a large needle,Tool/5-Shaft only/needle or some other cylindical tool/small worked piece of bone with a light grove down the middle. Could have been a large needle
 1478,2017,,167,17,I19,,MRD,30_VII_13,Mammal,General,large,,large mammal,#N/A,shaft,Spatula?,,0,sliver,2,1,,,,,,,,,,,,0,,,,,,,,,20.3,W of what is left of bevel,sliver,spatula?,"piece of a large straight shaft (so likely human), rough bevel on on end. ","shaft/sliver/spatula?/piece of a large straight shaft (so likely human), rough bevel on on end. "
-1479,2017,,167,17,I19,,MRD,30_VII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,shaft,,,0,8- pieces grouped together ,5,4,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,"two likely baby animal frag, one a weird rib shaped thing.  ","shaft/8- pieces grouped together //two likely baby animal frag, one a weird rib shaped thing.  "
-1480,2017,,167,17,I19,,MRD,30_VII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,5,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
+1479,2017,,167,17,I19,,MRD,30_VII_13,Unknown,NID,,,Bird or Mammal,#N/A,shaft,,,0,8- pieces grouped together ,5,4,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,"two likely baby animal frag, one a weird rib shaped thing.  ","shaft/8- pieces grouped together //two likely baby animal frag, one a weird rib shaped thing.  "
+1480,2017,,167,17,I19,,MRD,30_VII_13,Unknown,NID,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,5,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1481,2017,,167,17,I19,,MRD,30_VII_13,Shell,Shell,,,Shell,#N/A,shell,,,0,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,Shell///
 1482,2017,,167,17,I19,,MRD,30_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,2,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1483,2017,,164,17,K20,,AGMR,30_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth ND,C1,,0.3,Posterior,?,1,,"young, root not completely filled in",,,,,,,,,,0,,,,,,,,,,,Posterior,Canine,,Tth ND/Posterior/Canine/
@@ -643,7 +643,7 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1499,2017,,167,17,I19,,MRD,30_VII_13,Mammal,General,large,,large mammal,#N/A,shaft,Spatula?,,0,sliver,2,1,,,,,,,,,,,,0,,,,,,,,,8.5x16.6,Lxmax W,sliver,spatula?,"long and straight, possibly human, cut mark at one end, polished and shaped at the other, fragment of spatula most likely","shaft/sliver/spatula?/long and straight, possibly human, cut mark at one end, polished and shaped at the other, fragment of spatula most likely"
 1500,2017,,173,17,I21,,AGMR,31_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth Low,C1,L,0.5,4-Distal and shaft,?,1,,,,,,,,,,,,0,,,,,,,,,,,4-Distal and shaft,Canine,,Tth Low/4-Distal and shaft/Canine/
 1501,2017,,173,17,I21,,AGMR,31_VII_13,Mammal,General,medium,,medium mammal,#N/A,rib,Frags, ,0,5-Shaft only,1,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,frag,,rib/5-Shaft only/frag/
-1502,2017,,173,17,I21,,AGMR,31_VII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,shaft,,,?,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,,bird-like shape but very very thick for the size of it.,shaft/5-Shaft only//bird-like shape but very very thick for the size of it.
+1502,2017,,173,17,I21,,AGMR,31_VII_13,Unknown,NID,,,Bird or Mammal,#N/A,shaft,,,?,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,,bird-like shape but very very thick for the size of it.,shaft/5-Shaft only//bird-like shape but very very thick for the size of it.
 1503,2017,,173,17,I21,,AGMR,31_VII_13,Bird,Anseriformes,Anatidae,,Waterfowl,#N/A,Sternum,,,0.1,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,Sternum///
 1504,2017,,161,17,J20,,AGMR,29_VII_13,Bird,General,,,Bird,#N/A,Ulna,,R,0.3,4-Distal and shaft,1,1,,,,,,,,,,,,0,,,,,,,,,,,4-Distal and shaft,,,Ulna/4-Distal and shaft//
 1505,2017,,161,17,J20,,AGMR,29_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,///
@@ -657,10 +657,10 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1513,2017,,194,17,H21,,AGMR,2_VIII_13,Mammal,General,small-med,,small-med mammal,#N/A,shaft,,,0,sliver,?,1,,,,,,,,,,,6,1,,,,,,,,,,,sliver,,,shaft/sliver//
 1514,2017,,194,17,H21,,AGMR,2_VIII_13,Mammal,General,large,,large mammal,#N/A,Rib,,,0,8- pieces grouped together ,3,2,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,shaft,"two frags, one head?","Rib/8- pieces grouped together /shaft/two frags, one head?"
 1515,2017,,194,17,H21,,AGMR,2_VIII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth ND,C1,?,0.1,sliver,4,1,,,,,,,,,,,,0,,,,,,,,,,,sliver,Canine,post/medial - includes line like most other frag,Tth ND/sliver/Canine/post/medial - includes line like most other frag
-1516,2017,,194,17,H21,,AGMR,2_VIII_13,Fish,,Carangidae,,Jack fish,#N/A,Dentary,,R,0.1,Posterior,?,1,,,,,,,,,,,,0,,,,,,,,,,,Posterior,posterior ,,Dentary/Posterior/posterior /
-1517,2017,,194,17,H21,,AGMR,2_VIII_13,Fish,,Marine fish,,Marine fish,#N/A,Dorsal spine,-,,0.3,,?,1,,,,,,,,,,,8,1,,,,,,,,,,,,prox. ,,Dorsal spine//prox. /
-1518,2017,,194,17,H21,,AGMR,2_VIII_13,Fish,,,,ND fish,#N/A,frag,,,0,,?,1,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
-1519,2017,,194,17,H21,,AGMR,2_VIII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,shaft,,,0,sliver,?,1,,,,,,,,,,,4,1,,,,,,,,,,,sliver,,,shaft/sliver//
+1516,2017,,194,17,H21,,AGMR,2_VIII_13,Fish,Marine fish,Carangidae,,Jack fish,#N/A,Dentary,,R,0.1,Posterior,?,1,,,,,,,,,,,,0,,,,,,,,,,,Posterior,posterior ,,Dentary/Posterior/posterior /
+1517,2017,,194,17,H21,,AGMR,2_VIII_13,Fish,Marine fish,Marine fish,,Marine fish,#N/A,Dorsal spine,-,,0.3,,?,1,,,,,,,,,,,8,1,,,,,,,,,,,,prox. ,,Dorsal spine//prox. /
+1518,2017,,194,17,H21,,AGMR,2_VIII_13,Fish,Fish,,,ND fish,#N/A,frag,,,0,,?,1,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
+1519,2017,,194,17,H21,,AGMR,2_VIII_13,Unknown,NID,,,Bird or Mammal,#N/A,shaft,,,0,sliver,?,1,,,,,,,,,,,4,1,,,,,,,,,,,sliver,,,shaft/sliver//
 1520,2017,,194,17,H21,,AGMR,2_VIII_13,Mammal,General,,,mammal,#N/A,frag,,,0,8- pieces grouped together ,5,8,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1521,2017,,194,17,H21,,AGMR,2_VIII_13,Mammal,Human,,,Human,#N/A,,,,,,,3,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1522,2017,,195,17,H21,,AGMR,2_VIII_13,Mammal,Artiodactyla,Odocoileus,virginianus,White-tailed deer,#N/A,Femur,-,L,0.1,1-Proximal epiphysis,1,1,,young,,UN,PR,ND,spiral fracture,,,,,0,,,,,,,,,22.4,W of head epiphysis,1-Proximal epiphysis,prx,unfused proximal shaft,Femur/1-Proximal epiphysis/prx/unfused proximal shaft
@@ -732,14 +732,14 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1588,2017,,193,17,J19S,,DHS/BG,1_VIII_13,Mammal,Human,,,Human,#N/A,,,,,,,4,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1589,2017,,170,17,H22,,AGMR,30_VII_13,Mammal,Rodentia,,,Rodentia,#N/A,Mandible,,R,1,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,"mandible with complete dentition, looks possibly instrusive, mouse-size, did not identifiy to species due to time constraints","Mandible///mandible with complete dentition, looks possibly instrusive, mouse-size, did not identifiy to species due to time constraints"
 1590,2017,,170,17,H22,,AGMR,30_VII_13,Mammal,General,medium,,medium mammal,#N/A,Rib,Frags,,0,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,frag,,Rib/5-Shaft only/frag/
-1591,2017,,170,17,H22,,AGMR,30_VII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,shaft,Frags,,0,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,frag,"diaphysis of young animal, not clear if large bird or mammal, more likely mammal","shaft/5-Shaft only/frag/diaphysis of young animal, not clear if large bird or mammal, more likely mammal"
+1591,2017,,170,17,H22,,AGMR,30_VII_13,Unknown,NID,,,Bird or Mammal,#N/A,shaft,Frags,,0,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,frag,"diaphysis of young animal, not clear if large bird or mammal, more likely mammal","shaft/5-Shaft only/frag/diaphysis of young animal, not clear if large bird or mammal, more likely mammal"
 1592,2017,,19,17,J22,,DHS,5_VIII_13,Reptile,Testudine,,cf. Kinosternon,cf. Mud turtle,cf. Kinosternn,Carapace,Neural scute,,0.6,,1,1,,,,,,,,,,,,0,,maybe,,,,,,,,,,neural scute,,Carapace//neural scute/
 1593,2017,,19,17,J22,,DHS,5_VIII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth up,P4,R,1,,4,1,,,no wear,,,,,,,,7,1,,,,,,,,,,,,P4,"young, roots not filled in yet","Tth up//P4/young, roots not filled in yet"
 1594,2017,,19,17,J22,,DHS,5_VIII_13,Mammal,General,small,,small mammal,#N/A,Rib,,,0.2,5-Shaft only,2,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,shaft,,Rib/5-Shaft only/shaft/
 1595,2017,,19,17,J22,,DHS,5_VIII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,Frags,,0,sliver,2,3,,,,,,,,,,,,0,,one maybe,,,,,,,,,sliver,frag,,shaft/sliver/frag/
 1596,2017,,19,17,J22,,DHS,5_VIII_13,Mammal,General,,,mammal,#N/A,shaft,Frags,,0,sliver,1,1,,,,,,,,,,,,0,,,,1,,,,,,,sliver,frag,"cut across shaft, possible cut mark along shaft (at edge ie seperation of this fragment","shaft/sliver/frag/cut across shaft, possible cut mark along shaft (at edge ie seperation of this fragment"
 1597,2017,,19,17,J22,,DHS,5_VIII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,2,1,,,,,,,,,,,6,1,,,,,,,,,,,,,,frag///
-1598,2017,,19,17,J22,,DHS,5_VIII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,5,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
+1598,2017,,19,17,J22,,DHS,5_VIII_13,Unknown,NID,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,5,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1599,2017,,19,17,J22,,DHS,5_VIII_13,Mammal,Human,,,Human,#N/A,,,,,,,7,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1600,2017,,542,18,L23,,AH,19_VI_14,Shell,Shell,Gastropod,,Gastropod,#N/A,shell,,,,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1601,2017,,542,18,L23,,AH,19_VI_14,Mammal,Human,,,Human,#N/A,,,,,,,2,,,,,,,,,,,,0,,,,,,,,,,,,,,///
@@ -752,7 +752,7 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1608,2017,,156,17,I21,,DHS,29_VII_13,Mammal,General,,,mammal,#N/A,shaft,,,?,6- whole lenght/size but still broken,1,1,,,,,,,,,,,,0,,,2,,,,,,,,6- whole lenght/size but still broken,,"small bone, possibly leporidae phalanx or something similar, chewed by rodents","shaft/6- whole lenght/size but still broken//small bone, possibly leporidae phalanx or something similar, chewed by rodents"
 1609,2017,,156,17,I21,,DHS,29_VII_13,Mammal,Leporidae,Sylvilagus,sp.,Cottontail,#N/A,Scapula,,L,0.2,4-Distal and shaft,3,1,,,,,,,,,,,,0,,,,,,,,,,,4-Distal and shaft,caudal angle and border,,Scapula/4-Distal and shaft/caudal angle and border/
 1610,2017,,156,17,I21,,DHS,29_VII_13,Mammal,Rodentia,Geomyidae,,Tuza,#N/A,Mandible,-,R,0.1,Anterior,4,1,,,,,,,,,,,,0,,,,,,,,,,,1-Proximal epiphysis,ant.,,Mandible/1-Proximal epiphysis/ant./
-1611,2017,,156,17,I21,,DHS,29_VII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,2,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
+1611,2017,,156,17,I21,,DHS,29_VII_13,Unknown,NID,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,2,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1612,2017,,156,17,I21,,DHS,29_VII_13,Mammal,General,small,,small mammal,#N/A,rib,Frags,,0,5-Shaft only,2,2,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,frag,,rib/5-Shaft only/frag/
 1613,2017,,156,17,I21,,DHS,29_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,8- pieces grouped together ,5,5,,,,,,,"one 6, one 7",,,,*,2,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1614,2017,,156,17,I21,,DHS,29_VII_13,Mammal,General,large,,large mammal,#N/A,rib,,,0.2,5-Shaft only,3,1,,,,,,,,,,,,0,,,,,,,,,,,5-Shaft only,shaft,possibly human,rib/5-Shaft only/shaft/possibly human
@@ -766,7 +766,7 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1622,2017,,157,17,J21,,AGMR,29_VII_13,Shell,Shell,Gastropod,,Gastropod,#N/A,shell,,,0.9,6- whole lenght/size but still broken,,1,,,,,,,,,,,,0,,,,,,,,,,,6- whole lenght/size but still broken,,small shell,shell/6- whole lenght/size but still broken//small shell
 1623,2017,,157,17,J21,,AGMR,29_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth low,P3,R,0.5,3-Proximal and shaft,4,1,,,,,,,,,,,,0,,,,,,,,,,,3-Proximal and shaft,P3,anterior frag,Tth low/3-Proximal and shaft/P3/anterior frag
 1624,2017,,157,17,J21,,AGMR,29_VII_13,Mammal,General,,,mammal,#N/A,frag,,,0,8- pieces grouped together ,5,5,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
-1625,2017,,157,17,J21,,AGMR,29_VII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,2,,,,,,,"one 9 burnt, both possibly chewed ",,,,9,1,,*,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
+1625,2017,,157,17,J21,,AGMR,29_VII_13,Unknown,NID,,,Bird or Mammal,#N/A,frag,,,0,8- pieces grouped together ,5,2,,,,,,,"one 9 burnt, both possibly chewed ",,,,9,1,,*,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1626,2017,,157,17,J21,,AGMR,29_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,2,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1627,2017,,151,17,J22,,DHS/DMC/AGMR,29_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Ph 2,-,?,1,,,1,,,,FU,PR,FU,small cut mark transvers palmar,,,,,0,,,,1,,,,,"14.4, 7.5, 6.9","L, prox W, dist W",,?,small cut mark transvers palmar,Ph 2//?/small cut mark transvers palmar
 1628,2017,,151,17,J22,,DHS/DMC/AGMR,29_VII_13,Mammal,Carnivora,Canis,sp.,Canid,#N/A,Mc,V,L,0.9,4-Distal and shaft,2,1,,,,ND,PR,FU,,22_VIII_17,,,,0,,,,,,,,,37.4x7.33,L(incomplete)xdistal Ww,4-Distal and shaft,V,"looks similar to dog, but thick and quite curved. Does not match cat either. Could be a second generation Tlachichi, its very fat yet small and short. ","Mc/4-Distal and shaft/V/looks similar to dog, but thick and quite curved. Does not match cat either. Could be a second generation Tlachichi, its very fat yet small and short. "
@@ -779,8 +779,8 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1635,2017,,153,17,I20,,MRD,29_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth up,I3,R,0.9,4-Distal and shaft,1,1,,,ND,,,,,,,,9,1,,,,,,,,,,,4-Distal and shaft,I3,missing just tip,Tth up/4-Distal and shaft/I3/missing just tip
 1636,2017,,153,17,I20,,MRD,29_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Atlas,Frags,,0.1,1-Proximal epiphysis,3,1,,,,,,,,,,,,0,,,,,,,,,,,1-Proximal epiphysis,"frag of cranial facet, superior L side",,"Atlas/1-Proximal epiphysis/frag of cranial facet, superior L side/"
 1637,2017,,153,17,I20,,MRD,29_VII_13,Mammal,General,medium,,medium mammal,#N/A,Ph1,,?,0.6,3-Proximal and shaft,1,1,,,,,,,,,,,3,1,,,,,,,,,,,3-Proximal and shaft,,,Ph1/3-Proximal and shaft//
-1638,2017,,153,17,I20,,MRD,29_VII_13,Fish,,Marine fish,,Marine fish,#N/A,Pteryiophores,,,1,,,1,,,,,,,,,,,,0,,,,,,,,,"29.5,7.5",L (missing tiny bit from tip) W,,basal part of the dorsal spine,,Pteryiophores//basal part of the dorsal spine/
-1639,2017,,153,17,I20,,MRD,29_VII_13,Unknown,Bird or Mammal,,,Bird or Mammal,#N/A,frag,,,0,?,?,1,,,,,,,,,,,,0,,,,,,,,,,,?,,,frag/?//
+1638,2017,,153,17,I20,,MRD,29_VII_13,Fish,Marine fish,Marine fish,,Marine fish,#N/A,Pteryiophores,,,1,,,1,,,,,,,,,,,,0,,,,,,,,,"29.5,7.5",L (missing tiny bit from tip) W,,basal part of the dorsal spine,,Pteryiophores//basal part of the dorsal spine/
+1639,2017,,153,17,I20,,MRD,29_VII_13,Unknown,NID,,,Bird or Mammal,#N/A,frag,,,0,?,?,1,,,,,,,,,,,,0,,,,,,,,,,,?,,,frag/?//
 1640,2017,,153,17,I20,,MRD,29_VII_13,Mammal,Rodentia,Sciuridae,sp.,Squirrel,#N/A,Radius,,L,1,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,"small radius, looks very much like a squirrel could be a smaller species, like the other two humeri.","Radius///small radius, looks very much like a squirrel could be a smaller species, like the other two humeri."
 1641,2017,,153,17,I20,,MRD,29_VII_13,Mammal,General,,,mammal,#N/A,frag,,,0,8- pieces grouped together ,5,3,,,,,,,,,,,,0,,,,,,,,,,,8- pieces grouped together ,,,frag/8- pieces grouped together //
 1642,2017,,153,17,I20,,MRD,29_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,2,,,,,,,,,,,,0,,,,,,,,,,,,,,///
@@ -791,7 +791,7 @@ ID,YEAR,Volume,Lote,Operacion,Unidad,EL.,Investigator,Fecha,Class,Category,Genus
 1647,2017,,146,17,I20,EL8,,,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth low,M2,L,1,,,1,,,Light wear,,,,,,,,,0,,,,,,,,,"8.2,5.6 (some wear) ,6 ","ant-post, altura, ancho",,M2,"Large M2, measurements, particularly ant-post (which is one of the most useful criteria according to Blanco et al. 2009), fall between coyote and dog in range. Large dog or possible loberro","Tth low//M2/Large M2, measurements, particularly ant-post (which is one of the most useful criteria according to Blanco et al. 2009), fall between coyote and dog in range. Large dog or possible loberro"
 1648,2017,,146,17,I20,EL8,,,Mammal,Leporidae,Sylvilagus,audobonii,Desert cottontail,#N/A,Humerus,-,R,0.5,4-Distal and shaft,2,1,,,,,,,,,,,,0,,,,,,,,,5.8,disyal W,4-Distal and shaft,distl,,Humerus/4-Distal and shaft/distl/
 1649,2017,,146,17,I20,EL8,,,Mammal,General,medium-large,,medium-large mammal,#N/A,shaft,,,0,sliver,1,1,,,,,,,,,,,,0,,2,,,,,,,,,sliver,,,shaft/sliver//
-1650,2017,,141,17,H22,,AGMR,25_VII_13,NO BONES IN THIS BAG,,,,,#N/A,,,,,,,,,,,,,,,,,,,0,,,,,,,,,,,,,NO BONES IN THIS BAG,///NO BONES IN THIS BAG
+1650,2017,,141,17,H22,,AGMR,25_VII_13,NO BONES IN THIS BAG,,,,,#N/A,,,,,,,0,,,,,,,,,,,,0,,,,,,,,,,,,,NO BONES IN THIS BAG,///NO BONES IN THIS BAG
 1651,2017,,159,17,J20,,DHS,29_VII_13,Mammal,General,medium-large,,medium-large mammal,#N/A,frag,,,0,,3,2,,,,,,,,,,,,0,,,,,,,,,,,,,,frag///
 1652,2017,,159,17,J20,,DHS,29_VII_13,Mammal,Human,,,Human,#N/A,,,,,,,1,,,,,,,,,,,,0,,,,,,,,,,,,,,///
 1653,2017,,40,17,I20,,DHS,9_VII_13,Mammal,Carnivora,Canis,familiaris ,Dog,#N/A,Tth low,P4,R,0.9,,4,1,,,ND,,,,,,,,8,1,,,,,,,,,9.8,ant-post,,Pm4,,Tth low//Pm4/

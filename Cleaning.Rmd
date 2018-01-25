@@ -2,11 +2,15 @@
 title: "R Notebook"
 output: html_notebook
 ---
+This file carries out the basic cleaning and organisation of my Tlajinga data using the 2016 and 2017 data cleaning excel files. Changes to the spreadsheets should be made to these original files. Most of the species changes I carried out in the spreadsheets themselves. 
+```{r}
+rm(list = ls())
+```
 
 ```{r}
-d1<-read.csv("2017_data_cleaning.csv")
+d1<-read.csv("2017_data_cleaning.csv", stringsAsFactors = FALSE)
 el_list<-read.csv("El_list.csv")
-d2<-read.csv("2016_data_clean.csv")
+d2<-read.csv("2016_data_clean.csv", stringsAsFactors = FALSE)
 ```
 ```{r}
 library(dplyr)
@@ -40,7 +44,6 @@ write.csv(d2, file= "2016_new_element.csv")
 CLEANING PORTION DATA
 ```{r}
 uni_por2<-unique(d2$R_portion)
-View(uni_por2)
 ```
 I ended up cleaning those up in the original spreadsheet.
 
@@ -54,7 +57,7 @@ names(temp2)[20]<-"R_Portion"
 names(temp1)
 names(temp2)
 ```
-```{r}
+```{r include=FALSE}
 Tla_1<-rbind(temp1, temp2)
 trimws(Tla_1)
 ```
@@ -62,9 +65,33 @@ HEre I will look for unique names in the Name coloumn
 ```{r}
 unique(Tla_1$Name)
 ```
+Here I am selecting a subset so I can identify double-ups in species naming and change for consistency in the spreadsheet.
 ```{r}
 sp.<-select(Tla_1, Class, Category, Genus, Species, Name)
 uni_sp<-(unique(sp.))
 ```
 
+Now I will run some stats on NISP and Species. 
+```{r}
+names(Tla_1)
+str(Tla_1)
+```
+Here I am learning use the NISP count data to summarise my new dataset
 
+First I am editing some category details to make a better summary. 
+```{r}
+Tla_1$Category<-if_else(Tla_1$Category=="General", Tla_1$Name, Tla_1$Category)
+Tla_1$Category<-if_else(Tla_1$Category=="cf. Guajolote", "Bird", Tla_1$Category)
+```
+
+```{r}
+Tla_2<-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.
+```
+```{r}
+by_class<-Tla_2%>%group_by(Category)
+```
+```{r}
+library(stargazer)
+sp_table<-summarise(by_class, "NISP"=sum(NISP>0 ))#I had a lot of trouble with this, only got it to work by adding caode into the data input line to have strings as factors FALSE
+stargazer(sp_table, type="text", summary=FALSE)
+```
