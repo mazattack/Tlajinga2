@@ -2,7 +2,10 @@
 title: "R Notebook"
 output: html_notebook
 ---
-This file carries out the basic cleaning and organisation of my Tlajinga data using the 2016 and 2017 data cleaning excel files. Changes to the spreadsheets should be made to these original files. Most of the species changes I carried out in the spreadsheets themselves. 
+This notebook contains a record of my data cleaning and manipulation of my PATT 2016-7 faunal analysis. 
+
+#Loading base data
+This section out the basic cleaning and organisation of my Tlajinga data using the 2016 and 2017 data cleaning excel files. Changes to the spreadsheets should be made to these original files. Most of the species changes I carried out in the spreadsheets themselves. I used this code to create a new master dataset for future analysis. 
 ```{r}
 rm(list = ls())
 ```
@@ -16,19 +19,19 @@ d2<-read.csv("2016_data_clean.csv", stringsAsFactors = FALSE)
 library(dplyr)
 ```
 
-```{r}
+```{r eval=FALSE}
 #This code creates a list of the unique elements in the R_El column. 
 uni_el<-unique(d1$R_El)
 #I used this list to code each to a particular standardised element
 ```
 
-```{r}
+```{r eval=FALSE}
 #This code creates a list of the unique elements in the R_El column in the second dataset and adds them to the prior dataset
 uni_el2<-unique(d2$R_El)
 uni_merg<-c(as.character(uni_el), as.character(uni_el2))
 uni_all<-unique(uni_merg)
 ```
-
+##CLEANING Species DATA
 ```{r}
 #This code creates a new column for standardized elements and uses the look up list to provide the standardised element for that specimen. 
 d1$New_El<-el_list$Standard[match(d1$R_El, el_list$Orig)]
@@ -41,8 +44,8 @@ write.csv(d2, file= "2016_new_element.csv")
 ```
 
 
-CLEANING PORTION DATA
-```{r}
+##CLEANING PORTION DATA
+```{r eval=FALSE}
 uni_por2<-unique(d2$R_portion)
 ```
 I ended up cleaning those up in the original spreadsheet.
@@ -62,36 +65,150 @@ Tla_1<-rbind(temp1, temp2)
 trimws(Tla_1)
 ```
 HEre I will look for unique names in the Name coloumn
-```{r}
+```{r eval=FALSE}
 unique(Tla_1$Name)
 ```
 Here I am selecting a subset so I can identify double-ups in species naming and change for consistency in the spreadsheet.
-```{r}
+```{r eval=FALSE}
 sp.<-select(Tla_1, Class, Category, Genus, Species, Name)
 uni_sp<-(unique(sp.))
 ```
 
-Now I will run some stats on NISP and Species. 
-```{r}
+Here I am looking at the details and structure of the dataset I created
+```{r eval=FALSE}
 names(Tla_1)
 str(Tla_1)
 ```
+##Final spreadsheet for export:
+```{r}
+Tla_1$R_El<-Tla_1$New_El
+Tla_1<-select(Tla_1, -New_El)
+write.csv(Tla_1, file= "Tlajinga_cleaned_1_25_18.csv")
+```
+#Data subsets
 Here I am learning use the NISP count data to summarise my new dataset
 
 First I am editing some category details to make a better summary. 
 ```{r}
 Tla_1$Category<-if_else(Tla_1$Category=="General", Tla_1$Name, Tla_1$Category)
 Tla_1$Category<-if_else(Tla_1$Category=="cf. Guajolote", "Bird", Tla_1$Category)
+Tla_1<-filter(Tla_1, !Category=="") #here I am removing the fossil and empty bag from Tla_1 dataset
 ```
-
+This code writes a subset of the columns of Tla_1
 ```{r}
 Tla_2<-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.
 ```
+##GIS datasets
 ```{r}
-by_class<-Tla_2%>%group_by(Category)
+library(reshape2)
+```
+Here I am creating subsets of the data for GIS. Note that the rowSUMs needs to be updated when the selected categories change. This will overwrite the file saved to the WD. Note that for YEAR to be included in GIS, it needs to be a different name:i.e. 
+names(Op_17)[2]<-"analy_year"
+```{r}
+temp<-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.
+Op_17<-filter(temp, Operacion=="17")
+melt17<-melt(Op_17, measure.vars = "NISP")%>%
+dcast(Operacion+Unidad~Class+Name, sum)%>%
+mutate(Total_Row = rowSums(.[3:65]))
+names(melt17)<-gsub("[[:punct:][:space:]]", "", names(melt17))
+```
+
+```{r}
+Op_18<-filter(temp, Operacion=="18")
+melt18<-melt(Op_18, measure.vars = "NISP")%>%
+dcast(Operacion+Unidad~Class+Name, sum)%>%
+mutate(Total_Row = rowSums(.[3:93]))
+names(melt18)<-gsub("[[:punct:][:space:]]", "", names(melt18))
+write.csv(melt18, file= "Op_18_GIS.csv")
+```
+
+#Learning stargazer and plotly. 
+
+Here, I found the NISP did not sum appropriately, and later learnt melt to clean my data further to fix this. This code should be check carefully when applied to make sure the summary statistics are correct
+Creating variable summary tables and pie charts
+```{r}
+library(plotly)
+```
+
+```{r}
+temp<-filter(Tla_2, !Category=="Human") #add filters here if necessary 
+by_group<-temp%>%group_by(Operacion, Name) #simply changes group_by to edit table and piechart
+t<-summarise(by_group, "NISP"=sum(NISP))
+sum(t$NISP)#check that this equals total NISP for spreadsheet, currently 3360
+t
+plot_ly(t, labels = (t)[[1]], values = ~NISP, type = 'pie', textposition = 'inside', # note that the values must be directly attributed to the variable because it doesn't seem to sum. 
+        textinfo = 'label+percent') 
 ```
 ```{r}
+names(t)[1]
+```
+
+```{r}
+by_class<-Tla_2%>%group_by(Class, Category, Name)
+```
+
+```{r}
+sp_table<-summarise(by_class, "NISP"=sum(NISP))#I had a lot of trouble with this, only got it to work by adding caode into the data input line to have strings as factors FALSE
+sp_table
+sum(sp_table$NISP)
+```
+
+
+
+```{r}
+library(plotly)
+```
+Making a pie chart of the table above
+```{r}
+p <- plot_ly(sp_table, labels = ~Name, values = ~NISP, type = 'pie', textposition = 'inside', # note that the values must be directly attributed to the variable because it doesn't seem to sum. 
+        textinfo = 'label+percent') 
+```
+
+```{r}
+p
+```
+
+Code for stargazer for pulication quality tables
+```{r eval=FALSE}
 library(stargazer)
-sp_table<-summarise(by_class, "NISP"=sum(NISP>0 ))#I had a lot of trouble with this, only got it to work by adding caode into the data input line to have strings as factors FALSE
+sp_table<-summarise(by_class, "NISP"=sum(NISP))#I had a lot of trouble with this, only got it to work by adding caode into the data input line to have strings as factors FALSE
 stargazer(sp_table, type="text", summary=FALSE)
+```
+
+
+
+#Adding chronology to the dataset
+
+I'm going to use the datasets above to create a new melt for each LOTE to join with the new chronology groups I created in excel and see if I can identify some basic patterns over time. 
+
+```{r}
+chron17<-read.csv("17_Chro_join.csv", stringsAsFactors = FALSE)
+```
+
+```{r}
+library(reshape2)
+library(dplyr)
+```
+```{r}
+temp<-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.
+Op_17<-filter(temp, Operacion=="17")
+melt17<-melt(Op_17, measure.vars = "NISP")%>%
+dcast(Operacion+Unidad+Lote~Class, sum)
+```
+```{r}
+melt17<-mutate(melt17, Total_Row = rowSums(melt17[4:11]))
+names(melt17)<-gsub("[[:punct:][:space:]]", "", names(melt17))
+melt17$phase<-chron17$Chronology.group[match(melt17$Lote, chron17$Lote)]
+write.csv(melt17, file= "17_chron.csv")
+```
+
+```{r}
+melt17<-melt17%>%group_by(as.factor(phase))
+```
+
+```{r}
+temp_sum<-summarise(melt17, sum(Bird), sum(Fish), sum(Mammal), sum(Reptile))
+```
+```{r}
+str(temp_sum)
 ```

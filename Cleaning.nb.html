@@ -173,7 +173,10 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
-<p>This file carries out the basic cleaning and organisation of my Tlajinga data using the 2016 and 2017 data cleaning excel files. Changes to the spreadsheets should be made to these original files. Most of the species changes I carried out in the spreadsheets themselves.</p>
+<p>This notebook contains a record of my data cleaning and manipulation of my PATT 2016-7 faunal analysis.</p>
+<div id="loading-base-data" class="section level1">
+<h1>Loading base data</h1>
+<p>This section out the basic cleaning and organisation of my Tlajinga data using the 2016 and 2017 data cleaning excel files. Changes to the spreadsheets should be made to these original files. Most of the species changes I carried out in the spreadsheets themselves. I used this code to create a new master dataset for future analysis.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm0obGlzdCA9IGxzKCkpXG5gYGAifQ== -->
@@ -195,7 +198,7 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoaXMgY29kZSBjcmVhdGVzIGEgbGlzdCBvZiB0aGUgdW5pcXVlIGVsZW1lbnRzIGluIHRoZSBSX0VsIGNvbHVtbi4gXG51bmlfZWw8LXVuaXF1ZShkMSRSX0VsKVxuI0kgdXNlZCB0aGlzIGxpc3QgdG8gY29kZSBlYWNoIHRvIGEgcGFydGljdWxhciBzdGFuZGFyZGlzZWQgZWxlbWVudFxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjpbIiNUaGlzIGNvZGUgY3JlYXRlcyBhIGxpc3Qgb2YgdGhlIHVuaXF1ZSBlbGVtZW50cyBpbiB0aGUgUl9FbCBjb2x1bW4uICIsInVuaV9lbDwtdW5pcXVlKGQxJFJfRWwpIiwiI0kgdXNlZCB0aGlzIGxpc3QgdG8gY29kZSBlYWNoIHRvIGEgcGFydGljdWxhciBzdGFuZGFyZGlzZWQgZWxlbWVudCJdfQ== -->
 <pre class="r"><code>#This code creates a list of the unique elements in the R_El column. 
 uni_el&lt;-unique(d1$R_El)
 #I used this list to code each to a particular standardised element</code></pre>
@@ -204,7 +207,7 @@ uni_el&lt;-unique(d1$R_El)
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoaXMgY29kZSBjcmVhdGVzIGEgbGlzdCBvZiB0aGUgdW5pcXVlIGVsZW1lbnRzIGluIHRoZSBSX0VsIGNvbHVtbiBpbiB0aGUgc2Vjb25kIGRhdGFzZXQgYW5kIGFkZHMgdGhlbSB0byB0aGUgcHJpb3IgZGF0YXNldFxudW5pX2VsMjwtdW5pcXVlKGQyJFJfRWwpXG51bmlfbWVyZzwtYyhhcy5jaGFyYWN0ZXIodW5pX2VsKSwgYXMuY2hhcmFjdGVyKHVuaV9lbDIpKVxudW5pX2FsbDwtdW5pcXVlKHVuaV9tZXJnKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjpbIiNUaGlzIGNvZGUgY3JlYXRlcyBhIGxpc3Qgb2YgdGhlIHVuaXF1ZSBlbGVtZW50cyBpbiB0aGUgUl9FbCBjb2x1bW4gaW4gdGhlIHNlY29uZCBkYXRhc2V0IGFuZCBhZGRzIHRoZW0gdG8gdGhlIHByaW9yIGRhdGFzZXQiLCJ1bmlfZWwyPC11bmlxdWUoZDIkUl9FbCkiLCJ1bmlfbWVyZzwtYyhhcy5jaGFyYWN0ZXIodW5pX2VsKSwgYXMuY2hhcmFjdGVyKHVuaV9lbDIpKSIsInVuaV9hbGw8LXVuaXF1ZSh1bmlfbWVyZykiXX0= -->
 <pre class="r"><code>#This code creates a list of the unique elements in the R_El column in the second dataset and adds them to the prior dataset
 uni_el2&lt;-unique(d2$R_El)
 uni_merg&lt;-c(as.character(uni_el), as.character(uni_el2))
@@ -212,6 +215,8 @@ uni_all&lt;-unique(uni_merg)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="cleaning-species-data" class="section level2">
+<h2>CLEANING Species DATA</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1RoaXMgY29kZSBjcmVhdGVzIGEgbmV3IGNvbHVtbiBmb3Igc3RhbmRhcmRpemVkIGVsZW1lbnRzIGFuZCB1c2VzIHRoZSBsb29rIHVwIGxpc3QgdG8gcHJvdmlkZSB0aGUgc3RhbmRhcmRpc2VkIGVsZW1lbnQgZm9yIHRoYXQgc3BlY2ltZW4uIFxuZDEkTmV3X0VsPC1lbF9saXN0JFN0YW5kYXJkW21hdGNoKGQxJFJfRWwsIGVsX2xpc3QkT3JpZyldXG5kMiROZXdfRWw8LWVsX2xpc3QkU3RhbmRhcmRbbWF0Y2goZDIkUl9FbCwgZWxfbGlzdCRPcmlnKV1cbmBgYCJ9 -->
@@ -234,10 +239,12 @@ d2$New_El&lt;-el_list$Standard[match(d2$R_El, el_list$Orig)]</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>CLEANING PORTION DATA</p>
+</div>
+<div id="cleaning-portion-data" class="section level2">
+<h2>CLEANING PORTION DATA</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudW5pX3BvcjI8LXVuaXF1ZShkMiRSX3BvcnRpb24pXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoidW5pX3BvcjI8LXVuaXF1ZShkMiRSX3BvcnRpb24pIn0= -->
 <pre class="r"><code>uni_por2&lt;-unique(d2$R_portion)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
@@ -282,140 +289,233 @@ names(temp1)</code></pre>
 <p>HEre I will look for unique names in the Name coloumn</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudW5pcXVlKFRsYV8xJE5hbWUpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoidW5pcXVlKFRsYV8xJE5hbWUpIn0= -->
 <pre class="r"><code>unique(Tla_1$Name)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICBbMV0gXCJBcnRpb2RhY3R5bFwiICAgICAgICAgICAgICAgICAgIFwiRG9nXCIgICAgICAgICAgICAgICAgICAgICAgICAgICBcImxhcmdlIG1hbW1hbFwiICAgICAgICAgICAgICAgICAgXCJIYXJlXCIgICAgICAgICAgICAgICAgICAgICAgICAgIFwiVGVwb3JpbmdvXCIgICAgICAgICAgICAgICAgICAgICBcIlJhYmJpdC9oYXJlXCIgICAgICAgICAgICAgICAgICBcbiAgWzddIFwiQ2VydmlkXCIgICAgICAgICAgICAgICAgICAgICAgICBcIm1lZGl1bS1sYXJnZSBtYW1tYWxcIiAgICAgICAgICAgXCJIdW1hblwiICAgICAgICAgICAgICAgICAgICAgICAgIFwibWVkaXVtIG1hbW1hbFwiICAgICAgICAgICAgICAgICBcInNtYWxsIG1hbW1hbFwiICAgICAgICAgICAgICAgICAgXCJtYW1tYWxcIiAgICAgICAgICAgICAgICAgICAgICAgXG4gWzEzXSBcIkJpdmFsdmVcIiAgICAgICAgICAgICAgICAgICAgICAgXCJXaGl0ZS10YWlsZWQgZGVlclwiICAgICAgICAgICAgIFwiRWFzdGVybiBjb3R0b250YWlsXCIgICAgICAgICAgICBcIk5vcnRoZXJuIGJvYndoaXRlXCIgICAgICAgICAgICAgXCJCaXJkXCIgICAgICAgICAgICAgICAgICAgICAgICAgIFwiTWV4aWNhbiBncm91bmQgc3F1aXJyZWxcIiAgICAgIFxuIFsxOV0gXCJjZi4gTWV4aWNhbiBncm91bmQgc3F1aXJyZWxcIiAgIFwibWVkaXVtLWxhcmdlIGJpcmRcIiAgICAgICAgICAgICBcImNmLiBIYXdrXCIgICAgICAgICAgICAgICAgICAgICAgXCJzbWFsbC1tZWQgYmlyZFwiICAgICAgICAgICAgICAgIFwiU21va2V5IHBvY2tldCBnb3BoZXJcIiAgICAgICAgICBcIkJyb2NrZXQgZGVlclwiICAgICAgICAgICAgICAgICBcbiBbMjVdIFwiRG9nIChsZylcIiAgICAgICAgICAgICAgICAgICAgICBcIkd1YWpvbG90ZVwiICAgICAgICAgICAgICAgICAgICAgXCJjZi4gU3dhbGxvd1wiICAgICAgICAgICAgICAgICAgIFwiV2F0ZXJmb3dsXCIgICAgICAgICAgICAgICAgICAgICBcIlNsaWRlciB0dXJ0bGVcIiAgICAgICAgICAgICAgICAgXCJNZXhpY2FuIGNvdHRvbnRhaWxcIiAgICAgICAgICAgXG4gWzMxXSBcIkFtZXJpY2FuIENvb3RcIiAgICAgICAgICAgICAgICAgXCJTaGVsbFwiICAgICAgICAgICAgICAgICAgICAgICAgIFwiUmVkLWJlbGxpZWQgc3F1aXJyZWxcIiAgICAgICAgICBcIkRvZyAoc20pXCIgICAgICAgICAgICAgICAgICAgICAgXCJTcXVpcnJlbFwiICAgICAgICAgICAgICAgICAgICAgIFwibGFyZ2UgYmlyZFwiICAgICAgICAgICAgICAgICAgIFxuIFszN10gXCJQZXJjaWZvcm1lc1wiICAgICAgICAgICAgICAgICAgIFwiSGF3a1wiICAgICAgICAgICAgICAgICAgICAgICAgICBcImNmLiBHdWFqb2xvdGVcIiAgICAgICAgICAgICAgICAgXCJzbWFsbC1tZWQgbWFtbWFsXCIgICAgICAgICAgICAgIFwiTGFnb21vcnBoIG9yIFJvZGVudFwiICAgICAgICAgICBcIlF1YWlsXCIgICAgICAgICAgICAgICAgICAgICAgICBcbiBbNDNdIFwiR3JlYmVcIiAgICAgICAgICAgICAgICAgICAgICAgICBcIk5JRFwiICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJjZi4gQnJvY2tldCBEZWVyXCIgICAgICAgICAgICAgIFwiRnJvZ1wiICAgICAgICAgICAgICAgICAgICAgICAgICBcIk11ZCB0dXJ0bGVcIiAgICAgICAgICAgICAgICAgICAgXCJjZi4gTWFyaW5lIEZpc2hcIiAgICAgICAgICAgICAgXG4gWzQ5XSBcIlR1emFcIiAgICAgICAgICAgICAgICAgICAgICAgICAgXCJORCBmaXNoXCIgICAgICAgICAgICAgICAgICAgICAgIFwiRGVzZXJ0IGNvdHRvbnRhaWxcIiAgICAgICAgICAgICBcImNmLiBXaGl0ZS10YWlsZWQgRGVlclwiICAgICAgICAgXCJEb21lc3RpYyBwaWdcIiAgICAgICAgICAgICAgICAgIFwiQ2F0dGxlXCIgICAgICAgICAgICAgICAgICAgICAgIFxuIFs1NV0gXCJTaGVlcC9nb2F0XCIgICAgICAgICAgICAgICAgICAgIFwiR2FsbGlmb3JtZXNcIiAgICAgICAgICAgICAgICAgICBcIlR1cnRsZVwiICAgICAgICAgICAgICAgICAgICAgICAgXCJCaXJkIG9yIE1hbW1hbFwiICAgICAgICAgICAgICAgIFwiUGhhc2luaWRhZVwiICAgICAgICAgICAgICAgICAgICBcIlRsYWN1YWNoZVwiICAgICAgICAgICAgICAgICAgICBcbiBbNjFdIFwiQ290dG9udGFpbFwiICAgICAgICAgICAgICAgICAgICBcIkhvb2RlZCBza3Vua1wiICAgICAgICAgICAgICAgICAgXCJzbWFsbCByb2RlbnRcIiAgICAgICAgICAgICAgICAgIFwiUmFsbGlkYWVcIiAgICAgICAgICAgICAgICAgICAgICBcImNmLiBQZWNjYXJ5XCIgICAgICAgICAgICAgICAgICAgXCJQYXNzZXJpbmVcIiAgICAgICAgICAgICAgICAgICAgXG4gWzY3XSBcIkh1bWFuP1wiICAgICAgICAgICAgICAgICAgICAgICAgXCJzbWFsbCBiaXJkXCIgICAgICAgICAgICAgICAgICAgIFwiTWFyaW5lIGZpc2hcIiAgICAgICAgICAgICAgICAgICBcIkphY2sgZmlzaFwiICAgICAgICAgICAgICAgICAgICAgXCJMb2JlcnJvP1wiICAgICAgICAgICAgICAgICAgICAgIFwiUm9kZW50aWFcIiAgICAgICAgICAgICAgICAgICAgIFxuIFs3M10gXCJDaGFyYWRyaWlmb3JtZXNcIiAgICAgICAgICAgICAgIFwiY2YuIE11ZCB0dXJ0bGVcIiAgICAgICAgICAgICAgICBcIkdhc3Ryb3BvZFwiICAgICAgICAgICAgICAgICAgICAgXCJDYW5pZFwiICAgICAgICAgICAgICAgICAgICAgICAgIFwiXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkxvYmVycm9cIiAgICAgICAgICAgICAgICAgICAgICBcbiBbNzldIFwiU25hcHBlclwiICAgICAgICAgICAgICAgICAgICAgICBcIlB1bWFcIiAgICAgICAgICAgICAgICAgICAgICAgICAgXCJXaGl0ZS1zaWRlZCBKYWNrcmFiYml0XCIgICAgICAgIFwibWVkaXVtIGJpcmRcIiAgICAgICAgICAgICAgICAgICBcIlBpZ2VvblwiICAgICAgICAgICAgICAgICAgICAgICAgXCJSYXQvTW91c2VcIiAgICAgICAgICAgICAgICAgICAgXG4gWzg1XSBcImNmLiBUbGFjaGljaGlcIiAgICAgICAgICAgICAgICAgXCJGb3NzaWwgc2hhcmsgZnJvbSBjcmV0YWNlb3VzXCIgIFwiY2YuIExvbmcgdGFpbGVkIHdvb2QgcGF0cmlkZ2VcIiBcIkJsYWNrLW5lY2tlZCBncmViZVwiICAgICAgICAgICAgXCJjZi4gRnVsaWNhIGFtZXJpY2FuYVwiICAgICAgICAgIFwiZXh0cmEtbGFyZ2UgYmlyZFwiICAgICAgICAgICAgIFxuIFs5MV0gXCJjZi4gTWV4aWNhbiBjb3R0b250YWlsXCIgICAgICAgIFwiQ2hhcmFkcmlpZGFlXCIgICAgICAgICAgICAgICAgICBcImNmLiByYXB0b3JcIiAgICAgICAgICAgICAgICAgICAgXCJHYWxsaW51bGVcIiAgICAgICAgICAgICAgICAgICAgIFwiQ29hdGlcIiAgICAgICAgICAgICAgICAgICAgICAgICBcIlJhdmVuXCIgICAgICAgICAgICAgICAgICAgICAgICBcbiBbOTddIFwiY2YuIE5lZWRsZSBmaXNoXCIgICAgICAgICAgICAgICBcIlBlY2NhcmlcIiAgICAgICAgICAgICAgICAgICAgICAgXCJjZi4gQ2VydmlkXCIgICAgICAgICAgICAgICAgICAgIFwiOSBiYW5kZWQgYXJtYWRpbGxvXCIgICAgICAgICAgICBcImNoaWNrZW4/XCIgICAgICAgICAgICAgICAgICAgICAgXCJUbGFjaGljaGlcIiAgICAgICAgICAgICAgICAgICAgXG5bMTAzXSBcIkNvb3BlcuKAmXMgSGF3a1wiICAgICAgICAgICAgICAgICBcIkRlZXIgbW91c2VcIiAgICAgICAgICAgICAgICAgICAgXCJjZi4gVHVydGxlXCIgICAgICAgICAgICAgICAgICAgIFwiU291dGhlcm4gcG9ja2V0IGdvcGhlclwiICAgICAgIFxuIn0= -->
-<pre><code>  [1] &quot;Artiodactyl&quot;                   &quot;Dog&quot;                           &quot;large mammal&quot;                  &quot;Hare&quot;                          &quot;Teporingo&quot;                     &quot;Rabbit/hare&quot;                  
-  [7] &quot;Cervid&quot;                        &quot;medium-large mammal&quot;           &quot;Human&quot;                         &quot;medium mammal&quot;                 &quot;small mammal&quot;                  &quot;mammal&quot;                       
- [13] &quot;Bivalve&quot;                       &quot;White-tailed deer&quot;             &quot;Eastern cottontail&quot;            &quot;Northern bobwhite&quot;             &quot;Bird&quot;                          &quot;Mexican ground squirrel&quot;      
- [19] &quot;cf. Mexican ground squirrel&quot;   &quot;medium-large bird&quot;             &quot;cf. Hawk&quot;                      &quot;small-med bird&quot;                &quot;Smokey pocket gopher&quot;          &quot;Brocket deer&quot;                 
- [25] &quot;Dog (lg)&quot;                      &quot;Guajolote&quot;                     &quot;cf. Swallow&quot;                   &quot;Waterfowl&quot;                     &quot;Slider turtle&quot;                 &quot;Mexican cottontail&quot;           
- [31] &quot;American Coot&quot;                 &quot;Shell&quot;                         &quot;Red-bellied squirrel&quot;          &quot;Dog (sm)&quot;                      &quot;Squirrel&quot;                      &quot;large bird&quot;                   
- [37] &quot;Perciformes&quot;                   &quot;Hawk&quot;                          &quot;cf. Guajolote&quot;                 &quot;small-med mammal&quot;              &quot;Lagomorph or Rodent&quot;           &quot;Quail&quot;                        
- [43] &quot;Grebe&quot;                         &quot;NID&quot;                           &quot;cf. Brocket Deer&quot;              &quot;Frog&quot;                          &quot;Mud turtle&quot;                    &quot;cf. Marine Fish&quot;              
- [49] &quot;Tuza&quot;                          &quot;ND fish&quot;                       &quot;Desert cottontail&quot;             &quot;cf. White-tailed Deer&quot;         &quot;Domestic pig&quot;                  &quot;Cattle&quot;                       
- [55] &quot;Sheep/goat&quot;                    &quot;Galliformes&quot;                   &quot;Turtle&quot;                        &quot;Bird or Mammal&quot;                &quot;Phasinidae&quot;                    &quot;Tlacuache&quot;                    
- [61] &quot;Cottontail&quot;                    &quot;Hooded skunk&quot;                  &quot;small rodent&quot;                  &quot;Rallidae&quot;                      &quot;cf. Peccary&quot;                   &quot;Passerine&quot;                    
- [67] &quot;Human?&quot;                        &quot;small bird&quot;                    &quot;Marine fish&quot;                   &quot;Jack fish&quot;                     &quot;Loberro?&quot;                      &quot;Rodentia&quot;                     
- [73] &quot;Charadriiformes&quot;               &quot;cf. Mud turtle&quot;                &quot;Gastropod&quot;                     &quot;Canid&quot;                         &quot;&quot;                              &quot;Loberro&quot;                      
- [79] &quot;Snapper&quot;                       &quot;Puma&quot;                          &quot;White-sided Jackrabbit&quot;        &quot;medium bird&quot;                   &quot;Pigeon&quot;                        &quot;Rat/Mouse&quot;                    
- [85] &quot;cf. Tlachichi&quot;                 &quot;Fossil shark from cretaceous&quot;  &quot;cf. Long tailed wood patridge&quot; &quot;Black-necked grebe&quot;            &quot;cf. Fulica americana&quot;          &quot;extra-large bird&quot;             
- [91] &quot;cf. Mexican cottontail&quot;        &quot;Charadriidae&quot;                  &quot;cf. raptor&quot;                    &quot;Gallinule&quot;                     &quot;Coati&quot;                         &quot;Raven&quot;                        
- [97] &quot;cf. Needle fish&quot;               &quot;Peccari&quot;                       &quot;cf. Cervid&quot;                    &quot;9 banded armadillo&quot;            &quot;chicken?&quot;                      &quot;Tlachichi&quot;                    
-[103] &quot;Cooper’s Hawk&quot;                 &quot;Deer mouse&quot;                    &quot;cf. Turtle&quot;                    &quot;Southern pocket gopher&quot;       </code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Here I am selecting a subset so I can identify double-ups in species naming and change for consistency in the spreadsheet.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3AuPC1zZWxlY3QoVGxhXzEsIENsYXNzLCBDYXRlZ29yeSwgR2VudXMsIFNwZWNpZXMsIE5hbWUpXG51bmlfc3A8LSh1bmlxdWUoc3AuKSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjpbInNwLjwtc2VsZWN0KFRsYV8xLCBDbGFzcywgQ2F0ZWdvcnksIEdlbnVzLCBTcGVjaWVzLCBOYW1lKSIsInVuaV9zcDwtKHVuaXF1ZShzcC4pKSJdfQ== -->
 <pre class="r"><code>sp.&lt;-select(Tla_1, Class, Category, Genus, Species, Name)
 uni_sp&lt;-(unique(sp.))</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Now I will run some stats on NISP and Species.</p>
+<p>Here I am looking at the details and structure of the dataset I created</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMoVGxhXzEpXG5gYGAifQ== -->
-<pre class="r"><code>names(Tla_1)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjpbIm5hbWVzKFRsYV8xKSIsInN0cihUbGFfMSkiXX0= -->
+<pre class="r"><code>names(Tla_1)
+str(Tla_1)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSBcIklEXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiWUVBUlwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJWb2x1bWVcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkxvdGVcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiT3BlcmFjaW9uXCIgICAgICAgICAgICAgICAgICAgICAgICAgXCJVbmlkYWRcIiAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIFs3XSBcIkVMLlwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiSW52ZXN0aWdhdG9yXCIgICAgICAgICAgICAgICAgICAgICAgXCJGZWNoYVwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkNsYXNzXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiQ2F0ZWdvcnlcIiAgICAgICAgICAgICAgICAgICAgICAgICAgXCJHZW51c1wiICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzEzXSBcIlNwZWNpZXNcIiAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiTmFtZVwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJDRlwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIlJfRWxcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiUl9pbmZvXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJTaWRlXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzE5XSBcIkNvbXBsZXRlbmVzcy4uMC5mcmFnLi4xLmNvbXBsZXRlLlwiIFwiUl9Qb3J0aW9uXCIgICAgICAgICAgICAgICAgICAgICAgICAgXCJGcmFnbWVudGF0aW9uXCIgICAgICAgICAgICAgICAgICAgICBcIk5JU1BcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiTU5FXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJFc3RpbWF0ZS5BR0VcIiAgICAgICAgICAgICAgICAgICAgIFxuWzI1XSBcIkZ1c2lvbi53ZWFyXCIgICAgICAgICAgICAgICAgICAgICAgIFwiUHJveGltYWxcIiAgICAgICAgICAgICAgICAgICAgICAgICAgXCJTaGFmdFwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkRpc3RhbFwiICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiVGFwaG9ub215XCIgICAgICAgICAgICAgICAgICAgICAgICAgXCJQaG90b2dyYXBoZWRcIiAgICAgICAgICAgICAgICAgICAgIFxuWzMxXSBcIkJpcmQudG8uY29uZmlybS5JRFwiICAgICAgICAgICAgICAgIFwiQWRkaXRpb25hbC5hbmFseXNpc1wiICAgICAgICAgICAgICAgXCJRdWFsaXR5Lm9mLmhlYXQuZmlyZS5leHBvc3VyZVwiICAgICBcIlguLkNoYXJyZWRcIiAgICAgICAgICAgICAgICAgICAgICAgIFwiWC4uSGVhdC5leHBvc2VkXCIgICAgICAgICAgICAgICAgICAgXCJDYXJuaXZvcmVcIiAgICAgICAgICAgICAgICAgICAgICAgIFxuWzM3XSBcIlJvZGVudFwiICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiV29ya2VkXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJCdXRjaGVyeVwiICAgICAgICAgICAgICAgICAgICAgICAgICBcIldlYXRoZXJpbmdcIiAgICAgICAgICAgICAgICAgICAgICAgIFwiT3RoZXJcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJDYWxjaW5lZFwiICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzQzXSBcIk1lYXN1cmVtZW50c1wiICAgICAgICAgICAgICAgICAgICAgIFwiTG9jYXRpb24ub2YubWVhc3VyZW1lbnRcIiAgICAgICAgICAgXCJEZXRhaWxzXCIgICAgICAgICAgICAgICAgICAgICAgICAgICBcIk5ld19FbFwiICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4ifQ== -->
-<pre><code> [1] &quot;ID&quot;                                &quot;YEAR&quot;                              &quot;Volume&quot;                            &quot;Lote&quot;                              &quot;Operacion&quot;                         &quot;Unidad&quot;                           
- [7] &quot;EL.&quot;                               &quot;Investigator&quot;                      &quot;Fecha&quot;                             &quot;Class&quot;                             &quot;Category&quot;                          &quot;Genus&quot;                            
-[13] &quot;Species&quot;                           &quot;Name&quot;                              &quot;CF&quot;                                &quot;R_El&quot;                              &quot;R_info&quot;                            &quot;Side&quot;                             
-[19] &quot;Completeness..0.frag..1.complete.&quot; &quot;R_Portion&quot;                         &quot;Fragmentation&quot;                     &quot;NISP&quot;                              &quot;MNE&quot;                               &quot;Estimate.AGE&quot;                     
-[25] &quot;Fusion.wear&quot;                       &quot;Proximal&quot;                          &quot;Shaft&quot;                             &quot;Distal&quot;                            &quot;Taphonomy&quot;                         &quot;Photographed&quot;                     
-[31] &quot;Bird.to.confirm.ID&quot;                &quot;Additional.analysis&quot;               &quot;Quality.of.heat.fire.exposure&quot;     &quot;X..Charred&quot;                        &quot;X..Heat.exposed&quot;                   &quot;Carnivore&quot;                        
-[37] &quot;Rodent&quot;                            &quot;Worked&quot;                            &quot;Butchery&quot;                          &quot;Weathering&quot;                        &quot;Other&quot;                             &quot;Calcined&quot;                         
-[43] &quot;Measurements&quot;                      &quot;Location.of.measurement&quot;           &quot;Details&quot;                           &quot;New_El&quot;                           </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RyKFRsYV8xKVxuYGBgIn0= -->
-<pre class="r"><code>str(Tla_1)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0MTczMSBvYnMuIG9mICA0NiB2YXJpYWJsZXM6XG4gJCBJRCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGludCAgODU4IDg1OSA4NjAgODYxIDg2MiA4NjMgODY0IDg2NSA4NjYgODY3IC4uLlxuICQgWUVBUiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiMjAxN1wiIFwiMjAxN1wiIFwiMjAxN1wiIFwiMjAxN1wiIC4uLlxuICQgVm9sdW1lICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBudW0gIE5BIE5BIE5BIE5BIE5BIE5BIE5BIE5BIE5BIE5BIC4uLlxuICQgTG90ZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiNjc4XCIgXCI2NzhcIiBcIjY3OFwiIFwiNjc4XCIgLi4uXG4gJCBPcGVyYWNpb24gICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCIxOFwiIFwiMThcIiBcIjE4XCIgXCIxOFwiIC4uLlxuICQgVW5pZGFkICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiSTIzXCIgXCJJMjNcIiBcIkkyM1wiIFwiSTIzXCIgLi4uXG4gJCBFTC4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCIzNlwiIFwiMzZcIiBcIjM2XCIgXCIzNlwiIC4uLlxuICQgSW52ZXN0aWdhdG9yICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiREhTXCIgXCJESFNcIiBcIkRIU1wiIFwiREhTXCIgLi4uXG4gJCBGZWNoYSAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCI5X1ZJSV8xNFwiIFwiOV9WSUlfMTRcIiBcIjlfVklJXzE0XCIgXCI5X1ZJSV8xNFwiIC4uLlxuICQgQ2xhc3MgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiTWFtbWFsXCIgXCJNYW1tYWxcIiBcIk1hbW1hbFwiIFwiTWFtbWFsXCIgLi4uXG4gJCBDYXRlZ29yeSAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJBcnRpb2RhY3R5bGFcIiBcIkFydGlvZGFjdHlsYVwiIFwiQXJ0aW9kYWN0eWxhXCIgXCJDYXJuaXZvcmFcIiAuLi5cbiAkIEdlbnVzICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogY2hyICBcIkFydGlvZGFjdHlsYVwiIFwiQXJ0aW9kYWN0eWxhXCIgXCJBcnRpb2RhY3R5bGFcIiBcIkNhbmlzXCIgLi4uXG4gJCBTcGVjaWVzICAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJcIiBcIlwiIFwiXCIgXCJmYW1pbGlhcmlzIFwiIC4uLlxuICQgTmFtZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiQXJ0aW9kYWN0eWxcIiBcIkFydGlvZGFjdHlsXCIgXCJBcnRpb2RhY3R5bFwiIFwiRG9nXCIgLi4uXG4gJCBDRiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCIjTi9BXCIgXCIjTi9BXCIgXCIjTi9BXCIgXCIjTi9BXCIgLi4uXG4gJCBSX0VsICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJtYW5kaWJsZVwiIFwic2NhcHVsYVwiIFwicGF0ZWxsYVwiIFwiTWNcIiAuLi5cbiAkIFJfaW5mbyAgICAgICAgICAgICAgICAgICAgICAgICAgIDogY2hyICBcIlwiIFwiXCIgXCJcIiBcIklJSVwiIC4uLlxuICQgU2lkZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiTFwiIFwiTFwiIFwiP1wiIFwiUlwiIC4uLlxuICQgQ29tcGxldGVuZXNzLi4wLmZyYWcuLjEuY29tcGxldGUuOiBjaHIgIFwiMC4xXCIgXCIwLjFcIiBcIjFcIiBcIjAuOVwiIC4uLlxuICQgUl9Qb3J0aW9uICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiXCIgXCJcIiBcIjctIHdob2xlIGFuZCB1bmJyb2tlblwiIFwiMy1Qcm94aW1hbCBhbmQgc2hhZnRcIiAuLi5cbiAkIEZyYWdtZW50YXRpb24gICAgICAgICAgICAgICAgICAgIDogY2hyICBcIjEtQW5jaWVudFwiIFwiMy1Nb2Rlcm4vQW5jaWVudFwiIFwiXCIgXCJcIiAuLi5cbiAkIE5JU1AgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogaW50ICAxIDEgMSAxIDEgMSAxIDEgMyAxIC4uLlxuICQgTU5FICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBpbnQgIE5BIE5BIE5BIE5BIE5BIE5BIE5BIE5BIDMgTkEgLi4uXG4gJCBFc3RpbWF0ZS5BR0UgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCIxMC15b3VuZyhwb3JvdXMpXCIgXCIxMC15b3VuZyhwb3JvdXMpXCIgXCIwLSBub3QgZGV0ZXJtaW5hYmxlXCIgXCI0LSBpbmZhbnRpbGUgb3IganV2ZW5pbGVcIiAuLi5cbiAkIEZ1c2lvbi53ZWFyICAgICAgICAgICAgICAgICAgICAgIDogY2hyICBcIlwiIFwiXCIgXCJcIiBcIlwiIC4uLlxuICQgUHJveGltYWwgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiXCIgXCJcIiBcIlwiIFwiRlUtIEZ1c2VkXCIgLi4uXG4gJCBTaGFmdCAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJcIiBcIlwiIFwiXCIgXCJQciAtIHByZXNlbnRcIiAuLi5cbiAkIERpc3RhbCAgICAgICAgICAgICAgICAgICAgICAgICAgIDogY2hyICBcIlwiIFwiXCIgXCJcIiBcIlVGLSBVbmZ1c2VkXCIgLi4uXG4gJCBUYXBob25vbXkgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJcIiBcIlwiIFwiXCIgXCJcIiAuLi5cbiAkIFBob3RvZ3JhcGhlZCAgICAgICAgICAgICAgICAgICAgIDogY2hyICBcIlwiIFwiXCIgXCJQaG9uZSAyOF9WSUlJXzE3XCIgXCJcIiAuLi5cbiAkIEJpcmQudG8uY29uZmlybS5JRCAgICAgICAgICAgICAgIDogY2hyICBcIlwiIFwiXCIgXCJZXCIgXCJcIiAuLi5cbiAkIEFkZGl0aW9uYWwuYW5hbHlzaXMgICAgICAgICAgICAgIDogY2hyICBOQSBOQSBOQSBOQSAuLi5cbiAkIFF1YWxpdHkub2YuaGVhdC5maXJlLmV4cG9zdXJlICAgIDogY2hyICBcIlwiIFwiXCIgXCJcIiBcIjktIHNsaWdodGx5IGJ1cm50XCIgLi4uXG4gJCBYLi5DaGFycmVkICAgICAgICAgICAgICAgICAgICAgICA6IGludCAgMCAwIDAgMSAxIDAgMCAxIDAgMCAuLi5cbiAkIFguLkhlYXQuZXhwb3NlZCAgICAgICAgICAgICAgICAgIDogY2hyICBcIj9cIiBcIjBcIiBcIj9cIiBcIlwiIC4uLlxuICQgQ2Fybml2b3JlICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiMi13aG9sZVwiIFwiMFwiIFwiMFwiIFwiMFwiIC4uLlxuICQgUm9kZW50ICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBpbnQgIDAgMCAwIDAgMCAwIDAgMCAwIDAgLi4uXG4gJCBXb3JrZWQgICAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCIwXCIgXCIwXCIgXCIwXCIgXCIwXCIgLi4uXG4gJCBCdXRjaGVyeSAgICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCIwXCIgXCIwXCIgXCIwXCIgXCIwXCIgLi4uXG4gJCBXZWF0aGVyaW5nICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJcIiBcIlwiIFwiXCIgXCJcIiAuLi5cbiAkIE90aGVyICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogY2hyICBcIjBcIiBcIjBcIiBcIjBcIiBcIjBcIiAuLi5cbiAkIENhbGNpbmVkICAgICAgICAgICAgICAgICAgICAgICAgIDogaW50ICAwIDAgMCAwIDAgMCAwIDAgMCAwIC4uLlxuICQgTWVhc3VyZW1lbnRzICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwiMTIuOVwiIFwiXCIgXCIzNS41eDIxLjl4MTkuMlwiIFwiOC40eDYuNDcsIDQ0Ljc4XCIgLi4uXG4gJCBMb2NhdGlvbi5vZi5tZWFzdXJlbWVudCAgICAgICAgICA6IGNociAgXCJtYW5kaWJ1bGFyIGNvbmR5bGVcIiBcIlwiIFwiTHhXeEhcIiBcIlByb3hpbWFsIFd4SCwgVUwgKHVuZnVzZWQgbGVuZ3RoKVwiIC4uLlxuICQgRGV0YWlscyAgICAgICAgICAgICAgICAgICAgICAgICAgOiBjaHIgIFwibWFuZGlibGUvbWFuZGlidWxhciBwcm9jZXNzIGFuZCByYW11cy8vXCIgXCJzY2FwdWxhL2NyYW5pYWwgYW5nbGUvL1wiIFwicGF0ZWxsYS83LSB3aG9sZSBhbmQgdW5icm9rZW4vL0NoZWNrIGFudGlsb2NhcHJhXCIgXCJNYy8zLVByb3hpbWFsIGFuZCBzaGFmdC9JSUkvXCIgLi4uXG4gJCBOZXdfRWwgICAgICAgICAgICAgICAgICAgICAgICAgICA6IEZhY3RvciB3LyA2OSBsZXZlbHMgXCJcIixcIkFudGxlclwiLFwiQXN0cmFnYWx1c1wiLC4uOiAyNyA0OSAzNiAyOCA1MSAyNyAxOCA2MCAyNSA0NiAuLi5cbiJ9 -->
-<pre><code>'data.frame':   1731 obs. of  46 variables:
- $ ID                               : int  858 859 860 861 862 863 864 865 866 867 ...
- $ YEAR                             : chr  &quot;2017&quot; &quot;2017&quot; &quot;2017&quot; &quot;2017&quot; ...
- $ Volume                           : num  NA NA NA NA NA NA NA NA NA NA ...
- $ Lote                             : chr  &quot;678&quot; &quot;678&quot; &quot;678&quot; &quot;678&quot; ...
- $ Operacion                        : chr  &quot;18&quot; &quot;18&quot; &quot;18&quot; &quot;18&quot; ...
- $ Unidad                           : chr  &quot;I23&quot; &quot;I23&quot; &quot;I23&quot; &quot;I23&quot; ...
- $ EL.                              : chr  &quot;36&quot; &quot;36&quot; &quot;36&quot; &quot;36&quot; ...
- $ Investigator                     : chr  &quot;DHS&quot; &quot;DHS&quot; &quot;DHS&quot; &quot;DHS&quot; ...
- $ Fecha                            : chr  &quot;9_VII_14&quot; &quot;9_VII_14&quot; &quot;9_VII_14&quot; &quot;9_VII_14&quot; ...
- $ Class                            : chr  &quot;Mammal&quot; &quot;Mammal&quot; &quot;Mammal&quot; &quot;Mammal&quot; ...
- $ Category                         : chr  &quot;Artiodactyla&quot; &quot;Artiodactyla&quot; &quot;Artiodactyla&quot; &quot;Carnivora&quot; ...
- $ Genus                            : chr  &quot;Artiodactyla&quot; &quot;Artiodactyla&quot; &quot;Artiodactyla&quot; &quot;Canis&quot; ...
- $ Species                          : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;familiaris &quot; ...
- $ Name                             : chr  &quot;Artiodactyl&quot; &quot;Artiodactyl&quot; &quot;Artiodactyl&quot; &quot;Dog&quot; ...
- $ CF                               : chr  &quot;#N/A&quot; &quot;#N/A&quot; &quot;#N/A&quot; &quot;#N/A&quot; ...
- $ R_El                             : chr  &quot;mandible&quot; &quot;scapula&quot; &quot;patella&quot; &quot;Mc&quot; ...
- $ R_info                           : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;III&quot; ...
- $ Side                             : chr  &quot;L&quot; &quot;L&quot; &quot;?&quot; &quot;R&quot; ...
- $ Completeness..0.frag..1.complete.: chr  &quot;0.1&quot; &quot;0.1&quot; &quot;1&quot; &quot;0.9&quot; ...
- $ R_Portion                        : chr  &quot;&quot; &quot;&quot; &quot;7- whole and unbroken&quot; &quot;3-Proximal and shaft&quot; ...
- $ Fragmentation                    : chr  &quot;1-Ancient&quot; &quot;3-Modern/Ancient&quot; &quot;&quot; &quot;&quot; ...
- $ NISP                             : int  1 1 1 1 1 1 1 1 3 1 ...
- $ MNE                              : int  NA NA NA NA NA NA NA NA 3 NA ...
- $ Estimate.AGE                     : chr  &quot;10-young(porous)&quot; &quot;10-young(porous)&quot; &quot;0- not determinable&quot; &quot;4- infantile or juvenile&quot; ...
- $ Fusion.wear                      : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; ...
- $ Proximal                         : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;FU- Fused&quot; ...
- $ Shaft                            : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;Pr - present&quot; ...
- $ Distal                           : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;UF- Unfused&quot; ...
- $ Taphonomy                        : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; ...
- $ Photographed                     : chr  &quot;&quot; &quot;&quot; &quot;Phone 28_VIII_17&quot; &quot;&quot; ...
- $ Bird.to.confirm.ID               : chr  &quot;&quot; &quot;&quot; &quot;Y&quot; &quot;&quot; ...
- $ Additional.analysis              : chr  NA NA NA NA ...
- $ Quality.of.heat.fire.exposure    : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;9- slightly burnt&quot; ...
- $ X..Charred                       : int  0 0 0 1 1 0 0 1 0 0 ...
- $ X..Heat.exposed                  : chr  &quot;?&quot; &quot;0&quot; &quot;?&quot; &quot;&quot; ...
- $ Carnivore                        : chr  &quot;2-whole&quot; &quot;0&quot; &quot;0&quot; &quot;0&quot; ...
- $ Rodent                           : int  0 0 0 0 0 0 0 0 0 0 ...
- $ Worked                           : chr  &quot;0&quot; &quot;0&quot; &quot;0&quot; &quot;0&quot; ...
- $ Butchery                         : chr  &quot;0&quot; &quot;0&quot; &quot;0&quot; &quot;0&quot; ...
- $ Weathering                       : chr  &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; ...
- $ Other                            : chr  &quot;0&quot; &quot;0&quot; &quot;0&quot; &quot;0&quot; ...
- $ Calcined                         : int  0 0 0 0 0 0 0 0 0 0 ...
- $ Measurements                     : chr  &quot;12.9&quot; &quot;&quot; &quot;35.5x21.9x19.2&quot; &quot;8.4x6.47, 44.78&quot; ...
- $ Location.of.measurement          : chr  &quot;mandibular condyle&quot; &quot;&quot; &quot;LxWxH&quot; &quot;Proximal WxH, UL (unfused length)&quot; ...
- $ Details                          : chr  &quot;mandible/mandibular process and ramus//&quot; &quot;scapula/cranial angle//&quot; &quot;patella/7- whole and unbroken//Check antilocapra&quot; &quot;Mc/3-Proximal and shaft/III/&quot; ...
- $ New_El                           : Factor w/ 69 levels &quot;&quot;,&quot;Antler&quot;,&quot;Astragalus&quot;,..: 27 49 36 28 51 27 18 60 25 46 ...</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="final-spreadsheet-for-export" class="section level2">
+<h2>Final spreadsheet for export:</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuVGxhXzEkUl9FbDwtVGxhXzEkTmV3X0VsXG5UbGFfMTwtc2VsZWN0KFRsYV8xLCAtTmV3X0VsKVxud3JpdGUuY3N2KFRsYV8xLCBmaWxlPSBcIlRsYWppbmdhX2NsZWFuZWRfMV8yNV8xOC5jc3ZcIilcbmBgYCJ9 -->
+<pre class="r"><code>Tla_1$R_El&lt;-Tla_1$New_El
+Tla_1&lt;-select(Tla_1, -New_El)
+write.csv(Tla_1, file= &quot;Tlajinga_cleaned_1_25_18.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+</div>
+<div id="data-subsets" class="section level1">
+<h1>Data subsets</h1>
 <p>Here I am learning use the NISP count data to summarise my new dataset</p>
 <p>First I am editing some category details to make a better summary.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuVGxhXzEkQ2F0ZWdvcnk8LWlmX2Vsc2UoVGxhXzEkQ2F0ZWdvcnk9PVwiR2VuZXJhbFwiLCBUbGFfMSROYW1lLCBUbGFfMSRDYXRlZ29yeSlcblRsYV8xJENhdGVnb3J5PC1pZl9lbHNlKFRsYV8xJENhdGVnb3J5PT1cImNmLiBHdWFqb2xvdGVcIiwgXCJCaXJkXCIsIFRsYV8xJENhdGVnb3J5KVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuVGxhXzEkQ2F0ZWdvcnk8LWlmX2Vsc2UoVGxhXzEkQ2F0ZWdvcnk9PVwiR2VuZXJhbFwiLCBUbGFfMSROYW1lLCBUbGFfMSRDYXRlZ29yeSlcblRsYV8xJENhdGVnb3J5PC1pZl9lbHNlKFRsYV8xJENhdGVnb3J5PT1cImNmLiBHdWFqb2xvdGVcIiwgXCJCaXJkXCIsIFRsYV8xJENhdGVnb3J5KVxuVGxhXzE8LWZpbHRlcihUbGFfMSwgIUNhdGVnb3J5PT1cIlwiKSAjaGVyZSBJIGFtIHJlbW92aW5nIHRoZSBmb3NzaWwgYW5kIGVtcHR5IGJhZyBmcm9tIFRsYV8xIGRhdGFzZXRcbmBgYCJ9 -->
 <pre class="r"><code>Tla_1$Category&lt;-if_else(Tla_1$Category==&quot;General&quot;, Tla_1$Name, Tla_1$Category)
-Tla_1$Category&lt;-if_else(Tla_1$Category==&quot;cf. Guajolote&quot;, &quot;Bird&quot;, Tla_1$Category)</code></pre>
+Tla_1$Category&lt;-if_else(Tla_1$Category==&quot;cf. Guajolote&quot;, &quot;Bird&quot;, Tla_1$Category)
+Tla_1&lt;-filter(Tla_1, !Category==&quot;&quot;) #here I am removing the fossil and empty bag from Tla_1 dataset</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>This code writes a subset of the columns of Tla_1</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuVGxhXzI8LXNlbGVjdCAoVGxhXzEsIElELCBPcGVyYWNpb24sIFVuaWRhZCwgTG90ZSwgRUwuLCBDbGFzcywgQ2F0ZWdvcnksIEdlbnVzLCBTcGVjaWVzLCBOYW1lLCBOSVNQKSAjaSd2ZSBub3cgaW5jbHVkZWQgSUQgaGVyZSBzbyBJIGNhbiBsaW5rIGl0IGJhY2sgdG8gdGhlIG9yaWdpbmFsIHNwcmVhZHNoZWV0LlxuYGBgIn0= -->
 <pre class="r"><code>Tla_2&lt;-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="gis-datasets" class="section level2">
+<h2>GIS datasets</h2>
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYnlfY2xhc3M8LVRsYV8yJT4lZ3JvdXBfYnkoQ2F0ZWdvcnkpXG5gYGAifQ== -->
-<pre class="r"><code>by_class&lt;-Tla_2%&gt;%group_by(Category)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZXNoYXBlMilcbmBgYCJ9 -->
+<pre class="r"><code>library(reshape2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Here I am creating subsets of the data for GIS. Note that the rowSUMs needs to be updated when the selected categories change. This will overwrite the file saved to the WD. Note that for YEAR to be included in GIS, it needs to be a different name:i.e. names(Op_17)[2]&lt;-“analy_year”</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVtcDwtc2VsZWN0IChUbGFfMSwgSUQsIE9wZXJhY2lvbiwgVW5pZGFkLCBMb3RlLCBFTC4sIENsYXNzLCBDYXRlZ29yeSwgR2VudXMsIFNwZWNpZXMsIE5hbWUsIE5JU1ApICNpJ3ZlIG5vdyBpbmNsdWRlZCBJRCBoZXJlIHNvIEkgY2FuIGxpbmsgaXQgYmFjayB0byB0aGUgb3JpZ2luYWwgc3ByZWFkc2hlZXQuXG5PcF8xNzwtZmlsdGVyKHRlbXAsIE9wZXJhY2lvbj09XCIxN1wiKVxubWVsdDE3PC1tZWx0KE9wXzE3LCBtZWFzdXJlLnZhcnMgPSBcIk5JU1BcIiklPiVcbmRjYXN0KE9wZXJhY2lvbitVbmlkYWR+Q2xhc3MrTmFtZSwgc3VtKSU+JVxubXV0YXRlKFRvdGFsX1JvdyA9IHJvd1N1bXMoLlszOjY1XSkpXG5uYW1lcyhtZWx0MTcpPC1nc3ViKFwiW1s6cHVuY3Q6XVs6c3BhY2U6XV1cIiwgXCJcIiwgbmFtZXMobWVsdDE3KSlcbmBgYCJ9 -->
+<pre class="r"><code>temp&lt;-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.
+Op_17&lt;-filter(temp, Operacion==&quot;17&quot;)
+melt17&lt;-melt(Op_17, measure.vars = &quot;NISP&quot;)%&gt;%
+dcast(Operacion+Unidad~Class+Name, sum)%&gt;%
+mutate(Total_Row = rowSums(.[3:65]))
+names(melt17)&lt;-gsub(&quot;[[:punct:][:space:]]&quot;, &quot;&quot;, names(melt17))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuT3BfMTg8LWZpbHRlcih0ZW1wLCBPcGVyYWNpb249PVwiMThcIilcbm1lbHQxODwtbWVsdChPcF8xOCwgbWVhc3VyZS52YXJzID0gXCJOSVNQXCIpJT4lXG5kY2FzdChPcGVyYWNpb24rVW5pZGFkfkNsYXNzK05hbWUsIHN1bSklPiVcbm11dGF0ZShUb3RhbF9Sb3cgPSByb3dTdW1zKC5bMzo5M10pKVxubmFtZXMobWVsdDE4KTwtZ3N1YihcIltbOnB1bmN0Ol1bOnNwYWNlOl1dXCIsIFwiXCIsIG5hbWVzKG1lbHQxOCkpXG53cml0ZS5jc3YobWVsdDE4LCBmaWxlPSBcIk9wXzE4X0dJUy5jc3ZcIilcbmBgYCJ9 -->
+<pre class="r"><code>Op_18&lt;-filter(temp, Operacion==&quot;18&quot;)
+melt18&lt;-melt(Op_18, measure.vars = &quot;NISP&quot;)%&gt;%
+dcast(Operacion+Unidad~Class+Name, sum)%&gt;%
+mutate(Total_Row = rowSums(.[3:93]))
+names(melt18)&lt;-gsub(&quot;[[:punct:][:space:]]&quot;, &quot;&quot;, names(melt18))
+write.csv(melt18, file= &quot;Op_18_GIS.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+</div>
+<div id="learning-stargazer-and-plotly." class="section level1">
+<h1>Learning stargazer and plotly.</h1>
+<p>Here, I found the NISP did not sum appropriately, and later learnt melt to clean my data further to fix this. This code should be check carefully when applied to make sure the summary statistics are correct Creating variable summary tables and pie charts</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShwbG90bHkpXG5gYGAifQ== -->
+<pre class="r"><code>library(plotly)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVtcDwtZmlsdGVyKFRsYV8yLCAhQ2F0ZWdvcnk9PVwiSHVtYW5cIikgI2FkZCBmaWx0ZXJzIGhlcmUgaWYgbmVjZXNzYXJ5IFxuYnlfZ3JvdXA8LXRlbXAlPiVncm91cF9ieShPcGVyYWNpb24sIE5hbWUpICNzaW1wbHkgY2hhbmdlcyBncm91cF9ieSB0byBlZGl0IHRhYmxlIGFuZCBwaWVjaGFydFxudDwtc3VtbWFyaXNlKGJ5X2dyb3VwLCBcIk5JU1BcIj1zdW0oTklTUCkpXG5zdW0odCROSVNQKSNjaGVjayB0aGF0IHRoaXMgZXF1YWxzIHRvdGFsIE5JU1AgZm9yIHNwcmVhZHNoZWV0LCBjdXJyZW50bHkgMzM2MFxudFxucGxvdF9seSh0LCBsYWJlbHMgPSAodClbWzFdXSwgdmFsdWVzID0gfk5JU1AsIHR5cGUgPSAncGllJywgdGV4dHBvc2l0aW9uID0gJ2luc2lkZScsICMgbm90ZSB0aGF0IHRoZSB2YWx1ZXMgbXVzdCBiZSBkaXJlY3RseSBhdHRyaWJ1dGVkIHRvIHRoZSB2YXJpYWJsZSBiZWNhdXNlIGl0IGRvZXNuJ3Qgc2VlbSB0byBzdW0uIFxuICAgICAgICB0ZXh0aW5mbyA9ICdsYWJlbCtwZXJjZW50JykgXG5gYGAifQ== -->
+<pre class="r"><code>temp&lt;-filter(Tla_2, !Category==&quot;Human&quot;) #add filters here if necessary 
+by_group&lt;-temp%&gt;%group_by(Operacion, Name) #simply changes group_by to edit table and piechart
+t&lt;-summarise(by_group, &quot;NISP&quot;=sum(NISP))
+sum(t$NISP)#check that this equals total NISP for spreadsheet, currently 3360
+t
+plot_ly(t, labels = (t)[[1]], values = ~NISP, type = 'pie', textposition = 'inside', # note that the values must be directly attributed to the variable because it doesn't seem to sum. 
+        textinfo = 'label+percent') </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShzdGFyZ2F6ZXIpXG5zcF90YWJsZTwtc3VtbWFyaXNlKGJ5X2NsYXNzLCBcIk5JU1BcIj1zdW0oTklTUD4wICkpI0kgaGFkIGEgbG90IG9mIHRyb3VibGUgd2l0aCB0aGlzLCBvbmx5IGdvdCBpdCB0byB3b3JrIGJ5IGFkZGluZyBjYW9kZSBpbnRvIHRoZSBkYXRhIGlucHV0IGxpbmUgdG8gaGF2ZSBzdHJpbmdzIGFzIGZhY3RvcnMgRkFMU0VcbnN0YXJnYXplcihzcF90YWJsZSwgdHlwZT1cInRleHRcIiwgc3VtbWFyeT1GQUxTRSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXModClbMV1cbmBgYCJ9 -->
+<pre class="r"><code>names(t)[1]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYnlfY2xhc3M8LVRsYV8yJT4lZ3JvdXBfYnkoQ2xhc3MsIENhdGVnb3J5LCBOYW1lKVxuYGBgIn0= -->
+<pre class="r"><code>by_class&lt;-Tla_2%&gt;%group_by(Class, Category, Name)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3BfdGFibGU8LXN1bW1hcmlzZShieV9jbGFzcywgXCJOSVNQXCI9c3VtKE5JU1ApKSNJIGhhZCBhIGxvdCBvZiB0cm91YmxlIHdpdGggdGhpcywgb25seSBnb3QgaXQgdG8gd29yayBieSBhZGRpbmcgY2FvZGUgaW50byB0aGUgZGF0YSBpbnB1dCBsaW5lIHRvIGhhdmUgc3RyaW5ncyBhcyBmYWN0b3JzIEZBTFNFXG5zcF90YWJsZVxuc3VtKHNwX3RhYmxlJE5JU1ApXG5gYGAifQ== -->
+<pre class="r"><code>sp_table&lt;-summarise(by_class, &quot;NISP&quot;=sum(NISP))#I had a lot of trouble with this, only got it to work by adding caode into the data input line to have strings as factors FALSE
+sp_table
+sum(sp_table$NISP)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShwbG90bHkpXG5gYGAifQ== -->
+<pre class="r"><code>library(plotly)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Making a pie chart of the table above</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCA8LSBwbG90X2x5KHNwX3RhYmxlLCBsYWJlbHMgPSB+TmFtZSwgdmFsdWVzID0gfk5JU1AsIHR5cGUgPSAncGllJywgdGV4dHBvc2l0aW9uID0gJ2luc2lkZScsICMgbm90ZSB0aGF0IHRoZSB2YWx1ZXMgbXVzdCBiZSBkaXJlY3RseSBhdHRyaWJ1dGVkIHRvIHRoZSB2YXJpYWJsZSBiZWNhdXNlIGl0IGRvZXNuJ3Qgc2VlbSB0byBzdW0uIFxuICAgICAgICB0ZXh0aW5mbyA9ICdsYWJlbCtwZXJjZW50JykgXG5gYGAifQ== -->
+<pre class="r"><code>p &lt;- plot_ly(sp_table, labels = ~Name, values = ~NISP, type = 'pie', textposition = 'inside', # note that the values must be directly attributed to the variable because it doesn't seem to sum. 
+        textinfo = 'label+percent') </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucFxuYGBgIn0= -->
+<pre class="r"><code>p</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Code for stargazer for pulication quality tables</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjpbImxpYnJhcnkoc3RhcmdhemVyKSIsInNwX3RhYmxlPC1zdW1tYXJpc2UoYnlfY2xhc3MsIFwiTklTUFwiPXN1bShOSVNQKSkjSSBoYWQgYSBsb3Qgb2YgdHJvdWJsZSB3aXRoIHRoaXMsIG9ubHkgZ290IGl0IHRvIHdvcmsgYnkgYWRkaW5nIGNhb2RlIGludG8gdGhlIGRhdGEgaW5wdXQgbGluZSB0byBoYXZlIHN0cmluZ3MgYXMgZmFjdG9ycyBGQUxTRSIsInN0YXJnYXplcihzcF90YWJsZSwgdHlwZT1cInRleHRcIiwgc3VtbWFyeT1GQUxTRSkiXX0= -->
 <pre class="r"><code>library(stargazer)
-sp_table&lt;-summarise(by_class, &quot;NISP&quot;=sum(NISP&gt;0 ))#I had a lot of trouble with this, only got it to work by adding caode into the data input line to have strings as factors FALSE
+sp_table&lt;-summarise(by_class, &quot;NISP&quot;=sum(NISP))#I had a lot of trouble with this, only got it to work by adding caode into the data input line to have strings as factors FALSE
 stargazer(sp_table, type=&quot;text&quot;, summary=FALSE)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="adding-chronology-to-the-dataset" class="section level1">
+<h1>Adding chronology to the dataset</h1>
+<p>I’m going to use the datasets above to create a new melt for each LOTE to join with the new chronology groups I created in excel and see if I can identify some basic patterns over time.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2hyb24xNzwtcmVhZC5jc3YoXCIxN19DaHJvX2pvaW4uY3N2XCIsIHN0cmluZ3NBc0ZhY3RvcnMgPSBGQUxTRSlcbmBgYCJ9 -->
+<pre class="r"><code>chron17&lt;-read.csv(&quot;17_Chro_join.csv&quot;, stringsAsFactors = FALSE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZXNoYXBlMilcbmxpYnJhcnkoZHBseXIpXG5gYGAifQ== -->
+<pre class="r"><code>library(reshape2)
+library(dplyr)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVtcDwtc2VsZWN0IChUbGFfMSwgSUQsIE9wZXJhY2lvbiwgVW5pZGFkLCBMb3RlLCBFTC4sIENsYXNzLCBDYXRlZ29yeSwgR2VudXMsIFNwZWNpZXMsIE5hbWUsIE5JU1ApICNpJ3ZlIG5vdyBpbmNsdWRlZCBJRCBoZXJlIHNvIEkgY2FuIGxpbmsgaXQgYmFjayB0byB0aGUgb3JpZ2luYWwgc3ByZWFkc2hlZXQuXG5PcF8xNzwtZmlsdGVyKHRlbXAsIE9wZXJhY2lvbj09XCIxN1wiKVxubWVsdDE3PC1tZWx0KE9wXzE3LCBtZWFzdXJlLnZhcnMgPSBcIk5JU1BcIiklPiVcbmRjYXN0KE9wZXJhY2lvbitVbmlkYWQrTG90ZX5DbGFzcywgc3VtKVxuYGBgIn0= -->
+<pre class="r"><code>temp&lt;-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.
+Op_17&lt;-filter(temp, Operacion==&quot;17&quot;)
+melt17&lt;-melt(Op_17, measure.vars = &quot;NISP&quot;)%&gt;%
+dcast(Operacion+Unidad+Lote~Class, sum)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWVsdDE3PC1tdXRhdGUobWVsdDE3LCBUb3RhbF9Sb3cgPSByb3dTdW1zKG1lbHQxN1s0OjExXSkpXG5uYW1lcyhtZWx0MTcpPC1nc3ViKFwiW1s6cHVuY3Q6XVs6c3BhY2U6XV1cIiwgXCJcIiwgbmFtZXMobWVsdDE3KSlcbm1lbHQxNyRwaGFzZTwtY2hyb24xNyRDaHJvbm9sb2d5Lmdyb3VwW21hdGNoKG1lbHQxNyRMb3RlLCBjaHJvbjE3JExvdGUpXVxud3JpdGUuY3N2KG1lbHQxNywgZmlsZT0gXCIxN19jaHJvbi5jc3ZcIilcbmBgYCJ9 -->
+<pre class="r"><code>melt17&lt;-mutate(melt17, Total_Row = rowSums(melt17[4:11]))
+names(melt17)&lt;-gsub(&quot;[[:punct:][:space:]]&quot;, &quot;&quot;, names(melt17))
+melt17$phase&lt;-chron17$Chronology.group[match(melt17$Lote, chron17$Lote)]
+write.csv(melt17, file= &quot;17_chron.csv&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWVsdDE3PC1tZWx0MTclPiVncm91cF9ieShhcy5mYWN0b3IocGhhc2UpKVxuYGBgIn0= -->
+<pre class="r"><code>melt17&lt;-melt17%&gt;%group_by(as.factor(phase))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVtcF9zdW08LXN1bW1hcmlzZShtZWx0MTcsIHN1bShCaXJkKSwgc3VtKEZpc2gpLCBzdW0oTWFtbWFsKSwgc3VtKFJlcHRpbGUpKVxuYGBgIn0= -->
+<pre class="r"><code>temp_sum&lt;-summarise(melt17, sum(Bird), sum(Fish), sum(Mammal), sum(Reptile))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RyKHRlbXBfc3VtKVxuYGBgIn0= -->
+<pre class="r"><code>str(temp_sum)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KVGhpcyBmaWxlIGNhcnJpZXMgb3V0IHRoZSBiYXNpYyBjbGVhbmluZyBhbmQgb3JnYW5pc2F0aW9uIG9mIG15IFRsYWppbmdhIGRhdGEgdXNpbmcgdGhlIDIwMTYgYW5kIDIwMTcgZGF0YSBjbGVhbmluZyBleGNlbCBmaWxlcy4gQ2hhbmdlcyB0byB0aGUgc3ByZWFkc2hlZXRzIHNob3VsZCBiZSBtYWRlIHRvIHRoZXNlIG9yaWdpbmFsIGZpbGVzLiBNb3N0IG9mIHRoZSBzcGVjaWVzIGNoYW5nZXMgSSBjYXJyaWVkIG91dCBpbiB0aGUgc3ByZWFkc2hlZXRzIHRoZW1zZWx2ZXMuIA0KYGBge3J9DQpybShsaXN0ID0gbHMoKSkNCmBgYA0KDQpgYGB7cn0NCmQxPC1yZWFkLmNzdigiMjAxN19kYXRhX2NsZWFuaW5nLmNzdiIsIHN0cmluZ3NBc0ZhY3RvcnMgPSBGQUxTRSkNCmVsX2xpc3Q8LXJlYWQuY3N2KCJFbF9saXN0LmNzdiIpDQpkMjwtcmVhZC5jc3YoIjIwMTZfZGF0YV9jbGVhbi5jc3YiLCBzdHJpbmdzQXNGYWN0b3JzID0gRkFMU0UpDQpgYGANCmBgYHtyfQ0KbGlicmFyeShkcGx5cikNCmBgYA0KDQpgYGB7cn0NCiNUaGlzIGNvZGUgY3JlYXRlcyBhIGxpc3Qgb2YgdGhlIHVuaXF1ZSBlbGVtZW50cyBpbiB0aGUgUl9FbCBjb2x1bW4uIA0KdW5pX2VsPC11bmlxdWUoZDEkUl9FbCkNCiNJIHVzZWQgdGhpcyBsaXN0IHRvIGNvZGUgZWFjaCB0byBhIHBhcnRpY3VsYXIgc3RhbmRhcmRpc2VkIGVsZW1lbnQNCmBgYA0KDQpgYGB7cn0NCiNUaGlzIGNvZGUgY3JlYXRlcyBhIGxpc3Qgb2YgdGhlIHVuaXF1ZSBlbGVtZW50cyBpbiB0aGUgUl9FbCBjb2x1bW4gaW4gdGhlIHNlY29uZCBkYXRhc2V0IGFuZCBhZGRzIHRoZW0gdG8gdGhlIHByaW9yIGRhdGFzZXQNCnVuaV9lbDI8LXVuaXF1ZShkMiRSX0VsKQ0KdW5pX21lcmc8LWMoYXMuY2hhcmFjdGVyKHVuaV9lbCksIGFzLmNoYXJhY3Rlcih1bmlfZWwyKSkNCnVuaV9hbGw8LXVuaXF1ZSh1bmlfbWVyZykNCmBgYA0KDQpgYGB7cn0NCiNUaGlzIGNvZGUgY3JlYXRlcyBhIG5ldyBjb2x1bW4gZm9yIHN0YW5kYXJkaXplZCBlbGVtZW50cyBhbmQgdXNlcyB0aGUgbG9vayB1cCBsaXN0IHRvIHByb3ZpZGUgdGhlIHN0YW5kYXJkaXNlZCBlbGVtZW50IGZvciB0aGF0IHNwZWNpbWVuLiANCmQxJE5ld19FbDwtZWxfbGlzdCRTdGFuZGFyZFttYXRjaChkMSRSX0VsLCBlbF9saXN0JE9yaWcpXQ0KZDIkTmV3X0VsPC1lbF9saXN0JFN0YW5kYXJkW21hdGNoKGQyJFJfRWwsIGVsX2xpc3QkT3JpZyldDQpgYGANCg0KYGBge3J9DQp3cml0ZS5jc3YoZDEsIGZpbGU9ICIyMDE3X25ld19lbGVtZW50LmNzdiIsIGFwcGVuZD1GQUxTRSkNCndyaXRlLmNzdihkMiwgZmlsZT0gIjIwMTZfbmV3X2VsZW1lbnQuY3N2IikNCmBgYA0KDQoNCkNMRUFOSU5HIFBPUlRJT04gREFUQQ0KYGBge3J9DQp1bmlfcG9yMjwtdW5pcXVlKGQyJFJfcG9ydGlvbikNCmBgYA0KSSBlbmRlZCB1cCBjbGVhbmluZyB0aG9zZSB1cCBpbiB0aGUgb3JpZ2luYWwgc3ByZWFkc2hlZXQuDQoNCk5vdyBJIHdpbGwgcHV0IHRoZSBkYXRhc2V0cyBiYWNrIHRvZ2V0aGVyIGFuZCBjbGVhbiB0aGUgc3BlY2llcyBuYW1lcyBhbmQgc2V0IHRoZSBncm91cGluZ3MgYnkgdHlwZS4gDQpgYGB7cn0NCnRlbXAxPC1zZWxlY3QoZDEsIC1Qb3J0aW9uLCAtRWxlbWVudC5pbmZvLCAtQ29tbWVudHMpDQp0ZW1wMjwtc2VsZWN0KGQyLCAtUG9ydGlvbiwgLUNvbW1lbnRzKQ0KbmFtZXModGVtcDEpWzQ1XTwtIkRldGFpbHMiDQpuYW1lcyh0ZW1wMilbNDVdPC0iRGV0YWlscyINCm5hbWVzKHRlbXAyKVsyMF08LSJSX1BvcnRpb24iDQpuYW1lcyh0ZW1wMSkNCm5hbWVzKHRlbXAyKQ0KYGBgDQpgYGB7ciBpbmNsdWRlPUZBTFNFfQ0KVGxhXzE8LXJiaW5kKHRlbXAxLCB0ZW1wMikNCnRyaW13cyhUbGFfMSkNCmBgYA0KSEVyZSBJIHdpbGwgbG9vayBmb3IgdW5pcXVlIG5hbWVzIGluIHRoZSBOYW1lIGNvbG91bW4NCmBgYHtyfQ0KdW5pcXVlKFRsYV8xJE5hbWUpDQpgYGANCkhlcmUgSSBhbSBzZWxlY3RpbmcgYSBzdWJzZXQgc28gSSBjYW4gaWRlbnRpZnkgZG91YmxlLXVwcyBpbiBzcGVjaWVzIG5hbWluZyBhbmQgY2hhbmdlIGZvciBjb25zaXN0ZW5jeSBpbiB0aGUgc3ByZWFkc2hlZXQuDQpgYGB7cn0NCnNwLjwtc2VsZWN0KFRsYV8xLCBDbGFzcywgQ2F0ZWdvcnksIEdlbnVzLCBTcGVjaWVzLCBOYW1lKQ0KdW5pX3NwPC0odW5pcXVlKHNwLikpDQpgYGANCg0KTm93IEkgd2lsbCBydW4gc29tZSBzdGF0cyBvbiBOSVNQIGFuZCBTcGVjaWVzLiANCmBgYHtyfQ0KbmFtZXMoVGxhXzEpDQpzdHIoVGxhXzEpDQpgYGANCkhlcmUgSSBhbSBsZWFybmluZyB1c2UgdGhlIE5JU1AgY291bnQgZGF0YSB0byBzdW1tYXJpc2UgbXkgbmV3IGRhdGFzZXQNCg0KRmlyc3QgSSBhbSBlZGl0aW5nIHNvbWUgY2F0ZWdvcnkgZGV0YWlscyB0byBtYWtlIGEgYmV0dGVyIHN1bW1hcnkuIA0KYGBge3J9DQpUbGFfMSRDYXRlZ29yeTwtaWZfZWxzZShUbGFfMSRDYXRlZ29yeT09IkdlbmVyYWwiLCBUbGFfMSROYW1lLCBUbGFfMSRDYXRlZ29yeSkNClRsYV8xJENhdGVnb3J5PC1pZl9lbHNlKFRsYV8xJENhdGVnb3J5PT0iY2YuIEd1YWpvbG90ZSIsICJCaXJkIiwgVGxhXzEkQ2F0ZWdvcnkpDQpgYGANCg0KYGBge3J9DQpUbGFfMjwtc2VsZWN0IChUbGFfMSwgSUQsIE9wZXJhY2lvbiwgVW5pZGFkLCBMb3RlLCBFTC4sIENsYXNzLCBDYXRlZ29yeSwgR2VudXMsIFNwZWNpZXMsIE5hbWUsIE5JU1ApICNpJ3ZlIG5vdyBpbmNsdWRlZCBJRCBoZXJlIHNvIEkgY2FuIGxpbmsgaXQgYmFjayB0byB0aGUgb3JpZ2luYWwgc3ByZWFkc2hlZXQuDQpgYGANCmBgYHtyfQ0KYnlfY2xhc3M8LVRsYV8yJT4lZ3JvdXBfYnkoQ2F0ZWdvcnkpDQpgYGANCmBgYHtyfQ0KbGlicmFyeShzdGFyZ2F6ZXIpDQpzcF90YWJsZTwtc3VtbWFyaXNlKGJ5X2NsYXNzLCAiTklTUCI9c3VtKE5JU1A+MCApKSNJIGhhZCBhIGxvdCBvZiB0cm91YmxlIHdpdGggdGhpcywgb25seSBnb3QgaXQgdG8gd29yayBieSBhZGRpbmcgY2FvZGUgaW50byB0aGUgZGF0YSBpbnB1dCBsaW5lIHRvIGhhdmUgc3RyaW5ncyBhcyBmYWN0b3JzIEZBTFNFDQpzdGFyZ2F6ZXIoc3BfdGFibGUsIHR5cGU9InRleHQiLCBzdW1tYXJ5PUZBTFNFKQ0KYGBgDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KVGhpcyBub3RlYm9vayBjb250YWlucyBhIHJlY29yZCBvZiBteSBkYXRhIGNsZWFuaW5nIGFuZCBtYW5pcHVsYXRpb24gb2YgbXkgUEFUVCAyMDE2LTcgZmF1bmFsIGFuYWx5c2lzLiANCg0KI0xvYWRpbmcgYmFzZSBkYXRhDQpUaGlzIHNlY3Rpb24gb3V0IHRoZSBiYXNpYyBjbGVhbmluZyBhbmQgb3JnYW5pc2F0aW9uIG9mIG15IFRsYWppbmdhIGRhdGEgdXNpbmcgdGhlIDIwMTYgYW5kIDIwMTcgZGF0YSBjbGVhbmluZyBleGNlbCBmaWxlcy4gQ2hhbmdlcyB0byB0aGUgc3ByZWFkc2hlZXRzIHNob3VsZCBiZSBtYWRlIHRvIHRoZXNlIG9yaWdpbmFsIGZpbGVzLiBNb3N0IG9mIHRoZSBzcGVjaWVzIGNoYW5nZXMgSSBjYXJyaWVkIG91dCBpbiB0aGUgc3ByZWFkc2hlZXRzIHRoZW1zZWx2ZXMuIEkgdXNlZCB0aGlzIGNvZGUgdG8gY3JlYXRlIGEgbmV3IG1hc3RlciBkYXRhc2V0IGZvciBmdXR1cmUgYW5hbHlzaXMuIA0KYGBge3J9DQpybShsaXN0ID0gbHMoKSkNCmBgYA0KDQpgYGB7cn0NCmQxPC1yZWFkLmNzdigiMjAxN19kYXRhX2NsZWFuaW5nLmNzdiIsIHN0cmluZ3NBc0ZhY3RvcnMgPSBGQUxTRSkNCmVsX2xpc3Q8LXJlYWQuY3N2KCJFbF9saXN0LmNzdiIpDQpkMjwtcmVhZC5jc3YoIjIwMTZfZGF0YV9jbGVhbi5jc3YiLCBzdHJpbmdzQXNGYWN0b3JzID0gRkFMU0UpDQpgYGANCmBgYHtyfQ0KbGlicmFyeShkcGx5cikNCmBgYA0KDQpgYGB7ciBldmFsPUZBTFNFfQ0KI1RoaXMgY29kZSBjcmVhdGVzIGEgbGlzdCBvZiB0aGUgdW5pcXVlIGVsZW1lbnRzIGluIHRoZSBSX0VsIGNvbHVtbi4gDQp1bmlfZWw8LXVuaXF1ZShkMSRSX0VsKQ0KI0kgdXNlZCB0aGlzIGxpc3QgdG8gY29kZSBlYWNoIHRvIGEgcGFydGljdWxhciBzdGFuZGFyZGlzZWQgZWxlbWVudA0KYGBgDQoNCmBgYHtyIGV2YWw9RkFMU0V9DQojVGhpcyBjb2RlIGNyZWF0ZXMgYSBsaXN0IG9mIHRoZSB1bmlxdWUgZWxlbWVudHMgaW4gdGhlIFJfRWwgY29sdW1uIGluIHRoZSBzZWNvbmQgZGF0YXNldCBhbmQgYWRkcyB0aGVtIHRvIHRoZSBwcmlvciBkYXRhc2V0DQp1bmlfZWwyPC11bmlxdWUoZDIkUl9FbCkNCnVuaV9tZXJnPC1jKGFzLmNoYXJhY3Rlcih1bmlfZWwpLCBhcy5jaGFyYWN0ZXIodW5pX2VsMikpDQp1bmlfYWxsPC11bmlxdWUodW5pX21lcmcpDQpgYGANCiMjQ0xFQU5JTkcgU3BlY2llcyBEQVRBDQpgYGB7cn0NCiNUaGlzIGNvZGUgY3JlYXRlcyBhIG5ldyBjb2x1bW4gZm9yIHN0YW5kYXJkaXplZCBlbGVtZW50cyBhbmQgdXNlcyB0aGUgbG9vayB1cCBsaXN0IHRvIHByb3ZpZGUgdGhlIHN0YW5kYXJkaXNlZCBlbGVtZW50IGZvciB0aGF0IHNwZWNpbWVuLiANCmQxJE5ld19FbDwtZWxfbGlzdCRTdGFuZGFyZFttYXRjaChkMSRSX0VsLCBlbF9saXN0JE9yaWcpXQ0KZDIkTmV3X0VsPC1lbF9saXN0JFN0YW5kYXJkW21hdGNoKGQyJFJfRWwsIGVsX2xpc3QkT3JpZyldDQpgYGANCg0KYGBge3J9DQp3cml0ZS5jc3YoZDEsIGZpbGU9ICIyMDE3X25ld19lbGVtZW50LmNzdiIsIGFwcGVuZD1GQUxTRSkNCndyaXRlLmNzdihkMiwgZmlsZT0gIjIwMTZfbmV3X2VsZW1lbnQuY3N2IikNCmBgYA0KDQoNCiMjQ0xFQU5JTkcgUE9SVElPTiBEQVRBDQpgYGB7ciBldmFsPUZBTFNFfQ0KdW5pX3BvcjI8LXVuaXF1ZShkMiRSX3BvcnRpb24pDQpgYGANCkkgZW5kZWQgdXAgY2xlYW5pbmcgdGhvc2UgdXAgaW4gdGhlIG9yaWdpbmFsIHNwcmVhZHNoZWV0Lg0KDQpOb3cgSSB3aWxsIHB1dCB0aGUgZGF0YXNldHMgYmFjayB0b2dldGhlciBhbmQgY2xlYW4gdGhlIHNwZWNpZXMgbmFtZXMgYW5kIHNldCB0aGUgZ3JvdXBpbmdzIGJ5IHR5cGUuIA0KYGBge3J9DQp0ZW1wMTwtc2VsZWN0KGQxLCAtUG9ydGlvbiwgLUVsZW1lbnQuaW5mbywgLUNvbW1lbnRzKQ0KdGVtcDI8LXNlbGVjdChkMiwgLVBvcnRpb24sIC1Db21tZW50cykNCm5hbWVzKHRlbXAxKVs0NV08LSJEZXRhaWxzIg0KbmFtZXModGVtcDIpWzQ1XTwtIkRldGFpbHMiDQpuYW1lcyh0ZW1wMilbMjBdPC0iUl9Qb3J0aW9uIg0KbmFtZXModGVtcDEpDQpuYW1lcyh0ZW1wMikNCmBgYA0KYGBge3IgaW5jbHVkZT1GQUxTRX0NClRsYV8xPC1yYmluZCh0ZW1wMSwgdGVtcDIpDQp0cmltd3MoVGxhXzEpDQpgYGANCkhFcmUgSSB3aWxsIGxvb2sgZm9yIHVuaXF1ZSBuYW1lcyBpbiB0aGUgTmFtZSBjb2xvdW1uDQpgYGB7ciBldmFsPUZBTFNFfQ0KdW5pcXVlKFRsYV8xJE5hbWUpDQpgYGANCkhlcmUgSSBhbSBzZWxlY3RpbmcgYSBzdWJzZXQgc28gSSBjYW4gaWRlbnRpZnkgZG91YmxlLXVwcyBpbiBzcGVjaWVzIG5hbWluZyBhbmQgY2hhbmdlIGZvciBjb25zaXN0ZW5jeSBpbiB0aGUgc3ByZWFkc2hlZXQuDQpgYGB7ciBldmFsPUZBTFNFfQ0Kc3AuPC1zZWxlY3QoVGxhXzEsIENsYXNzLCBDYXRlZ29yeSwgR2VudXMsIFNwZWNpZXMsIE5hbWUpDQp1bmlfc3A8LSh1bmlxdWUoc3AuKSkNCmBgYA0KDQpIZXJlIEkgYW0gbG9va2luZyBhdCB0aGUgZGV0YWlscyBhbmQgc3RydWN0dXJlIG9mIHRoZSBkYXRhc2V0IEkgY3JlYXRlZA0KYGBge3IgZXZhbD1GQUxTRX0NCm5hbWVzKFRsYV8xKQ0Kc3RyKFRsYV8xKQ0KYGBgDQojI0ZpbmFsIHNwcmVhZHNoZWV0IGZvciBleHBvcnQ6DQpgYGB7cn0NClRsYV8xJFJfRWw8LVRsYV8xJE5ld19FbA0KVGxhXzE8LXNlbGVjdChUbGFfMSwgLU5ld19FbCkNCndyaXRlLmNzdihUbGFfMSwgZmlsZT0gIlRsYWppbmdhX2NsZWFuZWRfMV8yNV8xOC5jc3YiKQ0KYGBgDQojRGF0YSBzdWJzZXRzDQpIZXJlIEkgYW0gbGVhcm5pbmcgdXNlIHRoZSBOSVNQIGNvdW50IGRhdGEgdG8gc3VtbWFyaXNlIG15IG5ldyBkYXRhc2V0DQoNCkZpcnN0IEkgYW0gZWRpdGluZyBzb21lIGNhdGVnb3J5IGRldGFpbHMgdG8gbWFrZSBhIGJldHRlciBzdW1tYXJ5LiANCmBgYHtyfQ0KVGxhXzEkQ2F0ZWdvcnk8LWlmX2Vsc2UoVGxhXzEkQ2F0ZWdvcnk9PSJHZW5lcmFsIiwgVGxhXzEkTmFtZSwgVGxhXzEkQ2F0ZWdvcnkpDQpUbGFfMSRDYXRlZ29yeTwtaWZfZWxzZShUbGFfMSRDYXRlZ29yeT09ImNmLiBHdWFqb2xvdGUiLCAiQmlyZCIsIFRsYV8xJENhdGVnb3J5KQ0KVGxhXzE8LWZpbHRlcihUbGFfMSwgIUNhdGVnb3J5PT0iIikgI2hlcmUgSSBhbSByZW1vdmluZyB0aGUgZm9zc2lsIGFuZCBlbXB0eSBiYWcgZnJvbSBUbGFfMSBkYXRhc2V0DQpgYGANClRoaXMgY29kZSB3cml0ZXMgYSBzdWJzZXQgb2YgdGhlIGNvbHVtbnMgb2YgVGxhXzENCmBgYHtyfQ0KVGxhXzI8LXNlbGVjdCAoVGxhXzEsIElELCBPcGVyYWNpb24sIFVuaWRhZCwgTG90ZSwgRUwuLCBDbGFzcywgQ2F0ZWdvcnksIEdlbnVzLCBTcGVjaWVzLCBOYW1lLCBOSVNQKSAjaSd2ZSBub3cgaW5jbHVkZWQgSUQgaGVyZSBzbyBJIGNhbiBsaW5rIGl0IGJhY2sgdG8gdGhlIG9yaWdpbmFsIHNwcmVhZHNoZWV0Lg0KYGBgDQojI0dJUyBkYXRhc2V0cw0KYGBge3J9DQpsaWJyYXJ5KHJlc2hhcGUyKQ0KYGBgDQpIZXJlIEkgYW0gY3JlYXRpbmcgc3Vic2V0cyBvZiB0aGUgZGF0YSBmb3IgR0lTLiBOb3RlIHRoYXQgdGhlIHJvd1NVTXMgbmVlZHMgdG8gYmUgdXBkYXRlZCB3aGVuIHRoZSBzZWxlY3RlZCBjYXRlZ29yaWVzIGNoYW5nZS4gVGhpcyB3aWxsIG92ZXJ3cml0ZSB0aGUgZmlsZSBzYXZlZCB0byB0aGUgV0QuIE5vdGUgdGhhdCBmb3IgWUVBUiB0byBiZSBpbmNsdWRlZCBpbiBHSVMsIGl0IG5lZWRzIHRvIGJlIGEgZGlmZmVyZW50IG5hbWU6aS5lLiANCm5hbWVzKE9wXzE3KVsyXTwtImFuYWx5X3llYXIiDQpgYGB7cn0NCnRlbXA8LXNlbGVjdCAoVGxhXzEsIElELCBPcGVyYWNpb24sIFVuaWRhZCwgTG90ZSwgRUwuLCBDbGFzcywgQ2F0ZWdvcnksIEdlbnVzLCBTcGVjaWVzLCBOYW1lLCBOSVNQKSAjaSd2ZSBub3cgaW5jbHVkZWQgSUQgaGVyZSBzbyBJIGNhbiBsaW5rIGl0IGJhY2sgdG8gdGhlIG9yaWdpbmFsIHNwcmVhZHNoZWV0Lg0KT3BfMTc8LWZpbHRlcih0ZW1wLCBPcGVyYWNpb249PSIxNyIpDQptZWx0MTc8LW1lbHQoT3BfMTcsIG1lYXN1cmUudmFycyA9ICJOSVNQIiklPiUNCmRjYXN0KE9wZXJhY2lvbitVbmlkYWR+Q2xhc3MrTmFtZSwgc3VtKSU+JQ0KbXV0YXRlKFRvdGFsX1JvdyA9IHJvd1N1bXMoLlszOjY1XSkpDQpuYW1lcyhtZWx0MTcpPC1nc3ViKCJbWzpwdW5jdDpdWzpzcGFjZTpdXSIsICIiLCBuYW1lcyhtZWx0MTcpKQ0KYGBgDQoNCmBgYHtyfQ0KT3BfMTg8LWZpbHRlcih0ZW1wLCBPcGVyYWNpb249PSIxOCIpDQptZWx0MTg8LW1lbHQoT3BfMTgsIG1lYXN1cmUudmFycyA9ICJOSVNQIiklPiUNCmRjYXN0KE9wZXJhY2lvbitVbmlkYWR+Q2xhc3MrTmFtZSwgc3VtKSU+JQ0KbXV0YXRlKFRvdGFsX1JvdyA9IHJvd1N1bXMoLlszOjkzXSkpDQpuYW1lcyhtZWx0MTgpPC1nc3ViKCJbWzpwdW5jdDpdWzpzcGFjZTpdXSIsICIiLCBuYW1lcyhtZWx0MTgpKQ0Kd3JpdGUuY3N2KG1lbHQxOCwgZmlsZT0gIk9wXzE4X0dJUy5jc3YiKQ0KYGBgDQoNCiNMZWFybmluZyBzdGFyZ2F6ZXIgYW5kIHBsb3RseS4gDQoNCkhlcmUsIEkgZm91bmQgdGhlIE5JU1AgZGlkIG5vdCBzdW0gYXBwcm9wcmlhdGVseSwgYW5kIGxhdGVyIGxlYXJudCBtZWx0IHRvIGNsZWFuIG15IGRhdGEgZnVydGhlciB0byBmaXggdGhpcy4gVGhpcyBjb2RlIHNob3VsZCBiZSBjaGVjayBjYXJlZnVsbHkgd2hlbiBhcHBsaWVkIHRvIG1ha2Ugc3VyZSB0aGUgc3VtbWFyeSBzdGF0aXN0aWNzIGFyZSBjb3JyZWN0DQpDcmVhdGluZyB2YXJpYWJsZSBzdW1tYXJ5IHRhYmxlcyBhbmQgcGllIGNoYXJ0cw0KYGBge3J9DQpsaWJyYXJ5KHBsb3RseSkNCmBgYA0KDQpgYGB7cn0NCnRlbXA8LWZpbHRlcihUbGFfMiwgIUNhdGVnb3J5PT0iSHVtYW4iKSAjYWRkIGZpbHRlcnMgaGVyZSBpZiBuZWNlc3NhcnkgDQpieV9ncm91cDwtdGVtcCU+JWdyb3VwX2J5KE9wZXJhY2lvbiwgTmFtZSkgI3NpbXBseSBjaGFuZ2VzIGdyb3VwX2J5IHRvIGVkaXQgdGFibGUgYW5kIHBpZWNoYXJ0DQp0PC1zdW1tYXJpc2UoYnlfZ3JvdXAsICJOSVNQIj1zdW0oTklTUCkpDQpzdW0odCROSVNQKSNjaGVjayB0aGF0IHRoaXMgZXF1YWxzIHRvdGFsIE5JU1AgZm9yIHNwcmVhZHNoZWV0LCBjdXJyZW50bHkgMzM2MA0KdA0KcGxvdF9seSh0LCBsYWJlbHMgPSAodClbWzFdXSwgdmFsdWVzID0gfk5JU1AsIHR5cGUgPSAncGllJywgdGV4dHBvc2l0aW9uID0gJ2luc2lkZScsICMgbm90ZSB0aGF0IHRoZSB2YWx1ZXMgbXVzdCBiZSBkaXJlY3RseSBhdHRyaWJ1dGVkIHRvIHRoZSB2YXJpYWJsZSBiZWNhdXNlIGl0IGRvZXNuJ3Qgc2VlbSB0byBzdW0uIA0KICAgICAgICB0ZXh0aW5mbyA9ICdsYWJlbCtwZXJjZW50JykgDQpgYGANCmBgYHtyfQ0KbmFtZXModClbMV0NCmBgYA0KDQpgYGB7cn0NCmJ5X2NsYXNzPC1UbGFfMiU+JWdyb3VwX2J5KENsYXNzLCBDYXRlZ29yeSwgTmFtZSkNCmBgYA0KDQpgYGB7cn0NCnNwX3RhYmxlPC1zdW1tYXJpc2UoYnlfY2xhc3MsICJOSVNQIj1zdW0oTklTUCkpI0kgaGFkIGEgbG90IG9mIHRyb3VibGUgd2l0aCB0aGlzLCBvbmx5IGdvdCBpdCB0byB3b3JrIGJ5IGFkZGluZyBjYW9kZSBpbnRvIHRoZSBkYXRhIGlucHV0IGxpbmUgdG8gaGF2ZSBzdHJpbmdzIGFzIGZhY3RvcnMgRkFMU0UNCnNwX3RhYmxlDQpzdW0oc3BfdGFibGUkTklTUCkNCmBgYA0KDQoNCg0KYGBge3J9DQpsaWJyYXJ5KHBsb3RseSkNCmBgYA0KTWFraW5nIGEgcGllIGNoYXJ0IG9mIHRoZSB0YWJsZSBhYm92ZQ0KYGBge3J9DQpwIDwtIHBsb3RfbHkoc3BfdGFibGUsIGxhYmVscyA9IH5OYW1lLCB2YWx1ZXMgPSB+TklTUCwgdHlwZSA9ICdwaWUnLCB0ZXh0cG9zaXRpb24gPSAnaW5zaWRlJywgIyBub3RlIHRoYXQgdGhlIHZhbHVlcyBtdXN0IGJlIGRpcmVjdGx5IGF0dHJpYnV0ZWQgdG8gdGhlIHZhcmlhYmxlIGJlY2F1c2UgaXQgZG9lc24ndCBzZWVtIHRvIHN1bS4gDQogICAgICAgIHRleHRpbmZvID0gJ2xhYmVsK3BlcmNlbnQnKSANCmBgYA0KDQpgYGB7cn0NCnANCmBgYA0KDQpDb2RlIGZvciBzdGFyZ2F6ZXIgZm9yIHB1bGljYXRpb24gcXVhbGl0eSB0YWJsZXMNCmBgYHtyIGV2YWw9RkFMU0V9DQpsaWJyYXJ5KHN0YXJnYXplcikNCnNwX3RhYmxlPC1zdW1tYXJpc2UoYnlfY2xhc3MsICJOSVNQIj1zdW0oTklTUCkpI0kgaGFkIGEgbG90IG9mIHRyb3VibGUgd2l0aCB0aGlzLCBvbmx5IGdvdCBpdCB0byB3b3JrIGJ5IGFkZGluZyBjYW9kZSBpbnRvIHRoZSBkYXRhIGlucHV0IGxpbmUgdG8gaGF2ZSBzdHJpbmdzIGFzIGZhY3RvcnMgRkFMU0UNCnN0YXJnYXplcihzcF90YWJsZSwgdHlwZT0idGV4dCIsIHN1bW1hcnk9RkFMU0UpDQpgYGANCg0KDQoNCiNBZGRpbmcgY2hyb25vbG9neSB0byB0aGUgZGF0YXNldA0KDQpJJ20gZ29pbmcgdG8gdXNlIHRoZSBkYXRhc2V0cyBhYm92ZSB0byBjcmVhdGUgYSBuZXcgbWVsdCBmb3IgZWFjaCBMT1RFIHRvIGpvaW4gd2l0aCB0aGUgbmV3IGNocm9ub2xvZ3kgZ3JvdXBzIEkgY3JlYXRlZCBpbiBleGNlbCBhbmQgc2VlIGlmIEkgY2FuIGlkZW50aWZ5IHNvbWUgYmFzaWMgcGF0dGVybnMgb3ZlciB0aW1lLiANCg0KYGBge3J9DQpjaHJvbjE3PC1yZWFkLmNzdigiMTdfQ2hyb19qb2luLmNzdiIsIHN0cmluZ3NBc0ZhY3RvcnMgPSBGQUxTRSkNCmBgYA0KDQpgYGB7cn0NCmxpYnJhcnkocmVzaGFwZTIpDQpsaWJyYXJ5KGRwbHlyKQ0KYGBgDQpgYGB7cn0NCnRlbXA8LXNlbGVjdCAoVGxhXzEsIElELCBPcGVyYWNpb24sIFVuaWRhZCwgTG90ZSwgRUwuLCBDbGFzcywgQ2F0ZWdvcnksIEdlbnVzLCBTcGVjaWVzLCBOYW1lLCBOSVNQKSAjaSd2ZSBub3cgaW5jbHVkZWQgSUQgaGVyZSBzbyBJIGNhbiBsaW5rIGl0IGJhY2sgdG8gdGhlIG9yaWdpbmFsIHNwcmVhZHNoZWV0Lg0KT3BfMTc8LWZpbHRlcih0ZW1wLCBPcGVyYWNpb249PSIxNyIpDQptZWx0MTc8LW1lbHQoT3BfMTcsIG1lYXN1cmUudmFycyA9ICJOSVNQIiklPiUNCmRjYXN0KE9wZXJhY2lvbitVbmlkYWQrTG90ZX5DbGFzcywgc3VtKQ0KYGBgDQpgYGB7cn0NCm1lbHQxNzwtbXV0YXRlKG1lbHQxNywgVG90YWxfUm93ID0gcm93U3VtcyhtZWx0MTdbNDoxMV0pKQ0KbmFtZXMobWVsdDE3KTwtZ3N1YigiW1s6cHVuY3Q6XVs6c3BhY2U6XV0iLCAiIiwgbmFtZXMobWVsdDE3KSkNCm1lbHQxNyRwaGFzZTwtY2hyb24xNyRDaHJvbm9sb2d5Lmdyb3VwW21hdGNoKG1lbHQxNyRMb3RlLCBjaHJvbjE3JExvdGUpXQ0Kd3JpdGUuY3N2KG1lbHQxNywgZmlsZT0gIjE3X2Nocm9uLmNzdiIpDQpgYGANCg0KYGBge3J9DQptZWx0MTc8LW1lbHQxNyU+JWdyb3VwX2J5KGFzLmZhY3RvcihwaGFzZSkpDQpgYGANCg0KYGBge3J9DQp0ZW1wX3N1bTwtc3VtbWFyaXNlKG1lbHQxNywgc3VtKEJpcmQpLCBzdW0oRmlzaCksIHN1bShNYW1tYWwpLCBzdW0oUmVwdGlsZSkpDQpgYGANCmBgYHtyfQ0Kc3RyKHRlbXBfc3VtKQ0KYGBg</div>
 
 
 
