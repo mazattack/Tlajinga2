@@ -79,12 +79,38 @@ Here I am looking at the details and structure of the dataset I created
 names(Tla_1)
 str(Tla_1)
 ```
+
+##Adding in confidence value for species IDS
+
+```{r}
+lconf<-read.csv("low_confidence_ID.csv")
+Tla_1$lconf<-NA
+
+for (i in 1:nrow(Tla_1))
+if ((Tla_1$Name[i] %in% lconf[,1])==FALSE){Tla_1$lconf[i]<-"0"} else {Tla_1$lconf[i]<-"1"}
+```
+
+
+I want to summar
+
+
 ##Final spreadsheet for export:
 ```{r}
 Tla_1$R_El<-Tla_1$New_El
 Tla_1<-select(Tla_1, -New_El)
 write.csv(Tla_1, file= "Tlajinga_cleaned_1_25_18.csv")
 ```
+
+
+Randomly select 10 bags for ZooMS
+
+```{r}
+runif(10, 1,283)
+```
+
+
+
+
 #Data subsets
 Here I am learning use the NISP count data to summarise my new dataset
 
@@ -212,3 +238,5 @@ temp_sum<-summarise(melt17, sum(Bird), sum(Fish), sum(Mammal), sum(Reptile))
 ```{r}
 str(temp_sum)
 ```
+
+#Spreadsheet of individual Leporidae to calculate MNE
