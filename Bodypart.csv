@@ -1,0 +1,68 @@
+,Element,Body part
+1,Mandible,Head
+2,Scapula,Forelimb
+3,Patella,Hindlimb
+4,Metacarpal,Feet
+5,Shaft frags,Shaft
+6,Femur,Hindlimb
+7,Tibia,Hindlimb
+8,Lumbar,Spine
+9,Radius,Forelimb
+10,Tool,Shaft
+11,Metatarsal,Feet
+12,Tth Up,Head
+13,Ribs,Chest
+14,Cranium,Head
+15,ND frags,Frag
+16,NA,
+17,Shell,
+18,Pelvis Acetabulum,Spine
+19,Humerus,Forelimb
+20,Mand/Tth,Head
+21,Skeleton,
+22,Vert ND,Spine
+23,Calcaneus,Feet
+24,Astragalus,Feet
+25,Tarsal,Feet
+26,Thoracic,Spine
+27,Phalanx3,Feet
+28,Cervical,Spine
+29,Sternum,Chest
+30,Coracoid,Forelimb
+31,Phalanx ND,Feet
+32,Sacrum,Spine
+33,ND frags?,Frag
+34,Tth ND,Head
+35,Tth Low,Head
+36,Ulna,Forelimb
+37,Dentary,Head
+38,Tibiotarsus,Hindlimb
+39,Cranium/Tth,Head
+40,Metapodial,Feet
+41,Phalanx2,Feet
+42,Phalanx1,Feet
+43,Pygostyle,Spine
+44,Hyomandibular,Head
+45,Caudal,Spine
+46,Fibula,Hindlimb
+47,Ilium,Spine
+48,Other,
+49,Tarsometatarsus,Feet
+50,Carapace,
+51,Antler,
+52,Urostyle,
+53,Scute,
+54,Spine,
+55,Pteryiophores,
+56,ND scute,
+57,Plastron,
+58,Synsacrum,Spine
+59,Atlas,Spine
+60,Ischium,Spine
+61,Carpometacarpus,Forelimb
+62,Axis,Spine
+63,Carpal,Feet
+64,ND Scute,
+65,Furcula,Chest
+66,Clavical,Chest
+67,Precaudal,Spine

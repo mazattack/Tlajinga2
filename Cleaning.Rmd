@@ -80,6 +80,14 @@ names(Tla_1)
 str(Tla_1)
 ```
 
+Renaming final Element columns
+```{r}
+library(dplyr)
+Tla_1$R_El<-Tla_1$New_El
+Tla_1<-select(Tla_1, -New_El)
+```
+
+
 ##Adding in confidence value for species IDS
 
 ```{r}
@@ -89,15 +97,23 @@ Tla_1$lconf<-NA
 for (i in 1:nrow(Tla_1))
 if ((Tla_1$Name[i] %in% lconf[,1])==FALSE){Tla_1$lconf[i]<-"0"} else {Tla_1$lconf[i]<-"1"}
 ```
+# Creating list of body parts from Elements
 
+```{r eval=FALSE}
+elist<-unique(Tla_1$R_El)
+```
+```{r}
+body<-read.csv("Bodypart.csv")
+```
 
-I want to summar
+```{r}
+Tla_1$body<-body$Body.part[match(Tla_1$R_El, body$Element)]
+```
 
 
 ##Final spreadsheet for export:
 ```{r}
-Tla_1$R_El<-Tla_1$New_El
-Tla_1<-select(Tla_1, -New_El)
+
 write.csv(Tla_1, file= "Tlajinga_cleaned_1_25_18.csv")
 ```
 
@@ -219,10 +235,10 @@ library(dplyr)
 temp<-select (Tla_1, ID, Operacion, Unidad, Lote, EL., Class, Category, Genus, Species, Name, NISP) #i've now included ID here so I can link it back to the original spreadsheet.
 Op_17<-filter(temp, Operacion=="17")
 melt17<-melt(Op_17, measure.vars = "NISP")%>%
-dcast(Operacion+Unidad+Lote~Class, sum)
+dcast(Operacion+Unidad+Lote~Category, sum)
 ```
 ```{r}
-melt17<-mutate(melt17, Total_Row = rowSums(melt17[4:11]))
+melt17<-mutate(melt17, Total_Row = rowSums(melt17[4:23]))
 names(melt17)<-gsub("[[:punct:][:space:]]", "", names(melt17))
 melt17$phase<-chron17$Chronology.group[match(melt17$Lote, chron17$Lote)]
 write.csv(melt17, file= "17_chron.csv")
@@ -239,4 +255,165 @@ temp_sum<-summarise(melt17, sum(Bird), sum(Fish), sum(Mammal), sum(Reptile))
 str(temp_sum)
 ```
 
-#Spreadsheet of individual Leporidae to calculate MNE
+# Creating list of body parts from Elements
+
+```{r}
+elist<-unique(Tla_1$R_El)
+```
+```{r}
+body<-read.csv("Bodypart.csv")
+```
+
+```{r}
+Tla_1$body<-body$Body.part[match(Tla_1$R_El, body$Element)]
+```
+
+```{r}
+library(dplyr)
+
+Tla_1%>%filter(Name=="White-tailed deer")%>%group_by(body)%>%summarise(sum(NISP))
+Tla_1%>%filter(Category=="Artiodactyla")%>%group_by(body)%>%summarise(sum(NISP))
+Tla_1%>%filter(Category=="Artiodactyla", !Name=="White-tailed deer")%>%group_by(body)%>%summarise(sum(NISP))
+```
+#Scatter plot of head-limb relationship
+
+
+
+
+
+```{r}
+library(dplyr)
+library(reshape2)
+temp<-select (Tla_1, ID, Operacion, Category, Name, NISP, body) 
+body_melt<-melt(temp, measure.vars = "NISP")
+```
+
+```{r}
+body_g<-dcast(body_melt, Operacion+Category~body, sum)
+
+```
+```{r}
+body_g$limb<-body_g$Forelimb+body_g$Hindlimb
+```
+
+```{r}
+g<-ggplot(filter(body_g, (Category=="Anseriformes"| Category=="Artiodactyla"|Category=="Carnivora"|Category== "Leporidae") & !Operacion=="SOTD"), aes(Head, limb))
+```
+
+```{r}
+g+geom_point(aes(color=Category, shape=Operacion))
+```
+Bar graphs of these 
+
+```{r}
+cat_bod<-aggregate(NISP~Category+body, data=Tla_1, sum)#Dont actually need this in the end
+```
+
+```{r}
+g<-ggplot(filter(Tla_1, (Category=="Artiodactyla"|Category=="Carnivora"|Category=="Leporidae") & !Operacion=="SOTD" & (body=="Chest"|body=="Feet"|body=="Forelimb"|body=="Head"|body=="Hindlimb"|body=="Spine")), aes(Category, NISP))
+```
+```{r}
+g+geom_bar(aes(fill=body), position="fill", stat="identity")+facet_grid(.~Operacion)
+
+```
+
+#bar graph comparing body parts to standards
+
+```{r}
+stan<-read.csv("body_standard.csv")
+```
+```{r}
+stan<-melt(stan)
+```
+
+```{r}
+stan$Operacion<-"standard"
+names(stan)[3]<-"NISP"
+names(stan)[2]<-"Category"
+```
+creating the joint dataset
+```{r}
+temp<-select(Tla_1, Operacion, Category, body, NISP)
+temp<-filter(temp, (Category=="Artiodactyla"|Category=="Carnivora"|Category=="Leporidae") & !Operacion=="SOTD" & (body=="Chest"|body=="Feet"|body=="Forelimb"|body=="Head"|body=="Hindlimb"|body=="Spine"))
+body_test<-rbind(temp, stan)
+```
+creating the graph
+```{r}
+g<-ggplot(body_test, aes(Operacion, NISP))
+```
+```{r}
+g+geom_bar(aes(fill=body), position="fill", stat="identity")+facet_grid(.~Category)
+```
+#scatter comparison of above
+```{r}
+body_test2<-dcast(body_test, Category+body~Operacion, sum)
+```
+```{r}
+names(body_test2)[3]<-"op17"
+names(body_test2)[4]<-"op18"
+```
+```{r}
+body_test2$tla<-body_test2$op17+body_test2$op18
+```
+
+```{r}
+g<-ggplot(body_test2, aes(standard, tla))
+```
+```{r}
+g+geom_point(aes(color=body))+facet_grid(.~Category)
+```
+```{r}
+lm(standard~tla, body_test2)
+```
+
+
+#Chi-sq analysis of the above
+
+```{r}
+temp<-filter(body_test2, Category=="Leporidae")
+tla<-temp$tla
+row.names(temp)<- temp$body
+P<-prop.table(temp$standard)
+```
+
+```{r}
+P2<-c(0.18965517, 0.29885057, 0.04597701, 0.20114943, 0.03448276, 0.22988506)
+```
+```{r}
+P
+P2
+```
+
+```{r}
+chi<-chisq.test(x=temp$tla, p=P, simulate.p.value = TRUE, B=100)
+```
+
+```{r}
+chi
+```
+
+```{r}
+chi$observed
+```
+```{r}
+round(chi$expected,2)
+```
+
+```{r}
+round(chi$residuals, 2)
+```
+
+
+#standardizing body parts
+```{r}
+body_test2$bodynew<-body_test2$tla/body_test2$standard
+```
+```{r}
+
+g<-ggplot(body_test2, aes(Category, bodynew))
+```
+```{r}
+g+geom_bar(aes(fill=body), position="fill", stat="identity")
+```
+```
+
