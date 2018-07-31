@@ -1,0 +1,62 @@
+---
+title: "Species count vs sample size"
+output: html_notebook
+---
+First importing a database in which all species are only counted once - where only family is present, included, but I took care not to double up family and genus of same family as 2 (i.e. Anas + anatidae, keep only anas)
+
+First, I got the unique names of the species I would count as unique, FYI I deleted a couple from the list below. I saved this separately in the folder as CSV. 
+```{r}
+u<-unique(x$Name)
+u
+```
+Now I need to create a spreadsheet of the clean version, in a transposed and melted form. This needs to show a single Lote on each row, and provide a sum of NISP, and a presence or absence of the key unique species. 
+
+I'll start with a melt and sum of the NISP for each species in each bag. 
+
+```{r}
+x<-read.csv("Tlajinga_cleaned_1_25_18.csv")
+```
+
+```{r}
+library(dplyr)
+x2<-select(x, Operacion, Lote, Genus, Species, Name, NISP)
+```
+```{r}
+d<-dcast(x2, Lote~Name, sum)
+```
+I'm and going to check the dcast summed properly by writing to excel
+```{r}
+write.csv(d2, "dcast.csv")
+```
+
+Checked and sum = total NISP
+Good!
+
+Now I am adding total NISP for each bag and will check using code above
+```{r}
+d2<-d
+d2$NISP<-rowSums(d[, 3:107])
+```
+
+This also checks out. Now I will select only the rows that match the names in the unique list saved earlier. I had to modify the unique sp. text to include all column names i wanted to keep, including lote and NISP and delete a false row
+
+```{r}
+u2<-read.delim("Unique_species.txt", header=FALSE, stringsAsFactors = FALSE)
+u2<-c(u2$V1)
+```
+```{r}
+u2
+```
+
+
+```{r}
+x3<-select(d2, u2)
+```
+
+```{r}
+x3
+```
+
+```{r}
+write.csv(x3, "Lote_sum.csv")
+```

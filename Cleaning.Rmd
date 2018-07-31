@@ -110,8 +110,15 @@ body<-read.csv("Bodypart.csv")
 Tla_1$body<-body$Body.part[match(Tla_1$R_El, body$Element)]
 ```
 
+#Adding Niche data to Tla_1
 
-##Final spreadsheet for export:
+```{r}
+niche<-read.csv("sp_niche.csv")
+Tla_1$niche<-niche$NICHE[match(Tla_1$Name, niche$Name)]
+```
+
+
+#Final spreadsheet for export:
 ```{r}
 
 write.csv(Tla_1, file= "Tlajinga_cleaned_1_25_18.csv")
@@ -414,6 +421,16 @@ g<-ggplot(body_test2, aes(Category, bodynew))
 ```
 ```{r}
 g+geom_bar(aes(fill=body), position="fill", stat="identity")
+
 ```
+
+#List of elements for ZooMS. Species by summed NISP
+```{r}
+library(dplyr)
+library(reshape2)
+Tla_1%>%select(Category, Genus, Species, Name, NISP)%>%group_by(Category, Genus, Species, Name)%>%summarize(sum(NISP))%>%write.csv(file= "Tlajinga_summary.csv")
+
 ```
+
+
 

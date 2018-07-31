@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+Looking at data from sharpe et al. 2018 on maya animal isotopes
+```{r}
+d<-read.csv("Maya_iso.csv", stringsAsFactors = T)
+```
+```{r}
+str(d)
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+g<-ggplot(filter(d, Name=="Canis lupus familiaris"| Name=="Meleagris gallopavo"| Name=="Odocoileus virginianus"| Name=="Tayassuidae"| Name=="Felidae (Panthera onca?)"), aes(x=ap, y=col, color=Name))
+```
+```{r}
+g<-g+geom_point()
+
+
+
+g<-g+scale_x_continuous(name="carbon apatite", breaks=seq(-18, -2, 2), limits= c(-18, -2)) +scale_y_continuous(name="carbon collagen", breaks=seq(-23, -7, 2), limits= c(-23, -7))
+g+geom_abline(intercept = -12.7, slope= 0.555, color="red") +geom_abline(intercept = -7.61, slope= 0.503,color="green")
+```
+
+
